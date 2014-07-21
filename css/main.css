@@ -33,6 +33,8 @@ pre {
 }
 
 article {
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
+  padding: 30px 20px;
 }
+
