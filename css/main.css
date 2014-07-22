@@ -40,6 +40,14 @@ pre {
   border-radius: 3px;
 }
 
+code {
+  padding: 2px 4px;
+  color: #de1e3d;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  margin: 0 2px;
+}
+
 main {
   max-width: 980px;
   margin: 0 auto;

@@ -6,3 +6,24 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+button {
+  padding: 10px;
+  background: #0073D5;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+       -o-transition: all .2s;
+       	  transition: all .2s;
+}
+
+button:hover {
+  background: #0058aa;
+}
+
+button.small {
+  font-size: 12px;
+}
