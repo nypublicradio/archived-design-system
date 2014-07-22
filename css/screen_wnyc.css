@@ -12,7 +12,7 @@ a:hover {
 }
 
 button {
-  padding: 10px;
+  padding: 10px 15px;
   background: #0073D5;
   border: none;
   color: white;
@@ -28,6 +28,6 @@ button:hover {
   background: #0058aa;
 }
 
-button.small {
-  font-size: 12px;
+button.large {
+  font-size: 15px;
 }
