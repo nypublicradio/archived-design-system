@@ -31,10 +31,26 @@ pre {
   border-radius: 3px;
 }
 
-article {
+main {
   max-width: 980px;
   margin: 0 auto;
   padding: 30px 20px;
+}
+
+article {
+  float: right;
+  width: 70%;
+}
+
+aside {
+  float: left;
+  width: 20%;
+}
+
+section {
+  padding: 0 0 50px 0;
+  margin: 0 0 50px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 h1 {
