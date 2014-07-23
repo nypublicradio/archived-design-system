@@ -28,6 +28,10 @@ button:hover {
   background: #0058aa;
 }
 
+button:active {
+  background: #012f5b;
+}
+
 button.large {
   font-size: 15px;
 }
@@ -68,6 +72,10 @@ h3.title a {
      -moz-transition: all .2s;
        -o-transition: all .2s;
        	  transition: all .2s;
+}
+
+.listen:active {
+  background: pink; 
 }
 
 .listen:hover {
