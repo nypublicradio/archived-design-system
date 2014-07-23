@@ -38,6 +38,16 @@ button.large {
   font-size: 15px;
 }
 
+.item {
+  max-width: 550px;
+}
+
+h2.title {
+  line-height: .9em;
+  margin: 0 0 5px 0;
+  width: 60%;
+}
+
 h2.title a {
   font-size: 0.7em;
   font-weight: bold;
