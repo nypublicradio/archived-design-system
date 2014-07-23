@@ -51,14 +51,15 @@ h3.title a {
 }
 
 .fa-play {
-  margin: 9px 11px;
-  font-size: 0.8em;
+  margin: 0 15px;
+  font-size: 1em;
+  line-height: 2.6em;
 }
 
 .listen {
   margin: 10px 0;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   background: #0073D5;
   color: white;
