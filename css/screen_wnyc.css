@@ -29,7 +29,7 @@ button:hover {
 }
 
 button:active {
-  background: #012f5b;
+  background: red;
 }
 
 button.large {
@@ -75,7 +75,7 @@ h3.title a {
 }
 
 .listen:active {
-  background: pink; 
+  background: red; 
 }
 
 .listen:hover {
