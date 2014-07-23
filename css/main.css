@@ -48,6 +48,16 @@ code {
   margin: 0 2px;
 }
 
+code.wnyc {
+  color: white;
+  background: #DE1E3D;
+}
+
+code.radiolab {
+  color: white;
+  background: #FE5900;
+}
+
 main {
   max-width: 980px;
   margin: 0 auto;

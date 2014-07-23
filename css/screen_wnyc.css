@@ -15,7 +15,7 @@ a:hover {
 
 button {
   padding: 10px 15px;
-  background: #0073D5;
+  background: #0dbcee/*#0073D5*/;
   border: none;
   color: white;
   cursor: pointer;
@@ -45,7 +45,7 @@ h2.title a {
 }
 
 h2.title a:hover {
-  color: #0073D5;
+  color: #0dbcee;
   text-decoration: none;
 }
 
