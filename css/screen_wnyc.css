@@ -38,10 +38,15 @@ button.large {
   font-size: 15px;
 }
 
-h3.title a {
-  font-size: 1.1em;
+h2.title a {
+  font-size: 0.7em;
   font-weight: bold;
   color: #222;
+}
+
+h2.title a:hover {
+  color: #0073D5;
+  text-decoration: none;
 }
 
 .extra {
@@ -56,14 +61,29 @@ h3.title a {
   margin-right: 5px;
 }
 
-.fa-play {
+.round .fa {
   font-size: 1.5em;
   line-height: 1.3em;
 }
 
-.listen {
-  margin: 10px 0;
+.round .fa-plus {
+  margin-left: -2px;
+}
+
+button.round {
+  margin: 10px 5px 10px 0;
   height: 40px;
   width: 40px;
   border-radius: 50%;
+}
+
+.imageright {
+  margin-top: 3px;
+  margin-left: 12px;
+  margin-bottom: 10px;
+  float: right;
+}
+
+.small_image {
+  width: 100px;
 }
