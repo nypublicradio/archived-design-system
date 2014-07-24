@@ -23,7 +23,7 @@ button {
   -webkit-transition: all .2s;
      -moz-transition: all .2s;
        -o-transition: all .2s;
-       	  transition: all .2s;
+       	  transition: all .2s; 
 }
 
 button:hover {
