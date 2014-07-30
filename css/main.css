@@ -30,7 +30,7 @@ header h1 {
   color: white;
 }
 
-pre {
+/*pre {
   background-color: #f8f8f8;
   border: 1px solid #ddd;
   font-size: 13px;
@@ -39,6 +39,7 @@ pre {
   padding: 6px 10px;
   border-radius: 3px;
 }
+*/
 
 code {
   padding: 2px 4px;
