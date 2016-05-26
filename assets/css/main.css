@@ -1,0 +1,403 @@
+/*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    text-rendering:optimizeLegibility;
+    color:#333;
+}
+
+@media only screen and (min-width:768px) {
+    html {
+        font-size:16px;
+    }
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+ul, li {
+    margin:0; padding:0;
+}
+
+ul li {list-style-type:none;}
+
+    ul.bullets li {
+        list-style-type:disc;
+        margin-left:40px;
+    }
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    margin:0; padding:0; 
+    font-weight:600;
+}
+
+strong {
+    font-weight:600;
+}
+
+article h1 {
+    font-size:1.6rem;
+    margin-bottom:1.25em;
+    line-height:1.4em;
+}
+
+article h2 {
+    font-size:0.75rem;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+a {}
+
+pre {
+    border-radius:10px;
+    background-color:#F1F1F1;
+    padding:10px 20px;
+}
+
+
+
+
+
+main {
+    position:relative;
+    padding-bottom:40vh;
+}
+
+.mobile_only {display:block; }
+
+.btn_nav {
+    position:absolute;
+    z-index:805;
+    top:35px;
+    right:20px;
+    font-size:0.75rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:white;
+    cursor:pointer;
+}
+    #arrow_open, .btn_nav.active #arrow_close { display:inline; }
+    #arrow_close, .btn_nav.active #arrow_open { display:none; }
+
+nav {
+    position:fixed;
+    z-index:800;
+    box-sizing:border-box;
+    width:100%;
+    height:90px;
+    background-color:#dc2342;
+}
+
+    nav header {
+        position:absolute;
+        z-index:802;
+        height:90px;
+        width:100%;
+        background-image:url('/assets/img/logo-wnyc-styleguide.svg');
+        background-size:30% auto;
+        background-position:7vw center;
+        background-repeat:no-repeat;
+        background-color:#dc2342;
+    }
+        nav header a {
+            display:block;
+            width:100%;
+            height:100%;
+            text-indent:-1000px;
+            overflow:hidden;
+        }
+    
+    nav > ul {
+        display:block;
+        position:absolute;
+        z-index:801;
+        width:100vw;
+        height:calc(100vh - 90px);
+        top:90px;
+        overflow:scroll;
+        margin:0;
+        padding:0.75em 0;
+        background-color:#201f27;
+        font-weight:600;
+        -webkit-transform:translateY(-105vh);
+                transform:translateY(-105vh);
+        -webkit-transition: -webkit-transform 0.25s ease-in-out;
+                transition: -webkit-transform 0.25s ease-in-out;
+    }
+        nav > ul.active {
+            -webkit-transform:translateY(0vh);
+                    transform:translateY(0vh);
+        }
+        nav ul li {
+            margin:0; 
+            padding:0;
+            list-style-type:none;
+        }
+            nav ul a {
+                display:block;
+                color:white;
+                text-decoration:none;
+                padding:4px 0 4px 20px;
+                border-left:3px solid rgba(255,0,0,0);
+            }
+                nav ul a:hover {
+                    background-color:#666;
+                }
+                nav ul a.active {
+                    border-left:3px solid rgba(255,0,0,1);
+                }
+                
+            nav > ul > li > a {
+                padding:0.5em 0px 0.5em 20px;
+                font-size:1.2rem;
+            }
+            
+            nav > ul > li > ul {
+                overflow:hidden;
+                max-height:0px;
+                -webkit-transition: max-height 0.25s ease-in-out;
+                        transition: max-height 0.25s ease-in-out;
+            }
+            
+                nav > ul > li > ul.expanded {
+                    max-height:100vh;
+                }
+            
+                nav > ul > li > ul > li {
+                    font-size:0.9rem;
+                }
+                    nav > ul > li > ul > li > a {
+                        padding:0.5em 0px 0.5em 30px;
+                    }
+
+article, section {
+    margin:0; 
+    padding:0;
+    box-sizing:border-box;
+}
+
+section {margin-bottom:3em;}
+
+    article {
+        padding:140px 20px 20px 20px;
+    }
+
+@media only screen and (min-width:768px) {
+    
+    .mobile_only {display:none !important; }
+    
+    nav {
+        top:0px;
+        left:0px;
+        width:200px;
+        min-height:100vh;
+    }
+        nav header {
+            position:relative;
+            width:100%;
+            height:120px;
+            background-size:60% auto;
+            background-position:center center;
+        }
+        nav > ul {
+            width:100%;
+            top:120px;
+            margin:0;
+            -webkit-transform:none;
+                    transform:none;
+            -webkit-transition:none;
+                    transition:none;
+        }
+
+            nav > ul > li > a {
+                font-size:1rem;
+            }
+                nav > ul > li > ul > li {
+                    font-size:0.8rem;
+                }
+    
+    article {
+        width:calc(100vw - 200px);
+        margin-left:165px;
+        padding:75px 65px;
+    }
+
+}
+
+@media only screen and (min-width:1100px) {
+    
+    article {
+        width: 900px;
+    }
+    
+}
+
+
+
+
+
+
+
+.btn_copy {
+    position:absolute;
+    right:-4px;
+    top:4px;
+    -webkit-appearance:none;
+    background-color:white;
+    border:0px;
+    outline:0px;
+    padding:5px 4px 4px 5px;
+    border-radius:3px;
+    box-shadow:0px 3px 5px rgba(0,0,0,0.25);
+    opacity:0;
+    -webkit-transition:opacity 0.25s ease-in-out;
+            transition:opacity 0.25s ease-in-out;
+}
+
+.copyable:hover .btn_copy {
+    opacity:1;
+}
+
+#message {
+    position:absolute;
+    z-index:700;
+    left:50vw;
+    top:50vh;
+    margin-left:-130px;
+    margin-top:-50px;
+    width:260px;
+    box-sizing:border-box;
+    padding:20px;
+    border-radius:5px;
+    box-shadow:0px 3px 5px rgba(0,0,0,0.25);
+    background-color:#ffffff;
+    color:black;
+    text-align:center;
+    opacity:0;
+    pointer-events:none;
+    -webkit-transition:opacity 0.25s ease-in-out;
+            transition:opacity 0.25s ease-in-out;
+}
+
+#message.visible {
+    opacity:1;
+    pointer-events:all;
+}
+
+
+
+
+
+
+
+
+

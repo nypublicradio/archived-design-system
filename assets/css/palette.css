@@ -1,0 +1,45 @@
+.wnyc-red {
+    color:#DE1E3D;
+}
+.wnyc-red.background {
+    background-color:#DE1E3D;
+    color:inherit;
+}
+
+.wnyc-red {
+    color:#DE1E3D;
+}
+.wnyc-red.background {
+    background-color:#DE1E3D;
+    color:white;
+    font-weight:600;
+}
+
+
+.grey-blue {
+    color:#201F27;
+}
+.grey-blue.background {
+    background-color:#201F27;
+    color:white;
+    font-weight:600;
+}
+
+
+.light-blue {
+    color:#627FDD;
+}
+.light-blue.background {
+    background-color:#627FDD;
+    color:inherit;
+}
+
+
+.light {
+    color:#F1F1F1;
+}
+.light.background {
+    background-color:#F1F1F1;
+    color:inherit;
+}
+

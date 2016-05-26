@@ -1,0 +1,57 @@
+.icons {
+    display:-webkit-flex;
+    display:flex;
+    -webkit-flex-wrap:wrap;
+            flex-wrap:wrap;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+}
+
+.icons li {
+    width:50%;
+    box-sizing:border-box;
+    padding:10px 10px;
+    border-radius:5px;
+    font-size:0.9em;
+}
+    .icons li:hover {
+        background-color:#F4F4F4;
+    }
+    
+    .icons li * {
+        vertical-align:middle;
+    }
+    
+    .icons li span {
+        cursor:default;
+    }
+    
+    .icons li img {
+        margin-right:5px;
+    }
+    
+    .icons li a.download,
+    .icons li a.link {
+        display:none;
+    }
+        .icons li:hover a.download, .icons li:hover a.link {
+            opacity:1;
+        } 
+
+@media only screen and (min-width:768px) {
+
+    .icons li {
+        white-space:nowrap;
+        width:24%;        
+    }
+
+    .icons li a.download,
+    .icons li a.link {
+        display:block;
+        text-decoration:none;
+        float:right;
+        margin-left:10px;
+        opacity:0;
+    }
+    
+}
