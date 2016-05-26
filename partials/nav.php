@@ -35,7 +35,7 @@
         <li>
             <a href="icons">Icons</a>
             <ul>
-                <li><a href="icons#guidelines">Fonts</a></li>
+                <li><a href="icons#guidelines">Guidelines</a></li>
                 <li><a href="icons#library">Library</a></li>
             </ul>
         </li>

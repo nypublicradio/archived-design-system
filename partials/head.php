@@ -14,8 +14,8 @@
 
         <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/swatches.css">
-        
+        <link rel="stylesheet" href="assets/css/nav.css">
+        <link rel="stylesheet" href="assets/css/swatches.css">        
         <link rel="stylesheet" href="assets/css/grid.css">
         <link rel="stylesheet" href="assets/css/palette.css">
         <link rel="stylesheet" href="assets/css/text.css">
