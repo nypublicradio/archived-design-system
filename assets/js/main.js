@@ -49,13 +49,17 @@ $(function() {
             // console.error('Trigger:', e.trigger);
             $('#message').html('Press ⌘-C to copy to your clipboard.').addClass('visible');
             $(document).on('keyup', function() {
-                $('#message').removeClass('visible');
-                $(document).off( "keyup" );
+                dismiss_message();
+            });
+            $(document).on('mouseup', function() {
+                dismiss_message();
             });
         });
         
-        $('#message').on('click', function() {
+        var dismiss_message = function() {
             $('#message').removeClass('visible');
-        });
+            $(document).off( "keyup" );
+            $(document).off( "click" );
+        }
     
 });
