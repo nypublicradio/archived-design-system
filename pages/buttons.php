@@ -17,6 +17,7 @@ padding:10px 12px;
 border-radius:6px;
 box-shadow:0px 2px 4px rgba(0,0,0,0.2);
 border:1px solid #e9e9e9;
+outline: none;
 background-color:#F4F4F4;
 font-size:0.9em;</code></pre>
                 <button class="btn_copy" data-clipboard-target="#button_code">📋</button>

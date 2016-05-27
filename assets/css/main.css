@@ -157,6 +157,7 @@ article h2 {
 a {}
 
 pre {
+    display:inline-block; /* iffy */
     border-radius:10px;
     background-color:#F1F1F1;
     padding:10px 20px;
