@@ -15,21 +15,27 @@
         <section id="paragraphs">
             <h2>Paragraphs</h2>
             <p>When used on a white or light background:</p>
-<pre class="copyable"><code class="copy_content">font-family:'Open Sans', sans-serif;
+            <div class="copyable">
+                <pre><code id="paragraph">font-family:'Open Sans', sans-serif;
 font-weight:300;
 font-size:16px;
 letter-spacing:0;
 line-height:1.5em;</code></pre>
+                <button class="btn_copy" data-clipboard-target="#paragraph">📋</button>
+            </div>
             <div class="example light background">
                 <p>Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur.</p>
             </div>
             
             <p>When used on a color background:</p>
-<pre class="copyable"><code class="copy_content">font-family:'Open Sans', sans-serif;
+            <div class="copyable">
+                <pre><code id="paragraph_on_dark">font-family:'Open Sans', sans-serif;
 font-weight:600;
 font-size:16px;
 letter-spacing:0;
 line-height:1.5em;</code></pre>
+                <button class="btn_copy" data-clipboard-target="#paragraph_on_dark">📋</button>
+            </div>
             <div class="example wnyc-red background">
                 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
             </div>            
@@ -38,12 +44,15 @@ line-height:1.5em;</code></pre>
         <section id="small_headers">
             <h2>Small Headers</h2>
             <p>Among other purposes, small headers are used for article sections, and names of shows in lists of audio content.
-<pre class="copyable"><code class="copy_content">font-family:'Open Sans', sans-serif;
+            <div class="copyable">
+                <pre><code id="small_header">font-family:'Open Sans', sans-serif;
 font-weight:600;
 font-size:16px;
 text-transform:uppercase;
 letter-spacing:2px;
 line-height:1.5em;</code></pre>
+                <button class="btn_copy" data-clipboard-target="#small_header">📋</button>
+            </div>
             <div class="example light background">
                 <h2>Small header text</h2>
             </div>            
