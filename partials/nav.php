@@ -39,5 +39,13 @@
                 <li><a href="icons#library">Library</a></li>
             </ul>
         </li>
+        <li>
+            <a href="buttons">Inputs &amp; Buttons</a>
+            <ul>
+                <li><a href="buttons#buttons">Buttons</a></li>
+                <li><a href="buttons#audio">Audio Controls</a></li>
+                <li><a href="buttons#dropdowns">Dropdowns</a></li>
+            </ul>
+        </li>
     </ul>
 </nav>

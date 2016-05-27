@@ -225,6 +225,10 @@ section {margin-bottom:3em;}
             transition:opacity 0.25s ease-in-out;
 }
 
+.copyable {
+    position:relative;
+}
+
 .copyable:hover .btn_copy {
     opacity:1;
 }
