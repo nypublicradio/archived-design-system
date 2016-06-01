@@ -1,5 +1,17 @@
 $(function() {
     
+    // build menu
+        if( !$('body').attr('id') != 'home' ) {
+            $.ajax({
+                url: '/index.html',
+            }).done(function(r) {
+                var nav = $(r).find('#page_tree');
+                $('#page_tree').replaceWith(nav);
+            });
+        }
+    
+    
+    
     // initiate smooth scroll on anchor links
         $('a').smoothScroll();
     
