@@ -16,7 +16,6 @@ $(function() {
         $('a').smoothScroll();
     
     
-    
     // mobile nav button
         $('.btn_nav').on('click', function() {
             $('nav ul').toggleClass('active');
