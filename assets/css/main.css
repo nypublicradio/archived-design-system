@@ -260,6 +260,7 @@ section {margin-bottom:3em;}
     
     article {
         width: 900px;
+        
     }
     
 }
@@ -417,12 +418,6 @@ nav {
                     font-size:0.8rem;
                 }
     
-    article {
-        width:calc(100vw - 200px);
-        margin-left:165px;
-        padding:75px 65px;
-    }
-
 }
 
 
