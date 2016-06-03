@@ -7,13 +7,31 @@ $(function() {
             }).done(function(r) {
                 var nav = $(r).find('#page_tree');
                 $('#page_tree').replaceWith(nav);
+                bind_nav_buttons();
             });
+        } else {
+            bind_nav_buttons();
         }
     
     
-    
-    // initiate smooth scroll on anchor links
-        $('a').smoothScroll();
+    var bind_nav_buttons = function() {
+        // initiate smooth scroll on anchor links
+            $('a').smoothScroll();
+        // nav "groups"
+            var slug = window.location.href.substr(window.location.href.lastIndexOf("/")+1);
+            if( !slug || slug == '' ) {
+                slug = 'home';
+            }
+            // auto-expand current group
+                $('a[href=' + slug + ']').next('ul').addClass('expanded');
+            // group expandsion behavior
+                $('nav > ul > li > a').on('click', function(e) {
+                    if( $(this).attr('href') == slug ) {
+                        e.preventDefault();
+                    }
+                    $(this).next('ul').toggleClass('expanded');
+                });
+    }
     
     
     // mobile nav button
@@ -26,23 +44,7 @@ $(function() {
         $('nav a').on('click', function() {
             $('nav ul').removeClass('active');
             $('.btn_nav').removeClass('active');
-        });
-    
-    // nav "groups"
-        var slug = window.location.href.substr(window.location.href.lastIndexOf("/")+1);
-        if( !slug || slug == '' ) {
-            slug = 'home';
-        }
-        // auto-expand current group
-            $('a[href=' + slug + ']').next('ul').addClass('expanded');
-        // group expandsion behavior
-            $('nav > ul > li > a').on('click', function(e) {
-                if( $(this).attr('href') == slug ) {
-                    e.preventDefault();
-                }
-                $(this).next('ul').toggleClass('expanded');
-            });
-    
+        });  
     
     
     // copy to clipboard functionality
