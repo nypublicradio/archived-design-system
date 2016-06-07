@@ -545,6 +545,8 @@ input[type=button] {
     .icons li a.link {
         display:none;
     }
+    
+    html.no-adownload a.download {display:none !important; }
         .icons li:hover a.download, .icons li:hover a.link {
             opacity:1;
         } 
