@@ -75,4 +75,15 @@ $(function() {
             $(document).off( "click" );
         }
     
+    
+    // initialize "inline swatches" 
+        $('.inline_swatch').each(function(i,n) {
+            $(this).html('<div class="swatch ' + $(this).data('color') + ' background"></div>' +
+                            '<ul>' +
+                                '<li>.' + $(this).data('color') + '</li>' +
+                                '<li id="' + $(this).data('color') + '_copy">#' + $(this).data('hex') + '</li>' +
+                                '<li>rgba(' + $(this).data('rgba') + ')</li>' +
+                            '</ul>');
+        });
+    
 });

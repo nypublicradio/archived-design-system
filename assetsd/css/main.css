@@ -648,30 +648,41 @@ ul.swatches.swatches_micro {
     display:block;
 }
 
+span.inline_swatch {
+    display:inline-block;
+    position:relative;
+}
+
+span.inline_swatch,
 ul.swatches.swatches_micro > li {
     display:inline-block;
-    margin-right:15px;
     box-sizing:border-box;
     border-radius:0;
     box-shadow:none;
     border:0;
-    margin-bottom:1em;
     width:auto !important;
 }
 
+ul.swatches.swatches_micro > li {
+    margin-right:15px;
+    margin-bottom:1em;
+}
+
+span.inline_swatch div.swatch,
 ul.swatches.swatches_micro > li div.swatch {
+    display:block;
     width:18px;
     height:18px;
     border-radius:3px;
 }
 
+span.inline_swatch ul,
 ul.swatches.swatches_micro > li > ul {
     display:none;
     position:absolute;
     z-index:20;
     bottom:8px;
     left:8px;
-    display:blockblock;
     padding:15px;
     border-radius:6px;
     box-shadow:0px 2px 4px rgba(0,0,0,0.2);
@@ -679,6 +690,7 @@ ul.swatches.swatches_micro > li > ul {
     background-color:white;
 }
 
+span.inline_swatch:hover ul,
 ul.swatches.swatches_micro > li:hover > ul {
     display:block;
 }
