@@ -461,7 +461,7 @@ nav {
 }
 
 #message {
-    position:absolute;
+    position:fixed;
     z-index:700;
     left:50vw;
     top:50vh;

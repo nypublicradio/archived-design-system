@@ -83,7 +83,9 @@ $(function() {
                                 '<li>.' + $(this).data('color') + '</li>' +
                                 '<li id="' + $(this).data('color') + '_copy">#' + $(this).data('hex') + '</li>' +
                                 '<li>rgba(' + $(this).data('rgba') + ')</li>' +
-                            '</ul>');
+                            '</ul>' +
+                            '<button class="btn_copy" data-clipboard-target="#' + $(this).data('color') + '_copy">📋</button>'
+                            );
         });
     
 });
