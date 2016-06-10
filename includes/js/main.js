@@ -47,8 +47,19 @@ $(function() {
         });  
     
     
+    // initialize "inline swatches" 
+        $('.inline_swatch').each(function(i,n) {
+            $(this).html('<div class="swatch ' + $(this).data('color') + ' background"></div>' +
+                            '<ul>' +
+                                '<li class="copyable" data-clipboard-target="#copy-inline-color-' + i + '" id="copy-inline-color-' + i + '">.' + $(this).data('color') + '</li>' +
+                                '<li class="copyable" data-clipboard-target="#copy-inline-hex-' + i + '"   id="copy-inline-hex-' + i + '"  >#' + $(this).data('hex') + '</li>' +
+                                '<li class="copyable" data-clipboard-target="#copy-inline-rgba-' + i + '"  id="copy-inline-rgba-' + i + '" >rgba(' + $(this).data('rgba') + ')</li>' +
+                            '</ul>'
+                            );
+        });
+    
     // copy to clipboard functionality
-        var clipboard = new Clipboard('.btn_copy');
+        var clipboard = new Clipboard('.copyable');
     
         clipboard.on('success', function(e) {
             // console.info('Action:', e.action);
@@ -75,17 +86,5 @@ $(function() {
             $(document).off( "click" );
         }
     
-    
-    // initialize "inline swatches" 
-        $('.inline_swatch').each(function(i,n) {
-            $(this).html('<div class="swatch ' + $(this).data('color') + ' background"></div>' +
-                            '<ul>' +
-                                '<li>.' + $(this).data('color') + '</li>' +
-                                '<li id="' + $(this).data('color') + '_copy">#' + $(this).data('hex') + '</li>' +
-                                '<li>rgba(' + $(this).data('rgba') + ')</li>' +
-                            '</ul>' +
-                            '<button class="btn_copy" data-clipboard-target="#' + $(this).data('color') + '_copy">📋</button>'
-                            );
-        });
-    
+
 });

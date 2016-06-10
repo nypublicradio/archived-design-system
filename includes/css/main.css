@@ -306,7 +306,7 @@ nav {
         z-index:802;
         height:90px;
         width:100%;
-        background-image:url('/assetsd/img/logo-wnyc-styleguide.svg');
+        background-image:url('/includes/img/logo-wnyc-styleguide.svg');
         background-size:30% auto;
         background-position:7vw center;
         background-repeat:no-repeat;
@@ -354,10 +354,11 @@ nav {
                 border-left:3px solid rgba(255,0,0,0);
             }
                 nav ul a:hover {
-                    background-color:#666;
+                    background-color:rgba(255,255,255,0.1);
                 }
                 nav ul a.active {
                     border-left:3px solid rgba(255,0,0,1);
+                    background-color:rgba(255,255,255,0.1);
                 }
                 
             nav > ul > li > a {
@@ -435,6 +436,7 @@ nav {
     margin-bottom:1em;
 }
 
+/*
 .btn_copy {
     position:absolute;
     right:-4px;
@@ -459,6 +461,7 @@ nav {
 .copyable:hover .btn_copy {
     opacity:1;
 }
+*/
 
 #message {
     position:fixed;
@@ -695,8 +698,13 @@ ul.swatches.swatches_micro > li:hover > ul {
     display:block;
 }
 
-
 @media only screen and (min-width:768px) {
+    ul.swatches > li {
+        width:33%;
+    }
+}
+
+@media only screen and (min-width:968px) {
     ul.swatches > li {
         width:23%;
     }

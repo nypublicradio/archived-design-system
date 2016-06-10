@@ -12,10 +12,10 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="icon" type="image/png" href="favicon.png">
 
-        <link rel="stylesheet" href="assetsd/css/normalize.css">
-        <link rel="stylesheet" href="assetsd/css/main.css">
+        <link rel="stylesheet" href="includes/css/normalize.css">
+        <link rel="stylesheet" href="includes/css/main.css">
         
-        <script src="assetsd/js/vendor/modernizr-custom.js"></script>
+        <script src="includes/js/vendor/modernizr-custom.js"></script>
     </head>
     <body>
         
@@ -43,114 +43,106 @@
                     <h2>Colors</h2>
                     <p>Nullam quis risus eget urna mollis ornare vel eu leo.Praesent commodo cursus magna, vel scelerisque nisl consectetur et. </p>
                     <ul class="swatches">
-                        <li class="copyable">
+                        <li>
                             <div class="swatch wnyc-red background"></div>
                             <ul>
-                                <li>.wnyc-red</li>
-                                <li id="wnyc_red_copy">#DE1E3D</li>
-                                <li>rgba(222,30,61,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-wnyc-red" id="copy-wnyc-red">.wnyc-red</li>
+                                <li class="copyable" data-clipboard-target="#copy-wnyc-red-hex" id="copy-wnyc-red-hex">#DE1E3D</li>
+                                <li class="copyable" data-clipboard-target="#copy-wnyc-red-rgba" id="copy-wnyc-red-rgba">rgba(222,30,61,1)</li>
                             </ul>
-                            <button class="btn_copy" data-clipboard-target="#wnyc_red_copy">📋</button>
                         </li>
-                        <li class="copyable">
+                        <li>
                             <div class="swatch grey-blue background"></div>
                             <ul>
-                                <li>.grey-blue</li>
-                                <li id="grey_blue_copy">#201F27</li>
-                                <li>rgba(32,31,39,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue" id="copy-grey-blue">.grey-blue</li>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue-hex" id="copy-grey-blue-hex">#201F27</li>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue-rgba" id="copy-grey-blue-rgba">rgba(32,31,39,1)</li>
                             </ul>
-                            <button class="btn_copy" data-clipboard-target="#grey_blue_copy">📋</button>
                         </li>
-                        <li class="copyable">
+                        <li>
                             <div class="swatch light-blue background"></div>
                             <ul>
-                                <li>.light-blue</li>
-                                <li id="light_blue_copy">#627FDD</li>
-                                <li>rgba(98,127,221,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-light-blue" id="copy-light-blue">.light-blue</li>
+                                <li class="copyable" data-clipboard-target="#copy-light-blue-hex" id="copy-light-blue-hex">#627FDD</li>
+                                <li class="copyable" data-clipboard-target="#copy-light-blue-rgba" id="copy-light-blue-rgba">rgba(98,127,221,1)</li>
                             </ul>
-                            <button class="btn_copy" data-clipboard-target="#light_blue_copy">📋</button>
                         </li>
-                        <li class="copyable">
+                        <li>
                             <div class="swatch light background"></div>
                             <ul>
-                                <li>.light</li>
-                                <li id="light_copy">#F1F1F1</li>
-                                <li>rgba(241,241,241,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-light" id="copy-light">.light</li>
+                                <li class="copyable" data-clipboard-target="#copy-light-hex" id="copy-light-hex">#F1F1F1</li>
+                                <li class="copyable" data-clipboard-target="#copy-light-rgba" id="copy-light-rgba">rgba(241,241,241,1)</li>
                             </ul>
-                            <button class="btn_copy" data-clipboard-target="#light_copy">📋</button>
                         </li>
                     </ul>
 
                     <ul class="swatches swatches_wide">
-                        <li class="copyable">
+                        <li>
                             <div class="swatch wnyc-red background"></div>
                             <ul>
-                                <li>.wnyc-red</li>
-                                <li id="wide_wnyc_red_copy">#DE1E3D</li>
-                                <li>rgba(222,30,61,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-wide-wnyc-red" id="copy-wide-wnyc-red">.wnyc-red</li>
+                                <li class="copyable" data-clipboard-target="#copy-wide-wnyc-red-hex" id="copy-wide-wnyc-red-hex">#DE1E3D</li>
+                                <li class="copyable" data-clipboard-target="#copy-wide-wnyc-red-rgba" id="copy-wide-wnyc-red-rgba">rgba(222,30,61,1)</li>
                             </ul>
-                            <button class="btn_copy" data-clipboard-target="#wide_wnyc_red_copy">📋</button>
                         </li>
-                        <li class="copyable">
+                        <li>
                             <div class="swatch grey-blue background"></div>
                             <ul>
-                                <li>.grey-blue</li>
-                                <li id="wide_grey_blue_copy">#201F27</li>
-                                <li>rgba(32,31,39,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-wide-grey-blue" id="copy-wide-grey-blue">.grey-blue</li>
+                                <li class="copyable" data-clipboard-target="#copy-wide-grey-blue-hex" id="copy-wide-grey-blue-hex">#201F27</li>
+                                <li class="copyable" data-clipboard-target="#copy-wide-grey-blue-rgba" id="copy-wide-grey-blue-rgba">rgba(32,31,39,1)</li>
                             </ul>
-                            <button class="btn_copy" data-clipboard-target="#wide_grey_blue_copy">📋</button>
                         </li>
-                        <li class="copyable">
+                        <li>
                             <div class="swatch light-blue background"></div>
                             <ul>
-                                <li>.light-blue</li>
-                                <li id="wide_light_blue_copy">#627FDD</li>
-                                <li>rgba(98,127,221,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-wide-light-blue" id="copy-wide-light-blue">.light-blue</li>
+                                <li class="copyable" data-clipboard-target="#copy-wide-light-blue-hex" id="copy-wide-light-blue-hex">#627FDD</li>
+                                <li class="copyable" data-clipboard-target="#copy-wide-light-blue-rgba" id="copy-wide-light-blue-rgba">rgba(98,127,221,1)</li>
                             </ul>
-                            <button class="btn_copy" data-clipboard-target="#wide_light_blue_copy">📋</button>
                         </li>
-                        <li class="copyable">
+                        <li>
                             <div class="swatch light background"></div>
                             <ul>
-                                <li>.light</li>
-                                <li id="wide_light_copy">#F1F1F1</li>
-                                <li>rgba(241,241,241,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-wide-light" id="copy-wide-light">.light</li>
+                                <li class="copyable" data-clipboard-target="#copy-wide-light-hex" id="copy-wide-light-hex">#F1F1F1</li>
+                                <li class="copyable" data-clipboard-target="#copy-wide-light-rgba" id="copy-wide-light-rgba">rgba(241,241,241,1)</li>
                             </ul>
-                            <button class="btn_copy" data-clipboard-target="#wide_light_copy">📋</button>
                         </li>
                     </ul>
 
                     <ul class="swatches swatches_micro">
-                        <li class="copyable">
+                        <li>
                             <div class="swatch wnyc-red background"></div>
                             <ul>
-                                <li>.wnyc-red</li>
-                                <li id="wnyc_red_copy">#DE1E3D</li>
-                                <li>rgba(222,30,61,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-micro-wnyc-red" id="copy-micro-wnyc-red">.wnyc-red</li>
+                                <li class="copyable" data-clipboard-target="#copy-micro-wnyc-red-hex" id="copy-micro-wnyc-red-hex">#DE1E3D</li>
+                                <li class="copyable" data-clipboard-target="#copy-micro-wnyc-red-rgba" id="copy-micro-wnyc-red-rgba">rgba(222,30,61,1)</li>
                             </ul>
                         </li>
-                        <li class="copyable">
+                        <li>
                             <div class="swatch grey-blue background"></div>
                             <ul>
-                                <li>.grey-blue</li>
-                                <li id="grey_blue_copy">#201F27</li>
-                                <li>rgba(32,31,39,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-micro-grey-blue" id="copy-micro-grey-blue">.grey-blue</li>
+                                <li class="copyable" data-clipboard-target="#copy-micro-grey-blue-hex" id="copy-micro-grey-blue-hex">#201F27</li>
+                                <li class="copyable" data-clipboard-target="#copy-micro-grey-blue-rgba" id="copy-micro-grey-blue-rgba">rgba(32,31,39,1)</li>
                             </ul>
                         </li>
-                        <li class="copyable">
+                        <li>
                             <div class="swatch light-blue background"></div>
                             <ul>
-                                <li>.light-blue</li>
-                                <li id="light_blue_copy">#627FDD</li>
-                                <li>rgba(98,127,221,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-micro-light-blue" id="copy-micro-light-blue">.light-blue</li>
+                                <li class="copyable" data-clipboard-target="#copy-micro-light-blue-hex" id="copy-micro-light-blue-hex">#627FDD</li>
+                                <li class="copyable" data-clipboard-target="#copy-micro-light-blue-rgba" id="copy-micro-light-blue-rgba">rgba(98,127,221,1)</li>
                             </ul>
                         </li>
-                        <li class="copyable">
+                        <li>
                             <div class="swatch light background"></div>
                             <ul>
-                                <li>.light</li>
-                                <li id="light_copy">#F1F1F1</li>
-                                <li>rgba(241,241,241,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-micro-light" id="copy-micro-light">.light</li>
+                                <li class="copyable" data-clipboard-target="#copy-micro-light-hex" id="copy-micro-light-hex">#F1F1F1</li>
+                                <li class="copyable" data-clipboard-target="#copy-micro-light-rgba" id="copy-micro-light-rgba">rgba(241,241,241,1)</li>
                             </ul>
                         </li>
                     </ul>
@@ -258,28 +250,28 @@ line-height:1.5em;</code></pre>
                     <p>If you want to use an icon, first check that one does not currently exist on our site for the concept you’re illustrating. If not, you can reach out to the digital team to have them create one. Or you can find icons on The Nounproject or Fontawesome. All icons must be in SVG format.</p>
                     <ul class="icons">
                         <li>
-                            <img src="/assetsd/icons/antenna.svg" alt="antenna icon">
+                            <img src="/includes/icons/antenna.svg" alt="antenna icon">
                             <span>antenna</span>
-                            <a download href="/assetsd/icons/antenna.svg" class="download"><img src="assetsd/img/download-thin.svg"></a>
-                            <a target="_blank" href="assetsd/icons/antenna.svg" class="link"><img src="assetsd/img/link.svg"></a>
+                            <a download href="/includes/icons/antenna.svg" class="download"><img src="includes/img/download-thin.svg"></a>
+                            <a target="_blank" href="includes/icons/antenna.svg" class="link"><img src="includes/img/link.svg"></a>
                         </li>
                         <li>
-                            <img src="/assetsd/icons/arrow-down.svg" alt="arrow-down icon">
+                            <img src="/includes/icons/arrow-down.svg" alt="arrow-down icon">
                             <span>arrow-down</span>
-                            <a download href="/assetsd/icons/arrow-down.svg" class="download"><img src="assetsd/img/download-thin.svg"></a>
-                            <a target="_blank" href="assetsd/icons/arrow-down.svg" class="link"><img src="assetsd/img/link.svg"></a>
+                            <a download href="/includes/icons/arrow-down.svg" class="download"><img src="includes/img/download-thin.svg"></a>
+                            <a target="_blank" href="includes/icons/arrow-down.svg" class="link"><img src="includes/img/link.svg"></a>
                         </li>
                         <li>
-                            <img src="/assetsd/icons/pause-hollow.svg" alt="pause-hollow icon">
+                            <img src="/includes/icons/pause-hollow.svg" alt="pause-hollow icon">
                             <span>pause-hollow</span>
-                            <a download href="/assetsd/icons/pause-hollow.svg" class="download"><img src="assetsd/img/download-thin.svg"></a>
-                            <a target="_blank" href="assetsd/icons/pause-hollow.svg" class="link"><img src="assetsd/img/link.svg"></a>
+                            <a download href="/includes/icons/pause-hollow.svg" class="download"><img src="includes/img/download-thin.svg"></a>
+                            <a target="_blank" href="includes/icons/pause-hollow.svg" class="link"><img src="includes/img/link.svg"></a>
                         </li>
                         <li>
-                            <img src="/assetsd/icons/play-hollow.svg" alt="play-hollow icon">
+                            <img src="/includes/icons/play-hollow.svg" alt="play-hollow icon">
                             <span>play-hollow</span>
-                            <a download href="/assetsd/icons/play-hollow.svg" class="download"><img src="assetsd/img/download-thin.svg"></a>
-                            <a target="_blank" href="assetsd/icons/play-hollow.svg" class="link"><img src="assetsd/img/link.svg"></a>
+                            <a download href="/includes/icons/play-hollow.svg" class="download"><img src="includes/img/download-thin.svg"></a>
+                            <a target="_blank" href="includes/icons/play-hollow.svg" class="link"><img src="includes/img/link.svg"></a>
                         </li>
                     </ul>
                 </section>
@@ -294,10 +286,10 @@ line-height:1.5em;</code></pre>
         <div id="message"></div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="assetsd/js/vendor/jquery-2.2.2.min.js"><\/script>')</script>
-        <script src="assetsd/js/vendor/clipboard.js-master/dist/clipboard.min.js"></script>
-        <script src="assetsd/js/plugins.js"></script>
-        <script src="assetsd/js/main.js"></script>
+        <script>window.jQuery || document.write('<script src="includes/js/vendor/jquery-2.2.2.min.js"><\/script>')</script>
+        <script src="includes/js/vendor/clipboard.js-master/dist/clipboard.min.js"></script>
+        <script src="includes/js/plugins.js"></script>
+        <script src="includes/js/main.js"></script>
 
     </body>
 </html>
