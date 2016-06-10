@@ -31,8 +31,14 @@ $(function() {
                     }
                     $(this).next('ul').toggleClass('expanded');
                 });
+        $('#page_tree a').on('click', function() {
+            $('a').removeClass('active');
+            $(this).addClass('active');
+        });
+
     }
     
+        
     
     // mobile nav button
         $('.btn_nav').on('click', function() {
