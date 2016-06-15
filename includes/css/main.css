@@ -435,6 +435,8 @@ nav {
     margin-bottom:1em;
 }
 
+.copyable {cursor:pointer;}
+
 .copyable_code {
     display:block;
     position:relative;

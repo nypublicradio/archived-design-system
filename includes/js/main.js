@@ -1,42 +1,28 @@
 $(function() {
     
-    // build menu
-        if( !$('body').attr('id') != 'home' ) {
-            $.ajax({
-                url: '/index.html',
-            }).done(function(r) {
-                var nav = $(r).find('#page_tree');
-                $('#page_tree').replaceWith(nav);
-                bind_nav_buttons();
-            });
-        } else {
-            bind_nav_buttons();
-        }
-    
-    
-    var bind_nav_buttons = function() {
-        // initiate smooth scroll on anchor links
-            $('a').smoothScroll();
-        // nav "groups"
-            var slug = window.location.href.substr(window.location.href.lastIndexOf("/")+1);
-            if( !slug || slug == '' ) {
-                slug = 'home';
-            }
-            // auto-expand current group
-                $('a[href=' + slug + ']').next('ul').addClass('expanded');
-            // group expandsion behavior
-                $('nav > ul > li > a').on('click', function(e) {
-                    if( $(this).attr('href') == slug ) {
-                        e.preventDefault();
-                    }
-                    $(this).next('ul').toggleClass('expanded');
-                });
-        $('#page_tree a').on('click', function() {
-            $('a').removeClass('active');
-            $(this).addClass('active');
-        });
 
-    }
+    // initiate smooth scroll on anchor links
+        $('a').smoothScroll();
+    // nav "groups"
+        var slug = window.location.href.substr(window.location.href.lastIndexOf("/")+1);
+        if( !slug || slug == '' ) {
+            slug = 'home';
+        }
+        // auto-expand current group
+            $('a[href=' + slug + ']').next('ul').addClass('expanded');
+        // group expansion behavior
+            $('nav > ul > li > a').on('click', function(e) {
+                if( $(this).attr('href') == slug ) {
+                    e.preventDefault();
+                }
+                $('#page_tree ul').removeClass('expanded');
+                $(this).next('ul').toggleClass('expanded');
+            });
+    $('#page_tree a').on('click', function() {
+        $('a').removeClass('active');
+        $(this).addClass('active');
+    });
+
     
         
     
@@ -72,6 +58,10 @@ $(function() {
             // console.info('Text:', e.text);
             // console.info('Trigger:', e.trigger);
             e.clearSelection();
+            $('#message').html('Copied!').addClass('visible');
+            setTimeout(function() {
+                dismiss_message();
+            }, 5000);
         });
         
         clipboard.on('error', function(e) {
