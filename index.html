@@ -31,28 +31,43 @@
                     <span id="arrow_open">▼</span>
                 </div>
                 <ul id="page_tree">
-                    <li>
-                        <a href="#index" >Introduction</a>
+                    <li class="intro">
+                        <a href="#index">Introduction</a>
                         <ul>
                             <li><a href="#outline" class="active">Outline</a></li>
                             <li><a href="#vision">Vision</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#styles">Styles</a>
+                        <a href="#atoms">Atoms</a>
                         <ul>
+                            <li><a href="#grid">Grid</a></li>
                             <li><a href="#palette">Colors</a></li>
                             <li><a href="#typography">Typography</a></li>
                             <li><a href="#buttons">Buttons</a></li>
+                            <li><a href="#inputs">Inputs</a></li>
+                            <li><a href="#transitions">Transitions</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#molecules">Molecules</a>
+                        <ul>
                             <li><a href="#forms">Forms</a></li>
-                            <li><a href="#icons">Icons</a></li>
+                            <li><a href="#notifications">Notifications</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#organisms">Organisms</a>
+                        <ul>
+                            <li><a href="#modals">Modals</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#assets">Assets</a>
                         <ul>
+                            <li><a href="#icons">Iconography</a></li>
                             <li><a href="#kits">Kits and Templates</a></li>
-                            <li><a href="#imagery">Imagery</a></li>
+                            <li><a href="#media">Media</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -60,11 +75,13 @@
 
             <article id="index">
                 
-                <h1>WNYC Design System</h1>
+                <h1>NYPR's Design System</h1>
                 
                 <section id="outline">
-                    <h2>Hello</h2>
-                    <p>This is the new home to our design system. It's in progress, as of June 2016. </p>
+                    <h2>Introduction</h2>
+                    <p>The NYPR Product Design team aims to maintain a consistent style across all NYPR products. To facilitate this, we have created the following style guide documenting a system of reusable components. Our goal is to achieve a faster and smarter process for product design and development.</p>
+                    <p>Our design system is based on the principles of <a href="http://bradfrost.com/blog/post/atomic-web-design/" target="_blank">atomic design</a>. The idea behind this methodology is that small elements of our products (atoms) can be designed and then combined into larger modules (molecules) which can then be combined into organisms. These elements can then be stitched together to form templates and pages.</p>
+                    <p>This design system is a living document and will be updated regularly.</p>
                 </section>
                 
 
@@ -72,13 +89,19 @@
             
             
 
-            <article id="styles">
+            <article id="atoms">
                 
-                <h1>Styles</h1>
+                <h1>Atoms</h1>
+
+                <section id="grid">
+                    <h2>Grids</h2>
+                    <p>Coming soon.</p>
+                </section>
                 
                 <section id="palette">
                     <h2>Colors</h2>
-                    <p>Nullam quis risus eget urna mollis ornare vel eu leo.Praesent commodo cursus magna, vel scelerisque nisl consectetur et. </p>
+                    <p></p>
+                    <h3>WNYC Digital Colors</h3>
                     <ul class="swatches">
                         <li>
                             <div class="swatch wnyc-red background"></div>
@@ -97,11 +120,11 @@
                             </ul>
                         </li>
                         <li>
-                            <div class="swatch light-blue background"></div>
+                            <div class="swatch grey-blue background"></div>
                             <ul>
-                                <li class="copyable" data-clipboard-target="#copy-light-blue" id="copy-light-blue">.light-blue</li>
-                                <li class="copyable" data-clipboard-target="#copy-light-blue-hex" id="copy-light-blue-hex">#627FDD</li>
-                                <li class="copyable" data-clipboard-target="#copy-light-blue-rgba" id="copy-light-blue-rgba">rgba(98,127,221,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue" id="copy-grey-blue">.grey-blue</li>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue-hex" id="copy-grey-blue-hex">#201F27</li>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue-rgba" id="copy-grey-blue-rgba">rgba(32,31,39,1)</li>
                             </ul>
                         </li>
                         <li>
@@ -114,7 +137,44 @@
                         </li>
                     </ul>
 
-                    <ul class="swatches swatches_wide">
+                    <h3>WQXR Digital Colors</h3>
+                    <ul class="swatches">
+                        <li>
+                            <div class="swatch wnyc-red background"></div>
+                            <ul>
+                                <li class="copyable" data-clipboard-target="#copy-wnyc-red" id="copy-wnyc-red">.wnyc-red</li>
+                                <li class="copyable" data-clipboard-target="#copy-wnyc-red-hex" id="copy-wnyc-red-hex">#DE1E3D</li>
+                                <li class="copyable" data-clipboard-target="#copy-wnyc-red-rgba" id="copy-wnyc-red-rgba">rgba(222,30,61,1)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="swatch grey-blue background"></div>
+                            <ul>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue" id="copy-grey-blue">.grey-blue</li>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue-hex" id="copy-grey-blue-hex">#201F27</li>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue-rgba" id="copy-grey-blue-rgba">rgba(32,31,39,1)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="swatch grey-blue background"></div>
+                            <ul>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue" id="copy-grey-blue">.grey-blue</li>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue-hex" id="copy-grey-blue-hex">#201F27</li>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue-rgba" id="copy-grey-blue-rgba">rgba(32,31,39,1)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="swatch light background"></div>
+                            <ul>
+                                <li class="copyable" data-clipboard-target="#copy-light" id="copy-light">.light</li>
+                                <li class="copyable" data-clipboard-target="#copy-light-hex" id="copy-light-hex">#F1F1F1</li>
+                                <li class="copyable" data-clipboard-target="#copy-light-rgba" id="copy-light-rgba">rgba(241,241,241,1)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p></p>
+
+                   <!--  <ul class="swatches swatches_wide">
                         <li>
                             <div class="swatch wnyc-red background"></div>
                             <ul>
@@ -147,9 +207,9 @@
                                 <li class="copyable" data-clipboard-target="#copy-wide-light-rgba" id="copy-wide-light-rgba">rgba(241,241,241,1)</li>
                             </ul>
                         </li>
-                    </ul>
+                    </ul> -->
 
-                    <ul class="swatches swatches_micro">
+                    <!-- <ul class="swatches swatches_micro">
                         <li>
                             <div class="swatch wnyc-red background"></div>
                             <ul>
@@ -182,23 +242,23 @@
                                 <li class="copyable" data-clipboard-target="#copy-micro-light-rgba" id="copy-micro-light-rgba">rgba(241,241,241,1)</li>
                             </ul>
                         </li>
-                    </ul>
+                    </ul> -->
                     
-                    <p>
+                    <!-- <p>
                         This is what an inline color swatch looks like 
                         <span class="inline_swatch" data-color="wnyc-red" data-hex="DE1E3D" data-rgba="222,30,61,1"></span>
                         in case you were wondering.
-                    </p>
+                    </p> -->
 
 
                     <h2>Hover States</h2>
-                    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. </p>
+                    <p>Coming soon.</p>
                 </section>
                 
                 <section id="typography">
                     <h2>Typography</h2>
-                    <p>Open Sans is the primary font used throughout the WNYC.org website and apps. We’ve chosen this font because it was designed as a sophisticated yet neutral font, optimized specifically for high legibility, and quick load times, across print, web, and small mobile screens. It is also elegant and stylized to fit well with flat design, while still being open-source and easily-available to contractors and collaborators. We primarily use regular, semibold, and bold weights. Italic is also occasionally used.</p>
-                    <p>In the past we’ve used Gotham, bold and medium. We retired this font from the site but it is still sometimes used in images (ads, marquee images, logos, etc). </p>
+                    <p>Open Sans is the primary font used throughout NYPR products. We’ve chosen this font because it was designed as a sophisticated yet neutral font, optimized specifically for high legibility, and quick load times, across print, web, and small mobile screens. It is also elegant and stylized to fit well with flat design, while still being open-source and easily-available to contractors and collaborators. We primarily use regular, semibold, and bold weights. Italic is also occasionally used.</p>
+                    <p>In the past we’ve used Gotham, bold and medium. We retired this font from the site but it is still often used in images (ads, marquee images, logos, etc). </p>
 
                     <h2>Paragraphs</h2>
                     <p>When used on a white or light background:</p>
@@ -211,7 +271,7 @@ line-height:1.5em;</code></pre>
                         <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
                     </div>
                     <div class="example light background">
-                        <p>Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur.</p>
+                        <p>Text used on a white or lightly colored background.</p>
                     </div>
                     
                     <p>When used on a color background:</p>
@@ -224,7 +284,7 @@ line-height:1.5em;</code></pre>
                         <button class="copyable btn_copy_code" data-clipboard-target="#paragraph_on_dark">copy</button>
                     </div>
                     <div class="example wnyc-red background">
-                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p>Text used on a color background</p>
                     </div>            
 
                     <h2>Small Headers</h2>
@@ -239,10 +299,10 @@ line-height:1.5em;</code></pre>
                         <button class="copyable btn_copy_code" data-clipboard-target="#small_header">copy</button>
                     </div>
                     <div class="example light background">
-                        <h2>Small header text</h2>
+                        <h3>Small header text on white or lightly colored background</h3>
                     </div>            
                     <div class="example wnyc-red background">
-                        <h2>Small header text on dark background</h2>
+                        <h3>Small header text on a color background</h3>
                     </div>            
 
                     <h2>Dates and Times</h2>
@@ -259,7 +319,7 @@ line-height:1.5em;</code></pre>
                 <section id="buttons">
                     <h2>Buttons</h2>
                     <p>Here’s a button.</p>
-                    <button>Yup, I’m a button</button>
+                    <button>Listen</button>
                     <div class="copyable_code">
                         <pre><code class="copy_content" id="button_code">box-sizing:border-box;
         padding:10px 12px;
@@ -274,12 +334,40 @@ line-height:1.5em;</code></pre>
                     </div>
         
                 </section>
-                
-                <section id="forms">
+
+                <section id="inputs">
+                    <h2>Inputs</h2>
+                    <p>Coming soon.</p>
+                </section>
+            </article>
+
+            <article id="molecules">
+                <h1>Molecules</h1>
+
+                <section id="Forms">
                     <h2>Forms</h2>
-                    <p>Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue.</p>
+                    <p>Coming soon.</p>
                 </section>
 
+                <section id="Notifications">
+                    <h2>Notifications</h2>
+                    <p>Coming soon.</p>
+                </section>
+                
+            </article>
+
+            <article id="organisms">
+                <h1>Organisms</h1>
+
+                 <section id="Modals">
+                    <h2>Modals</h2>
+                    <p>Coming soon.</p>
+                </section>
+            </article>
+
+            <article id="assets">
+                
+                <h1>Assets</h1>
 
                 <section id="icons">
                     <h2>Icons</h2>
@@ -313,23 +401,15 @@ line-height:1.5em;</code></pre>
                     </ul>
                 </section>
                 
-            </article>
-
-
-            <article id="assets">
-                
-                <h1>Assets</h1>
-                
                 <section id="kits">
                     <h2>Kits and Templates</h2>
-                    <p>Nullam quis risus eget urna mollis ornare vel eu leo.Praesent commodo cursus magna, vel scelerisque nisl consectetur et. </p>
+                    <p>Coming soon.</p>
                 </section>
                 
-                <section id="imagery">
-                    <h2>Imagery</h2>
-                    <p>Nullam quis risus eget urna mollis ornare vel eu leo.Praesent commodo cursus magna, vel scelerisque nisl consectetur et. </p>
+                <section id="media">
+                    <h2>Media</h2>
+                    <p>Coming soon.</p>
                 </section>
-                
                 
             </article>
 
