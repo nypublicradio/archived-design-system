@@ -12,7 +12,6 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
     line-height: 1.5em;
     text-rendering:optimizeLegibility;
     color:#333;
@@ -20,7 +19,6 @@ html {
 
 @media only screen and (min-width:768px) {
     html {
-        font-size: 16px;
     }
 }
 
@@ -135,7 +133,7 @@ ul li {list-style-type:none;}
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0; 
-    padding:0; 
+    padding: 0; 
     font-weight: 300;
 }
 
@@ -147,8 +145,22 @@ h1 {
     margin-bottom: 2.8rem;
 }
 
-strong {
-    font-weight: 600;
+.strong {
+    font-weight: 700;
+}
+
+.small_print {
+    font-size: 12px;
+    line-height: 22px;
+    color: #999;
+}
+
+.quote {
+    padding: 30px 0;
+    margin: 30px 0;
+    text-align: center;
+    width: 100%;
+    background: #f1f1f1;
 }
 
 article {
@@ -157,22 +169,31 @@ article {
 
 
 article h1 {
-    font-size: 2.4rem;
-    margin-bottom: 1.25rem;
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 15px;
 }
 
 h2, article h2 {
-    font-size: 1.6rem;
-    margin: 1rem 0 2rem 0;
-/*    text-transform:uppercase;
-    letter-spacing:2px;*/
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 15px;
 }
 
 h3, article h3 {
-    font-size: .75rem;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+h4, article h4 {
+    font-size: 12px;
+    line-height: 24px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 a {}
@@ -183,7 +204,10 @@ pre {
     padding:10px 20px;
 }
 
-
+p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
 
 
 
@@ -344,6 +368,34 @@ li {
   float: left;
 }
 
+ul.typo {
+    list-style: none;
+    border-left: 1px solid #ddd;
+    margin: 40px 0;
+    padding: 0px 0 0px 40px;
+}
+
+.typo li {
+    padding: 20px 0px;
+    float: none;
+}
+
+ul.bulleted {
+    margin-left: 20px;
+}
+
+.bulleted li {
+    list-style: disc;
+    padding: 5px 0px;
+}
+
+.numbered li {
+    list-style-type: decimal;
+    padding: 5px 0px;
+    margin-left: 0 30px;
+}
+
+
 /* clear'n floats */
 ul:after {
   clear: both;
@@ -362,7 +414,7 @@ nav {
 
 ul.primary li a {
   display: block;
-  padding: 20px 30px;
+  padding:30px 30px 10px 30px;
   text-decoration: none;
   color: #333;
 }
@@ -424,6 +476,8 @@ ul.primary li:hover > a{
   color: #000;
 } 
 
+
+
 @media only screen and (max-width: 600px) {
   .decor {
     padding: 3px;
@@ -469,104 +523,6 @@ ul.primary li:hover > a{
   }
 }
 
-/*nav {
-    z-index: 800;
-    top: 40px;
-}
-
-    nav header {
-        position: absolute;
-        z-index: 802;
-        height: 90px;
-        width: 100%;
-        background-image:url('/includes/img/logo-wnyc-styleguide.svg');
-        background-size: 30% auto;
-        background-position:7vw center;
-        background-repeat:no-repeat;
-        background-color: #f1f1f1;
-    }
-        nav header a {
-            display:block;
-            width:100%;
-            height:100%;
-            text-indent:-1000px;
-            overflow:hidden;
-        }
-    
-    nav > ul {
-        display:block;
-        z-index: 801;
-        width: 100vw;
-        height:calc(100vh - 90px);
-        top: 90px;
-        margin:0;
-        padding:0.75em 0;
-        background-color: #fff;
-        font-weight:600;
-        -webkit-transform:translateY(-105vh);
-                transform:translateY(-105vh);
-        -webkit-transition: -webkit-transform 0.25s ease-in-out;
-                transition: -webkit-transform 0.25s ease-in-out;
-    }
-        nav > ul.active {
-            -webkit-transform:translateY(0vh);
-                    transform:translateY(0vh);
-        }
-        nav ul li {
-            margin: 0; 
-            padding: 0;
-            list-style-type:none;
-        }
-
-            .nav_title, .nav_title a {
-                font-size: 1.1em;
-                margin-top: 40px;
-                margin-bottom: 5px;
-            }
-
-            .intro, .intro a{
-                font-size: 1.1em;
-                margin: 5px 0;
-            }
-
-            nav ul a {
-                display: block;
-                color: #333;
-                text-decoration: none;
-                font-weight: 300;
-                padding: 4px 0 4px 20px;
-                border-left:3px solid rgba(255,0,0,0);
-            }
-                nav ul a:hover {
-                    background-color:rgba(255,255,255,0.1);
-                }
-                nav ul a.active {
-                    border-left:3px solid rgba(255,0,0,1);
-                    background-color:rgba(255,255,255,0.1);
-                }
-                
-            nav > ul > li > a {
-                padding:0px 0px 0px 40px;
-                font-size:1.2rem;
-            }
-            
-            nav > ul > li > ul {
-                overflow:hidden;
-                max-height:0px;
-                -webkit-transition: max-height 0.25s ease-in-out;
-                        transition: max-height 0.25s ease-in-out;
-            }
-            
-                nav > ul > li > ul.expanded {
-                    max-height:100vh;
-                }
-            
-                nav > ul > li > ul > li {
-                    font-size:0.9rem;
-                }
-                    nav > ul > li > ul > li > a {
-                        padding:0.5em 0px 0.5em 30px;
-                    }*/
 
 @media only screen and (min-width:768px) {
     
@@ -574,7 +530,7 @@ ul.primary li:hover > a{
     
     nav {
         top: 40px;
-        width: 100%;
+        width: 700px;
     }
 
         nav > ul {

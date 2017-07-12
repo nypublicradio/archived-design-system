@@ -29,14 +29,14 @@
         <nav>
           <ul class="primary">
             <li>
-              <a href=""><h3>Introduction</h3></a>
+              <a href=""><h4>Introduction</h4></a>
               <ul class="sub">
                 <li><a href="#intro">About</a></li>
                 <li><a href="#team">The Team</a></li>
               </ul>
             </li>
             <li>
-              <a href=""><h3>Atoms</h3></a>
+              <a href=""><h4>Atoms</h4></a>
               <ul class="sub">
                 <li><a href="#atoms">Responsive Grid</a></li>
                 <li><a href="#colors">Colors</a></li>
@@ -48,20 +48,20 @@
               </ul>
             </li>
             <li>
-              <a href=""><h3>Molecules</h3></a>
+              <a href=""><h4>Molecules</h4></a>
               <ul class="sub">
                 <li><a href="#molecules">Forms</a></li>
                 <li><a href="#notifications">Notifications</a></li>
               </ul>  
             </li>
             <li>
-              <a href=""><h3>Organisms</h3></a>
+              <a href=""><h4>Organisms</h4></a>
               <ul class="sub">
                 <li><a href="#organisms">Modals</a></li>
               </ul>  
             </li>
             <li>
-              <a href=""><h3>Assets</h3></a>
+              <a href=""><h4>Assets</h4></a>
               <ul class="sub">
                 <li><a href="#icons">Icons</a></li>
                 <li><a href="#kits">Kits and Templates</a></li>
@@ -87,10 +87,10 @@
                 </section>
 
                 <section id="team">
-                    <h2>The Team</h2>
-                    <p>Marine Boudeau</br>Director, Design and User Experience</p>
-                    <p>Fiona Carswell</br>Lead Designer, Design and User Experience</p>
-                    <p>Clarisa Diaz</br>Interaction Designer, Data News</p>
+                    <h2>The Product Design Team</h2>
+                    <p><span class="strong">Marine Boudeau</span></br>Director, Design and User Experience</p>
+                    <p><span class="strong">Fiona Carswell</span></br>Lead Designer, Design and User Experience</p>
+                    <p><span class="strong">Clarisa Diaz</span></br>Interaction Designer, Data News</p>
                 </section>
                 
 
@@ -110,7 +110,7 @@
                 <section id="colors">
                     <h2>Colors</h2>
                     <p></p>
-                    <h3>WNYC Digital Colors</h3>
+                    <h4>WNYC Digital Colors</h4>
                     <ul class="swatches">
                         <li>
                             <div class="swatch wnyc-red background"></div>
@@ -146,7 +146,7 @@
                         </li>
                     </ul>
 
-                    <h3>WQXR Digital Colors</h3>
+                    <h4>WQXR Digital Colors</h4>
                     <ul class="swatches">
                         <li>
                             <div class="swatch wnyc-red background"></div>
@@ -194,50 +194,115 @@
                 <section id="typography">
                     <h2>Typography</h2>
                     <p><a href="https://fonts.google.com/specimen/Open+Sans" target="_blank">Open Sans</a> is the primary font used throughout NYPR products. We’ve chosen this font because it was designed as a sophisticated yet neutral font. It is optimized specifically for high legibility, and quick load times, across print, web, and small mobile screens. It is also elegant and stylized to fit well with flat design, while still being open-source and easily-available to contractors and collaborators. We primarily use regular, semibold, and bold weights. Italic is also occasionally used.</p>
-                    <p>In the past we’ve used Gotham, bold and medium. We retired this font from the site but it is still often used in images (ads, marquee images, logos, etc). </p>
+                    <p>For WQXR products, we sometimes use <a href="https://fonts.google.com/specimen/Lato" target="_blank">Lato</a> paired with Open Sans. 
+                    <p>In the past we’ve used Gotham. We retired this font from our digital products but it is still often used in images (ads, marquee images, logos, etc).</p>
+                    <p>Our typography styles:</p>
 
-                    <p>When used on a white or light background:</p>
-                    <div class="example light background">
-                        <p>Text used on a white or lightly colored background.</p>
+                    <ul class="typo">
+                        <li><h1>Heading Level One</h1>
+                            <h2>Heading Level Two</h2>
+                            <h3>Heading Level Three</h3>
+                            <h4>Heading Level Three</h4>
+                        <div class="copyable_code">
+                            <pre><code class="copy_content" id="button_code">h1 {
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 55px;
+  margin-bottom: 15px;
+}</code></pre>
+                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                        </div>
+
+                        <div class="copyable_code">
+                            <pre><code class="copy_content" id="button_code">h2 {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 15px;
+}</code></pre>
+                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+
+                        </div>
+
+                        <div class="copyable_code">
+                            <pre><code class="copy_content" id="button_code">h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 15px;
+}</code></pre>
+                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                        </div>
+
+                        <div class="copyable_code">
+                            <pre><code class="copy_content" id="button_code">h4 {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}</code></pre>
+                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+
+                        </div>
                     </div>
-                    <div class="copyable_code">
-                        <pre><code id="paragraph">font-family:'Open Sans', sans-serif;
-font-weight: 300;
-font-size: 16px;
-letter-spacing: 0;
-line-height: 1.5em;</code></pre>
-                        <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                    </div>
-                    
-                    
-                    <p>When used on a color background:</p>
-                    <div class="example wnyc-red background">
-                        <p>Text used on a color background</p>
-                    </div>  
-                    <div class="copyable_code">
-                        <pre><code id="paragraph_on_dark">font-family:'Open Sans', sans-serif;
-font-weight: 600;
-font-size: 16px;
-letter-spacing: 0;
-line-height: 1.5em;</code></pre>
-                        <button class="copyable btn_copy_code" data-clipboard-target="#paragraph_on_dark">copy</button>
-                    </div>
-          
-                    <div class="example light background">
-                        <h3>Small header text on white or lightly colored background</h3>
-                    </div>                        <div class="copyable_code">
-                        <pre><code id="small_header">font-family:'Open Sans', sans-serif;
-font-weight: 600;
-font-size: 16px;
-text-transform: uppercase;
-letter-spacing: 2px;
-line-height: 1.5em;</code></pre>
-                        <button class="copyable btn_copy_code" data-clipboard-target="#small_header">copy</button>
-                    </div>
-                            
-                    <div class="example wnyc-red background">
-                        <h3>Small header text on a color background</h3>
-                    </div>     
+                        </li>
+                        <li>
+                            <p>This is normal paragraph text. If part of the text needs to be emphasized, it should look <span class="strong">like this</span>. This is what a <a href="">link</a> should look like within a normal paragraph.</p>
+
+                                                    <div class="copyable_code">
+                            <pre><code class="copy_content" id="button_code">p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}</code></pre>
+                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                        </div>
+                        </li>
+                        <li>
+                            <div class="small_print">This is small print. It's used for legalese text or other info that is important but not primary to the page. This is what a <a href="">link</a> should look like within a block of small print.</div>
+
+                                                    <div class="copyable_code">
+                            <pre><code class="copy_content" id="button_code">.small_print {
+  font-size: 12px;
+  line-height: 22px;
+  color: #999;
+}</code></pre>
+                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                        </div>
+                        </li>
+                        <li>
+                            <div class="quote">
+                                <h2>"This is how we display a quote."</h2>
+                                - Person quoted
+                            </div>
+                        </li>
+                        <li>
+                            <ul class="bulleted">
+                                <li>This is a bulleted list</li>
+                                <li>Bulleted list item 2</li>
+                                <li>Bulleted list item 3</li>
+                                <li>Bulleted list item 4</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ol class="numbered">
+                                <li>This is a numbered list</li>
+                                <li>Numbered list item</li>
+                                <li>Numbered list item</li>
+                                <li>Numbered list item</li>
+                            </ol> 
+                        </li> 
+                        <li>
+                            <div class="example wnyc-red background">
+                                <p>Text used on a color background</p>
+                            </div>  
+                        </li>
+                    </ul>
+                
+                              
                 </section>       
 
                 <section id="dates">
@@ -254,7 +319,7 @@ line-height: 1.5em;</code></pre>
                 
                 <section id="buttons">
                     <h2>Buttons</h2>
-                    <p>Some buttons should be emphasized more than others, such as buttons that contain a call-to-action for a page. Examples of these include a'listen' buttons on story pages or 'buy tickets' buttons on event pages.</p>
+                    <p>Some buttons should be emphasized more than others, such as buttons that contain a primary call-to-action for a page. Examples of these include a'listen' buttons on story pages or 'buy tickets' buttons on event pages.</p>
                     <button>Listen</button>
                     <div class="copyable_code">
                         <pre><code class="copy_content" id="button_code">box-sizing:border-box;
