@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
@@ -23,10 +23,8 @@
                 <div class="logo"></div>              
                 <h1>Design System</h1>
         </div>
-        
- 
 
-        <nav>
+        <div id="nav_bar">
           <ul class="primary">
             <li>
               <a href=""><h4>Introduction</h4></a>
@@ -40,11 +38,12 @@
               <ul class="sub">
                 <li><a href="#atoms">Responsive Grid</a></li>
                 <li><a href="#colors">Colors</a></li>
-                <li><a href="#hoverstates">Hover States</a></li>
+                <li><a href="#hoverstates">Links and Hover States</a></li>
                 <li><a href="#typography">Typography</a></li>
                 <li><a href="#dates">Dates and Times</a></li>
                 <li><a href="#buttons">Buttons</a></li>
-                <li><a href="#buttons">Inputs</a></li>
+                <li><a href="#inputs">Inputs</a></li>
+                <li><a href="#loaders">Loaders and Transitions</a></li>
               </ul>
             </li>
             <li>
@@ -69,7 +68,7 @@
               </ul>  
             </li>
           </ul>
-        </nav>
+        </div>
 
        <main>
 
@@ -181,14 +180,44 @@
                             </ul>
                         </li>
                     </ul>
-                    <p></p>
+
+                    <h4>Data News Color Palettes</h4>
+                    <ul class="swatches">
+                        <li>
+                            <div class="swatch wnyc-red background"></div>
+                            <ul>
+                                <li class="copyable" data-clipboard-target="#copy-wnyc-red" id="copy-wnyc-red">.wnyc-red</li>
+                                <li class="copyable" data-clipboard-target="#copy-wnyc-red-hex" id="copy-wnyc-red-hex">#DE1E3D</li>
+                                <li class="copyable" data-clipboard-target="#copy-wnyc-red-rgba" id="copy-wnyc-red-rgba">rgba(222,30,61,1)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="swatch grey-blue background"></div>
+                            <ul>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue" id="copy-grey-blue">.grey-blue</li>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue-hex" id="copy-grey-blue-hex">#201F27</li>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue-rgba" id="copy-grey-blue-rgba">rgba(32,31,39,1)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="swatch grey-blue background"></div>
+                            <ul>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue" id="copy-grey-blue">.grey-blue</li>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue-hex" id="copy-grey-blue-hex">#201F27</li>
+                                <li class="copyable" data-clipboard-target="#copy-grey-blue-rgba" id="copy-grey-blue-rgba">rgba(32,31,39,1)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="swatch light background"></div>
+                            <ul>
+                                <li class="copyable" data-clipboard-target="#copy-light" id="copy-light">.light</li>
+                                <li class="copyable" data-clipboard-target="#copy-light-hex" id="copy-light-hex">#F1F1F1</li>
+                                <li class="copyable" data-clipboard-target="#copy-light-rgba" id="copy-light-rgba">rgba(241,241,241,1)</li>
+                            </ul>
+                        </li>
+                    </ul>
 
 
-                </section>
-
-                <section id="hoverstates">
-                        <h2>Hover States</h2>
-                    <p>Coming soon.</p>
                 </section>
                 
                 <section id="typography">
@@ -205,7 +234,7 @@
                             <h4>Heading Level Three</h4>
                         <div class="copyable_code">
                             <pre><code class="copy_content" id="button_code">h1 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 45px;
   line-height: 55px;
   margin-bottom: 15px;
@@ -215,7 +244,7 @@
 
                         <div class="copyable_code">
                             <pre><code class="copy_content" id="button_code">h2 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 32px;
   line-height: 44px;
   margin-bottom: 15px;
@@ -236,11 +265,11 @@
 
                         <div class="copyable_code">
                             <pre><code class="copy_content" id="button_code">h4 {
+  font-weight: 700;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 700;
   margin-bottom: 10px;
 }</code></pre>
                             <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
@@ -249,23 +278,35 @@
                     </div>
                         </li>
                         <li>
-                            <p>This is normal paragraph text. If part of the text needs to be emphasized, it should look <span class="strong">like this</span>. This is what a <a href="">link</a> should look like within a normal paragraph.</p>
+                            <p>This is normal paragraph text. If part of the text needs to be emphasized, it should <span class="strong">be bolded</span>. This is what a <a href="">link</a> should look like within a normal paragraph.</p>
 
                                                     <div class="copyable_code">
                             <pre><code class="copy_content" id="button_code">p {
   font-weight: 600;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 15px;
 }</code></pre>
                             <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
                         </div>
                         </li>
                         <li>
-                            <div class="small_print">This is small print. It's used for legalese text or other info that is important but not primary to the page. This is what a <a href="">link</a> should look like within a block of small print.</div>
+                            <p class="list">This is smaller paragraph text. This is typically used in list views.</p>
+
+                                                    <div class="copyable_code">
+                            <pre><code class="copy_content" id="button_code">p list{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+}</code></pre>
+                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                        </div>
+                        </li>
+                        <li>
+                            <div class="small_print">This is small print. It's used for legalese text, metadata, or other info that is important but not primary to the page. This is what <a href="">a link should look like</a> within a block of small print.</div>
 
                                                     <div class="copyable_code">
                             <pre><code class="copy_content" id="button_code">.small_print {
+  font-weight: 600;
   font-size: 12px;
   line-height: 22px;
   color: #999;
@@ -275,9 +316,22 @@
                         </li>
                         <li>
                             <div class="quote">
-                                <h2>"This is how we display a quote."</h2>
+                                <h2>"This is how we display a quote. The quote should be no more than 120 characters in length, including spaces."</h2>
                                 - Person quoted
                             </div>
+
+                            <div class="copyable_code">
+                            <pre><code class="copy_content" id="button_code">.quote {
+  max-width: 800px;
+  margin: 10px 0;
+  padding: 30px 30px;
+  text-align: center;
+  border-top: 4px solid #f1f1f1;
+  border-bottom: 4px solid #f1f1f1;
+}</code></pre>
+                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                        </div>
+
                         </li>
                         <li>
                             <ul class="bulleted">
@@ -286,6 +340,14 @@
                                 <li>Bulleted list item 3</li>
                                 <li>Bulleted list item 4</li>
                             </ul>
+
+                            <div class="copyable_code">
+                            <pre><code class="copy_content" id="button_code">ul.bullets li {
+  list-style-type:disc;
+  margin-left:40px;
+}</code></pre>
+                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                            </div>
                         </li>
                         <li>
                             <ol class="numbered">
@@ -303,17 +365,24 @@
                     </ul>
                 
                               
-                </section>       
+                </section>  
+
+
+                <section id="hoverstates">
+                    <h2>Links and Hover States</h2>
+                    <p>Coming soon.</p>
+                </section>     
 
                 <section id="dates">
 
                     <h2>Dates and Times</h2>
-                    <p>Keep abbreviations consistent across NYPR products:</p>
+                    <p>Keep abbreviations consistent across NYPR products: </br>
                     Hour = “hr”</br>
                     Minute(s) = “min”</br>
                     Seconds = should be rounded up to 1 minute
+                    </p>
                     
-                    <p>Dates should be written out in standard format, with the month shortened to the first three letters. For example: Jan 3, 2016.</p>
+                    <p>Dates should be written out in standard format, with the month shortened to the first three letters. For example: Jan 4, 2017.</p>
 
                 </section>
                 
@@ -321,18 +390,6 @@
                     <h2>Buttons</h2>
                     <p>Some buttons should be emphasized more than others, such as buttons that contain a primary call-to-action for a page. Examples of these include a'listen' buttons on story pages or 'buy tickets' buttons on event pages.</p>
                     <button>Listen</button>
-                    <div class="copyable_code">
-                        <pre><code class="copy_content" id="button_code">box-sizing:border-box;
-        padding: 10px 12px;
-        -webkit-appearance: none;
-        border-radius: 6px;
-        box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-        border: 1px solid #e9e9e9;
-        outline: none;
-        background-color: #F4F4F4;
-        font-size: 0.9em;</code></pre>
-                        <button class="copyable btn_copy_code" data-clipboard-target="#button_code">copy</button>
-                    </div>
         
                 </section>
 
@@ -340,6 +397,12 @@
                     <h2>Inputs</h2>
                     <p>Coming soon.</p>
                 </section>
+
+                <section id="loaders">
+                    <h2>Loaders and Transitions</h2>
+                    <p>Coming soon.</p>
+                </section>
+
             </article>
 
     <!-- ********** MOLECULES SECTION ********** -->
@@ -379,7 +442,7 @@
                 <section id="icons">
                     <h2>Icons</h2>
                     <p>We maintain a custom icon set with a consistent style that is simple, airy, and legible, serving to compliment a visual aesthetic without detracting from usability. We heavily user-test our icons to ensure that they are interpreted correctly and perceived as consistent with the brand. As our user demographic is often not tech-savvy, any icons that are not easily recognized must also be accompanied with a text label. All icons used must be inline with WNYC’s icon style in terms of consistent line thickness and rounding of edges, and they must be legible on small mobile screens.</p>
-                    <p>If you want to use an icon, first check that one does not currently exist on our site for the concept you’re illustrating. If not, you can reach out to the digital team to have them create one. Or you can find icons on The Nounproject or Fontawesome. All icons must be in SVG format.</p>
+                    <p>Our library of icons are from <a href="https://thenounproject.com/" target="_blank">Noun Project</a>, <a href="http://fontawesome.io/" target="_blank">Fontawesome</a>, or they are custom designed by our team. All icons must be in SVG format.</p>
                     <ul class="icons">
                         <li>
                             <img src="/includes/icons/antenna.svg" alt="antenna icon">
@@ -405,17 +468,53 @@
                             <a download href="/includes/icons/play-hollow.svg" class="download"><img src="includes/img/download-thin.svg"></a>
                             <a target="_blank" href="includes/icons/play-hollow.svg" class="link"><img src="includes/img/link.svg"></a>
                         </li>
+                        <li>
+                            <img src="/includes/icons/play-hollow.svg" alt="play-hollow icon">
+                            <span>play-hollow</span>
+                            <a download href="/includes/icons/play-hollow.svg" class="download"><img src="includes/img/download-thin.svg"></a>
+                            <a target="_blank" href="includes/icons/play-hollow.svg" class="link"><img src="includes/img/link.svg"></a>
+                        </li>
+                        <li>
+                            <img src="/includes/icons/play-hollow.svg" alt="play-hollow icon">
+                            <span>play-hollow</span>
+                            <a download href="/includes/icons/play-hollow.svg" class="download"><img src="includes/img/download-thin.svg"></a>
+                            <a target="_blank" href="includes/icons/play-hollow.svg" class="link"><img src="includes/img/link.svg"></a>
+                        </li>
+                        <li>
+                            <img src="/includes/icons/play-hollow.svg" alt="play-hollow icon">
+                            <span>play-hollow</span>
+                            <a download href="/includes/icons/play-hollow.svg" class="download"><img src="includes/img/download-thin.svg"></a>
+                            <a target="_blank" href="includes/icons/play-hollow.svg" class="link"><img src="includes/img/link.svg"></a>
+                        </li>
+                        <li>
+                            <img src="/includes/icons/play-hollow.svg" alt="play-hollow icon">
+                            <span>play-hollow</span>
+                            <a download href="/includes/icons/play-hollow.svg" class="download"><img src="includes/img/download-thin.svg"></a>
+                            <a target="_blank" href="includes/icons/play-hollow.svg" class="link"><img src="includes/img/link.svg"></a>
+                        </li>
+                        <li>
+                            <img src="/includes/icons/play-hollow.svg" alt="play-hollow icon">
+                            <span>play-hollow</span>
+                            <a download href="/includes/icons/play-hollow.svg" class="download"><img src="includes/img/download-thin.svg"></a>
+                            <a target="_blank" href="includes/icons/play-hollow.svg" class="link"><img src="includes/img/link.svg"></a>
+                        </li>
                     </ul>
                 </section>
                 
                 <section id="kits">
                     <h2>Kits and Templates</h2>
                     <p>Coming soon.</p>
+                    
+
                 </section>
                 
                 <section id="media">
                     <h2>Media</h2>
-                    <p>Coming soon.</p>
+                    <p>All images that accompany stories must be a minimum of 800px wide at the highest resolution possible.</p>
+
+                    <p>Hero images: specs coming soon.</p>
+
+                    <p>Wherever possible, logos should be delivered as svg files. If this isn't possible, they should be .pngs at the highest resolution and size possible.</p>
                 </section>
                 
             </article>

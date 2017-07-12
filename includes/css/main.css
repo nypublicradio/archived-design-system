@@ -12,12 +12,11 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.5em;
     text-rendering:optimizeLegibility;
     color:#333;
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
     html {
     }
 }
@@ -134,11 +133,16 @@ ul li {list-style-type:none;}
 h1, h2, h3, h4, h5, h6 {
     margin: 0; 
     padding: 0; 
-    font-weight: 300;
+    font-weight: 400;
 }
 
 p {
     line-height: 1.7rem;
+}
+
+p.list {
+    font-size: 16px;
+    line-height: 28px;
 }
 
 h1 {
@@ -152,15 +156,38 @@ h1 {
 .small_print {
     font-size: 12px;
     line-height: 22px;
-    color: #999;
+    font-weight: 400;
+    color: #888;
+}
+
+.small_print a {
+    color: #888;
+    border-bottom: 1px solid #888;
+}
+
+.small_print a:hover {
+    opacity: .6;
+    border-bottom: 1px solid #888;
 }
 
 .quote {
-    padding: 30px 0;
-    margin: 30px 0;
+    padding: 30px 30px;
+    max-width: 800px;
+    margin: 10px 0;
     text-align: center;
-    width: 100%;
-    background: #f1f1f1;
+    border-top: 4px solid #f1f1f1;
+    border-bottom: 4px solid #f1f1f1;
+}
+
+a, a:active {
+    color: #0073d5;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    border-bottom: 1px solid #0073d5;
 }
 
 article {
@@ -316,20 +343,20 @@ article {
 .hero {
     position: relative;
     z-index: 1000;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 2rem;
     color: #fff;
     background: #333;
     width: 100%;
     text-align: center;
-    padding: 80px 0;
+    padding: 80px 0 40px 0;
 }
 
 .logo {
     width: 248px;
     height: 100px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     background-image:url('../img/NYPR_logo.svg');
     background-size: 248px 100px;
 }
@@ -370,13 +397,13 @@ li {
 
 ul.typo {
     list-style: none;
-    border-left: 1px solid #ddd;
+    border-left: 2px solid #f1f1f1;
     margin: 40px 0;
     padding: 0px 0 0px 40px;
 }
 
 .typo li {
-    padding: 20px 0px;
+    padding: 30px 0px;
     float: none;
 }
 
@@ -407,9 +434,23 @@ ul:after {
     display: table;
 }
 
-nav {
+#nav_bar {
   text-align: center;
   margin: 0 auto;
+  background: #fff;
+}
+
+
+.nav_bar-fixed {
+  position: fixed;
+  z-index:; 100;
+  width: 780px;
+  top: 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+#nav_bar a:hover {
+    border-bottom: 1px solid transparent;
 }
 
 ul.primary li a {
@@ -528,12 +569,23 @@ ul.primary li:hover > a{
     
     .mobile_only {display:none !important; }
     
-    nav {
-        top: 40px;
+    #nav_bar {
         width: 700px;
+        margin: 0 auto;
+        text-align: center;
     }
 
-        nav > ul {
+    .navbar-fixed {
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        max-width: 100%;
+        z-index: 100;
+        border-bottom: 1px solid #f1f1f1;
+    }
+
+        #nav_bar > ul {
             width:100%;
             margin:0;
             -webkit-transform:none;
@@ -542,10 +594,10 @@ ul.primary li:hover > a{
                     transition:none;
         }
 
-            nav > ul > li > a {
+            #nav_bar > ul > li > a {
                 font-size:.8rem;
             }
-                nav > ul > li > ul > li {
+                #nav_bar > ul > li > ul > li {
                     font-size:0.8rem;
                 }
     
@@ -569,8 +621,9 @@ ul.primary li:hover > a{
 .copyable {cursor:pointer;}
 
 .copyable_code {
-    display:block;
-    position:relative;
+    display: block;
+    position: relative;
+    margin: 30px 0;
 }
     .btn_copy_code {
         position:absolute;
@@ -654,11 +707,11 @@ input[type=button] {
 }
 
 .icons li {
-    width:50%;
+    width: 50%;
     box-sizing:border-box;
-    padding:10px 10px;
-    border-radius:6px;
-    font-size:0.9em;
+    padding: 10px 10px;
+    border-radius: 6px;
+    font-size: 0.9em;
     white-space:nowrap;
 }
     .icons li:hover {
