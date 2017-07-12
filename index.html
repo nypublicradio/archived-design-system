@@ -18,90 +18,99 @@
         <script src="includes/js/vendor/modernizr-custom.js"></script>
     </head>
     <body id="home">
+
+        <div class="hero">  
+                <div class="logo"></div>              
+                <h1>Design System</h1>
+        </div>
         
-        <main>
+ 
 
-            <nav>
-                <header>
-                    <a href="/">WNYC Design System</a>
-                </header>
-                <div class="btn_nav mobile_only">
-                    Menu
-                    <span id="arrow_close">▲</span>
-                    <span id="arrow_open">▼</span>
-                </div>
-                <ul id="page_tree">
-                    <li class="intro">
-                        <a href="#index">Introduction</a>
-                        <ul>
-                            <li><a href="#outline" class="active">Outline</a></li>
-                            <li><a href="#vision">Vision</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#atoms">Atoms</a>
-                        <ul>
-                            <li><a href="#grid">Grid</a></li>
-                            <li><a href="#palette">Colors</a></li>
-                            <li><a href="#typography">Typography</a></li>
-                            <li><a href="#buttons">Buttons</a></li>
-                            <li><a href="#inputs">Inputs</a></li>
-                            <li><a href="#transitions">Transitions</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#molecules">Molecules</a>
-                        <ul>
-                            <li><a href="#forms">Forms</a></li>
-                            <li><a href="#notifications">Notifications</a></li>
-                        </ul>
-                    </li>
-                     <li>
-                        <a href="#organisms">Organisms</a>
-                        <ul>
-                            <li><a href="#modals">Modals</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#assets">Assets</a>
-                        <ul>
-                            <li><a href="#icons">Iconography</a></li>
-                            <li><a href="#kits">Kits and Templates</a></li>
-                            <li><a href="#media">Media</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+        <nav>
+          <ul class="primary">
+            <li>
+              <a href=""><h4>Introduction</h4></a>
+              <ul class="sub">
+                <li><a href="#intro">About</a></li>
+                <li><a href="#team">The Team</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href=""><h4>Atoms</h4></a>
+              <ul class="sub">
+                <li><a href="#atoms">Responsive Grid</a></li>
+                <li><a href="#colors">Colors</a></li>
+                <li><a href="#hoverstates">Hover States</a></li>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#dates">Dates and Times</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#buttons">Inputs</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href=""><h4>Molecules</h4></a>
+              <ul class="sub">
+                <li><a href="#molecules">Forms</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+              </ul>  
+            </li>
+            <li>
+              <a href=""><h4>Organisms</h4></a>
+              <ul class="sub">
+                <li><a href="#organisms">Modals</a></li>
+              </ul>  
+            </li>
+            <li>
+              <a href=""><h4>Assets</h4></a>
+              <ul class="sub">
+                <li><a href="#icons">Icons</a></li>
+                <li><a href="#kits">Kits and Templates</a></li>
+                <li><a href="#media">Media</a></li>
+              </ul>  
+            </li>
+          </ul>
+        </nav>
 
-            <article id="index">
-                
-                <h1>NYPR's Design System</h1>
-                
-                <section id="outline">
-                    <h2>Introduction</h2>
+       <main>
+
+<!-- ********** INTRO SECTION ********** -->
+
+            <article id="intro">
+
+                <h1>Introduction</h1>
+
+                <section id="about">
+                    <h2>About</h2>
                     <p>The NYPR Product Design team aims to maintain a consistent style across all NYPR products. To facilitate this, we have created the following style guide documenting a system of reusable components. Our goal is to achieve a faster and smarter process for product design and development.</p>
                     <p>Our design system is based on the principles of <a href="http://bradfrost.com/blog/post/atomic-web-design/" target="_blank">atomic design</a>. The idea behind this methodology is that small elements of our products (atoms) can be designed and then combined into larger modules (molecules) which can then be combined into organisms. These elements can then be stitched together to form templates and pages.</p>
                     <p>This design system is a living document and will be updated regularly.</p>
+                </section>
+
+                <section id="team">
+                    <h2>The Product Design Team</h2>
+                    <p><span class="strong">Marine Boudeau</span></br>Director, Design and User Experience</p>
+                    <p><span class="strong">Fiona Carswell</span></br>Lead Designer, Design and User Experience</p>
+                    <p><span class="strong">Clarisa Diaz</span></br>Interaction Designer, Data News</p>
                 </section>
                 
 
             </article>
             
-            
+    <!-- ********** ATOMS SECTION ********** -->        
 
             <article id="atoms">
                 
                 <h1>Atoms</h1>
 
                 <section id="grid">
-                    <h2>Grids</h2>
+                    <h2>Responsive Grid</h2>
                     <p>Coming soon.</p>
                 </section>
                 
-                <section id="palette">
+                <section id="colors">
                     <h2>Colors</h2>
                     <p></p>
-                    <h3>WNYC Digital Colors</h3>
+                    <h4>WNYC Digital Colors</h4>
                     <ul class="swatches">
                         <li>
                             <div class="swatch wnyc-red background"></div>
@@ -137,7 +146,7 @@
                         </li>
                     </ul>
 
-                    <h3>WQXR Digital Colors</h3>
+                    <h4>WQXR Digital Colors</h4>
                     <ul class="swatches">
                         <li>
                             <div class="swatch wnyc-red background"></div>
@@ -174,162 +183,154 @@
                     </ul>
                     <p></p>
 
-                   <!--  <ul class="swatches swatches_wide">
-                        <li>
-                            <div class="swatch wnyc-red background"></div>
-                            <ul>
-                                <li class="copyable" data-clipboard-target="#copy-wide-wnyc-red" id="copy-wide-wnyc-red">.wnyc-red</li>
-                                <li class="copyable" data-clipboard-target="#copy-wide-wnyc-red-hex" id="copy-wide-wnyc-red-hex">#DE1E3D</li>
-                                <li class="copyable" data-clipboard-target="#copy-wide-wnyc-red-rgba" id="copy-wide-wnyc-red-rgba">rgba(222,30,61,1)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="swatch grey-blue background"></div>
-                            <ul>
-                                <li class="copyable" data-clipboard-target="#copy-wide-grey-blue" id="copy-wide-grey-blue">.grey-blue</li>
-                                <li class="copyable" data-clipboard-target="#copy-wide-grey-blue-hex" id="copy-wide-grey-blue-hex">#201F27</li>
-                                <li class="copyable" data-clipboard-target="#copy-wide-grey-blue-rgba" id="copy-wide-grey-blue-rgba">rgba(32,31,39,1)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="swatch light-blue background"></div>
-                            <ul>
-                                <li class="copyable" data-clipboard-target="#copy-wide-light-blue" id="copy-wide-light-blue">.light-blue</li>
-                                <li class="copyable" data-clipboard-target="#copy-wide-light-blue-hex" id="copy-wide-light-blue-hex">#627FDD</li>
-                                <li class="copyable" data-clipboard-target="#copy-wide-light-blue-rgba" id="copy-wide-light-blue-rgba">rgba(98,127,221,1)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="swatch light background"></div>
-                            <ul>
-                                <li class="copyable" data-clipboard-target="#copy-wide-light" id="copy-wide-light">.light</li>
-                                <li class="copyable" data-clipboard-target="#copy-wide-light-hex" id="copy-wide-light-hex">#F1F1F1</li>
-                                <li class="copyable" data-clipboard-target="#copy-wide-light-rgba" id="copy-wide-light-rgba">rgba(241,241,241,1)</li>
-                            </ul>
-                        </li>
-                    </ul> -->
 
-                    <!-- <ul class="swatches swatches_micro">
-                        <li>
-                            <div class="swatch wnyc-red background"></div>
-                            <ul>
-                                <li class="copyable" data-clipboard-target="#copy-micro-wnyc-red" id="copy-micro-wnyc-red">.wnyc-red</li>
-                                <li class="copyable" data-clipboard-target="#copy-micro-wnyc-red-hex" id="copy-micro-wnyc-red-hex">#DE1E3D</li>
-                                <li class="copyable" data-clipboard-target="#copy-micro-wnyc-red-rgba" id="copy-micro-wnyc-red-rgba">rgba(222,30,61,1)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="swatch grey-blue background"></div>
-                            <ul>
-                                <li class="copyable" data-clipboard-target="#copy-micro-grey-blue" id="copy-micro-grey-blue">.grey-blue</li>
-                                <li class="copyable" data-clipboard-target="#copy-micro-grey-blue-hex" id="copy-micro-grey-blue-hex">#201F27</li>
-                                <li class="copyable" data-clipboard-target="#copy-micro-grey-blue-rgba" id="copy-micro-grey-blue-rgba">rgba(32,31,39,1)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="swatch light-blue background"></div>
-                            <ul>
-                                <li class="copyable" data-clipboard-target="#copy-micro-light-blue" id="copy-micro-light-blue">.light-blue</li>
-                                <li class="copyable" data-clipboard-target="#copy-micro-light-blue-hex" id="copy-micro-light-blue-hex">#627FDD</li>
-                                <li class="copyable" data-clipboard-target="#copy-micro-light-blue-rgba" id="copy-micro-light-blue-rgba">rgba(98,127,221,1)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="swatch light background"></div>
-                            <ul>
-                                <li class="copyable" data-clipboard-target="#copy-micro-light" id="copy-micro-light">.light</li>
-                                <li class="copyable" data-clipboard-target="#copy-micro-light-hex" id="copy-micro-light-hex">#F1F1F1</li>
-                                <li class="copyable" data-clipboard-target="#copy-micro-light-rgba" id="copy-micro-light-rgba">rgba(241,241,241,1)</li>
-                            </ul>
-                        </li>
-                    </ul> -->
-                    
-                    <!-- <p>
-                        This is what an inline color swatch looks like 
-                        <span class="inline_swatch" data-color="wnyc-red" data-hex="DE1E3D" data-rgba="222,30,61,1"></span>
-                        in case you were wondering.
-                    </p> -->
+                </section>
 
-
-                    <h2>Hover States</h2>
+                <section id="hoverstates">
+                        <h2>Hover States</h2>
                     <p>Coming soon.</p>
                 </section>
                 
                 <section id="typography">
                     <h2>Typography</h2>
-                    <p>Open Sans is the primary font used throughout NYPR products. We’ve chosen this font because it was designed as a sophisticated yet neutral font, optimized specifically for high legibility, and quick load times, across print, web, and small mobile screens. It is also elegant and stylized to fit well with flat design, while still being open-source and easily-available to contractors and collaborators. We primarily use regular, semibold, and bold weights. Italic is also occasionally used.</p>
-                    <p>In the past we’ve used Gotham, bold and medium. We retired this font from the site but it is still often used in images (ads, marquee images, logos, etc). </p>
+                    <p><a href="https://fonts.google.com/specimen/Open+Sans" target="_blank">Open Sans</a> is the primary font used throughout NYPR products. We’ve chosen this font because it was designed as a sophisticated yet neutral font. It is optimized specifically for high legibility, and quick load times, across print, web, and small mobile screens. It is also elegant and stylized to fit well with flat design, while still being open-source and easily-available to contractors and collaborators. We primarily use regular, semibold, and bold weights. Italic is also occasionally used.</p>
+                    <p>For WQXR products, we sometimes use <a href="https://fonts.google.com/specimen/Lato" target="_blank">Lato</a> paired with Open Sans. 
+                    <p>In the past we’ve used Gotham. We retired this font from our digital products but it is still often used in images (ads, marquee images, logos, etc).</p>
+                    <p>Our typography styles:</p>
 
-                    <h2>Paragraphs</h2>
-                    <p>When used on a white or light background:</p>
-                    <div class="copyable_code">
-                        <pre><code id="paragraph">font-family:'Open Sans', sans-serif;
-font-weight:300;
-font-size:16px;
-letter-spacing:0;
-line-height:1.5em;</code></pre>
-                        <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                    </div>
-                    <div class="example light background">
-                        <p>Text used on a white or lightly colored background.</p>
-                    </div>
-                    
-                    <p>When used on a color background:</p>
-                    <div class="copyable_code">
-                        <pre><code id="paragraph_on_dark">font-family:'Open Sans', sans-serif;
-font-weight:600;
-font-size:16px;
-letter-spacing:0;
-line-height:1.5em;</code></pre>
-                        <button class="copyable btn_copy_code" data-clipboard-target="#paragraph_on_dark">copy</button>
-                    </div>
-                    <div class="example wnyc-red background">
-                        <p>Text used on a color background</p>
-                    </div>            
+                    <ul class="typo">
+                        <li><h1>Heading Level One</h1>
+                            <h2>Heading Level Two</h2>
+                            <h3>Heading Level Three</h3>
+                            <h4>Heading Level Three</h4>
+                        <div class="copyable_code">
+                            <pre><code class="copy_content" id="button_code">h1 {
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 55px;
+  margin-bottom: 15px;
+}</code></pre>
+                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                        </div>
 
-                    <h2>Small Headers</h2>
-                    <p>Among other purposes, small headers are used for article sections, and names of shows in lists of audio content.</p>
-                    <div class="copyable_code">
-                        <pre><code id="small_header">font-family:'Open Sans', sans-serif;
-font-weight:600;
-font-size:16px;
-text-transform:uppercase;
-letter-spacing:2px;
-line-height:1.5em;</code></pre>
-                        <button class="copyable btn_copy_code" data-clipboard-target="#small_header">copy</button>
+                        <div class="copyable_code">
+                            <pre><code class="copy_content" id="button_code">h2 {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 15px;
+}</code></pre>
+                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+
+                        </div>
+
+                        <div class="copyable_code">
+                            <pre><code class="copy_content" id="button_code">h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 15px;
+}</code></pre>
+                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                        </div>
+
+                        <div class="copyable_code">
+                            <pre><code class="copy_content" id="button_code">h4 {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}</code></pre>
+                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+
+                        </div>
                     </div>
-                    <div class="example light background">
-                        <h3>Small header text on white or lightly colored background</h3>
-                    </div>            
-                    <div class="example wnyc-red background">
-                        <h3>Small header text on a color background</h3>
-                    </div>            
+                        </li>
+                        <li>
+                            <p>This is normal paragraph text. If part of the text needs to be emphasized, it should look <span class="strong">like this</span>. This is what a <a href="">link</a> should look like within a normal paragraph.</p>
+
+                                                    <div class="copyable_code">
+                            <pre><code class="copy_content" id="button_code">p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}</code></pre>
+                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                        </div>
+                        </li>
+                        <li>
+                            <div class="small_print">This is small print. It's used for legalese text or other info that is important but not primary to the page. This is what a <a href="">link</a> should look like within a block of small print.</div>
+
+                                                    <div class="copyable_code">
+                            <pre><code class="copy_content" id="button_code">.small_print {
+  font-size: 12px;
+  line-height: 22px;
+  color: #999;
+}</code></pre>
+                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                        </div>
+                        </li>
+                        <li>
+                            <div class="quote">
+                                <h2>"This is how we display a quote."</h2>
+                                - Person quoted
+                            </div>
+                        </li>
+                        <li>
+                            <ul class="bulleted">
+                                <li>This is a bulleted list</li>
+                                <li>Bulleted list item 2</li>
+                                <li>Bulleted list item 3</li>
+                                <li>Bulleted list item 4</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ol class="numbered">
+                                <li>This is a numbered list</li>
+                                <li>Numbered list item</li>
+                                <li>Numbered list item</li>
+                                <li>Numbered list item</li>
+                            </ol> 
+                        </li> 
+                        <li>
+                            <div class="example wnyc-red background">
+                                <p>Text used on a color background</p>
+                            </div>  
+                        </li>
+                    </ul>
+                
+                              
+                </section>       
+
+                <section id="dates">
 
                     <h2>Dates and Times</h2>
-                    <p>How do we handle time:</p>
-                    <ul class="bullets">
-                        <li>Hour = “hr”</li>
-                        <li>Minute(s) = “min”</li>
-                        <li>Seconds = should be rounded up to 1 minute</li>
-                    </ul>
+                    <p>Keep abbreviations consistent across NYPR products:</p>
+                    Hour = “hr”</br>
+                    Minute(s) = “min”</br>
+                    Seconds = should be rounded up to 1 minute
+                    
                     <p>Dates should be written out in standard format, with the month shortened to the first three letters. For example: Jan 3, 2016.</p>
 
                 </section>
                 
                 <section id="buttons">
                     <h2>Buttons</h2>
-                    <p>Here’s a button.</p>
+                    <p>Some buttons should be emphasized more than others, such as buttons that contain a primary call-to-action for a page. Examples of these include a'listen' buttons on story pages or 'buy tickets' buttons on event pages.</p>
                     <button>Listen</button>
                     <div class="copyable_code">
                         <pre><code class="copy_content" id="button_code">box-sizing:border-box;
-        padding:10px 12px;
-        -webkit-appearance:none;
-        border-radius:6px;
-        box-shadow:0px 2px 4px rgba(0,0,0,0.2);
-        border:1px solid #e9e9e9;
+        padding: 10px 12px;
+        -webkit-appearance: none;
+        border-radius: 6px;
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+        border: 1px solid #e9e9e9;
         outline: none;
-        background-color:#F4F4F4;
-        font-size:0.9em;</code></pre>
+        background-color: #F4F4F4;
+        font-size: 0.9em;</code></pre>
                         <button class="copyable btn_copy_code" data-clipboard-target="#button_code">copy</button>
                     </div>
         
@@ -341,29 +342,35 @@ line-height:1.5em;</code></pre>
                 </section>
             </article>
 
+    <!-- ********** MOLECULES SECTION ********** -->
+
             <article id="molecules">
                 <h1>Molecules</h1>
 
-                <section id="Forms">
+                <section id="forms">
                     <h2>Forms</h2>
                     <p>Coming soon.</p>
                 </section>
 
-                <section id="Notifications">
+                <section id="notifications">
                     <h2>Notifications</h2>
                     <p>Coming soon.</p>
                 </section>
                 
             </article>
 
+    <!-- ********** ORGANISMS SECTION ********** -->
+
             <article id="organisms">
                 <h1>Organisms</h1>
 
-                 <section id="Modals">
+                 <section id="modals">
                     <h2>Modals</h2>
                     <p>Coming soon.</p>
                 </section>
             </article>
+
+    <!-- ********** ASSETS SECTION ********** -->
 
             <article id="assets">
                 

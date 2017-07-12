@@ -4,10 +4,7 @@
 # TEAM
 
     Eric Jacobsen -- developer -- @eric_wvgg
-
-# THANKS
-
-    Obama
+    Fiona Carswell -- designer/developer
 
 # TECHNOLOGY COLOPHON
 
