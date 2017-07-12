@@ -313,19 +313,15 @@ article, section {
 }
 
 
-article {
-    padding: 140px 20px 20px 20px;
-}
-
 @media only screen and (min-width:768px) {
     
     article {
         max-width: 750px;
-        padding: 60px 80px;
+        padding: 60px 80px 120px 80px;
     }
 
     section {
-        margin-top: 80px;
+        margin: 40px 0px 100px 0;
     }
 
 }
@@ -362,6 +358,16 @@ article {
 }
 
 
+input[type=text] {
+    border: 1px solid #ddd;
+    color: #333;
+    font-weight: 400;
+    width: 60%;
+    padding: 15px 20px;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
 
 /* ==========================================================================
    Navigation
@@ -397,14 +403,20 @@ li {
 
 ul.typo {
     list-style: none;
-    border-left: 2px solid #f1f1f1;
-    margin: 40px 0;
-    padding: 0px 0 0px 40px;
+    /*border-left: 2px solid #f1f1f1;*/
+    margin: 0;
+    padding: 0;
 }
 
 .typo li {
-    padding: 30px 0px;
+    padding: 0px 0px 0px 40px;
     float: none;
+    margin: 80px 0 80px 0px;
+    border-left: 2px solid #ddd;
+}
+
+.typo li:first-child {
+    margin-top: 40px;
 }
 
 ul.bulleted {
@@ -414,12 +426,20 @@ ul.bulleted {
 .bulleted li {
     list-style: disc;
     padding: 5px 0px;
+    margin: 0;
+    border-left: none;
+}
+
+.bulleted li:first-child {
+    margin-top: 0;
 }
 
 .numbered li {
     list-style-type: decimal;
     padding: 5px 0px;
     margin-left: 0 30px;
+    margin: 0;
+    border-left: none;
 }
 
 
@@ -517,7 +537,11 @@ ul.primary li:hover > a{
   color: #000;
 } 
 
-
+.anchor_nudge {
+    position: absolute; 
+    top: 400px;
+    background green;
+}
 
 @media only screen and (max-width: 600px) {
   .decor {
