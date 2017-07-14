@@ -24,6 +24,10 @@
                 <h1>Design System</h1>
         </div>
 
+        <div id="mobile_nav_bar">
+            mobile menu to come >
+        </div>
+
         <div id="nav_bar">
           <ul class="primary">
             <li>
@@ -36,7 +40,7 @@
             <li>
               <a href=""><h4>Atoms</h4></a>
               <ul class="sub">
-                <li><a href="#atoms">Responsive Grid</a></li>
+                <li><a href="#atoms">Grids</a></li>
                 <li><a href="#colors">Colors</a></li>
                 <li><a href="#hoverstates">Links and Hover States</a></li>
                 <li><a href="#typography">Typography</a></li>
@@ -60,7 +64,7 @@
               </ul>  
             </li>
             <li>
-              <a href=""><h4>Assets</h4></a>
+              <a href=""><h4>More</h4></a>
               <ul class="sub">
                 <li><a href="#icons">Icons</a></li>
                 <li><a href="#kits">Kits and Templates</a></li>
@@ -102,14 +106,20 @@
                 <h1>Atoms</h1>
 
                 <section id="grid">
-                    <h2>Responsive Grid</h2>
-                    <p>Coming soon.</p>
+                    <h2>Grids</h2>
+                    <div class="row">
+                        <div class="col col1">Row 1: Col 1</div>
+                        <div class="col col2">Row 1: Col 2</div>
+                    </div>
+                    <div class="row row2">
+                        <div class="col col3">Row 2: Col 1</div>
+                    </div>
                 </section>
                 
                 <section id="colors">
                     <h2>Colors</h2>
                     <p></p>
-                    <h4>WNYC Digital Colors</h4>
+                    <h4>WNYC Digital Colors (in progress)</h4>
                     <ul class="swatches">
                         <li>
                             <div class="swatch wnyc-red background"></div>
@@ -120,19 +130,55 @@
                             </ul>
                         </li>
                         <li>
-                            <div class="swatch grey-blue background"></div>
+                            <div class="swatch dark-red background"></div>
                             <ul>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue" id="copy-grey-blue">.grey-blue</li>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue-hex" id="copy-grey-blue-hex">#201F27</li>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue-rgba" id="copy-grey-blue-rgba">rgba(32,31,39,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-dark-red" id="copy-dark-red">.dark-red</li>
+                                <li class="copyable" data-clipboard-target="#copy-dark-red-hex" id="copy-dark-red-hex">#52000A</li>
+                                <li class="copyable" data-clipboard-target="#copy-dark-red-rgba" id="copy-dark-red-rgba">rgba(82, 0, 10)</li>
                             </ul>
                         </li>
                         <li>
-                            <div class="swatch grey-blue background"></div>
+                            <div class="swatch wnyc-dark-blue background"></div>
                             <ul>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue" id="copy-grey-blue">.grey-blue</li>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue-hex" id="copy-grey-blue-hex">#201F27</li>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue-rgba" id="copy-grey-blue-rgba">rgba(32,31,39,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-wnyc-dark-blue" id="copy-wnyc-dark-blue">.wnyc-dark-blue</li>
+                                <li class="copyable" data-clipboard-target="#copy-wnyc-dark-blue-hex" id="copy-wnyc-dark-blue-hex">#1068b2</li>
+                                <li class="copyable" data-clipboard-target="#copy-wnyc-dark-blue-rgba" id="copy-wnyc-dark-blue-rgba">rgba(32,31,39,1)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="swatch light background"></div>
+                            <ul>
+                                <li class="copyable" data-clipboard-target="#copy-light" id="copy-light">.light</li>
+                                <li class="copyable" data-clipboard-target="#copy-light-hex" id="copy-light-hex">#F1F1F1</li>
+                                <li class="copyable" data-clipboard-target="#copy-light-rgba" id="copy-light-rgba">rgba(16, 104, 178)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h4>WQXR Digital Colors (in progress)</h4>
+                    <ul class="swatches">
+                        <li>
+                            <div class="swatch wqxr-blue background"></div>
+                            <ul>
+                                <li class="copyable" data-clipboard-target="#copy-wqxr-blue" id="copy-wqxr-blue">.wqxr-blue</li>
+                                <li class="copyable" data-clipboard-target="#copy-wqxr-blue-hex" id="copy-wqxr-blue-hex">#00aeff</li>
+                                <li class="copyable" data-clipboard-target="#copy-wqxr-blue-rgba" id="copy-wqxr-blue-rgba">rgba(0,174,255,1)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="swatch wqxr-dark-blue background"></div>
+                            <ul>
+                                <li class="copyable" data-clipboard-target="#copy-wqxr-dark-blue" id="copy-wqxr-dark-blue">.wqxr-dark-blue</li>
+                                <li class="copyable" data-clipboard-target="#copy-wqxr-dark-blue-hex" id="copy-wqxr-dark-blue-hex">#1164b4</li>
+                                <li class="copyable" data-clipboard-target="#copy-wqxr-dark-blue-rgba" id="copy-wqxr-dark-blue-rgba">rgba(0,175,255,1)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="swatch wqxr-black background"></div>
+                            <ul>
+                                <li class="copyable" data-clipboard-target="#copy-wqxr-black" id="copy-wqxr-black">.wqxr-black</li>
+                                <li class="copyable" data-clipboard-target="#copy-wqxr-black-hex" id="copy-wqxr-black-hex">#000000</li>
+                                <li class="copyable" data-clipboard-target="#copy-wqxr-black-rgba" id="copy-wqxr-black-rgba">rgba(255,255,255,1)</li>
                             </ul>
                         </li>
                         <li>
@@ -145,43 +191,7 @@
                         </li>
                     </ul>
 
-                    <h4>WQXR Digital Colors</h4>
-                    <ul class="swatches">
-                        <li>
-                            <div class="swatch wnyc-red background"></div>
-                            <ul>
-                                <li class="copyable" data-clipboard-target="#copy-wnyc-red" id="copy-wnyc-red">.wnyc-red</li>
-                                <li class="copyable" data-clipboard-target="#copy-wnyc-red-hex" id="copy-wnyc-red-hex">#DE1E3D</li>
-                                <li class="copyable" data-clipboard-target="#copy-wnyc-red-rgba" id="copy-wnyc-red-rgba">rgba(222,30,61,1)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="swatch grey-blue background"></div>
-                            <ul>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue" id="copy-grey-blue">.grey-blue</li>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue-hex" id="copy-grey-blue-hex">#201F27</li>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue-rgba" id="copy-grey-blue-rgba">rgba(32,31,39,1)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="swatch grey-blue background"></div>
-                            <ul>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue" id="copy-grey-blue">.grey-blue</li>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue-hex" id="copy-grey-blue-hex">#201F27</li>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue-rgba" id="copy-grey-blue-rgba">rgba(32,31,39,1)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="swatch light background"></div>
-                            <ul>
-                                <li class="copyable" data-clipboard-target="#copy-light" id="copy-light">.light</li>
-                                <li class="copyable" data-clipboard-target="#copy-light-hex" id="copy-light-hex">#F1F1F1</li>
-                                <li class="copyable" data-clipboard-target="#copy-light-rgba" id="copy-light-rgba">rgba(241,241,241,1)</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <h4>Data News Color Palettes</h4>
+                    <h4>Data News Color Palettes (in progress)</h4>
                     <ul class="swatches">
                         <li>
                             <div class="swatch wnyc-red background"></div>
@@ -302,13 +312,13 @@
                         </div>
                         </li>
                         <li>
-                            <div class="small_print">This is small print. It's used for legalese text, metadata, or other info that is important but not primary to the page. This is what <a href="">a link should look like</a> within a block of small print.</div>
+                            <div class="small_print">This is small print. It's used for legalese text, metadata, or other info that is important but not primary to the page. This is what <a href="">a link should look like</a> here.</div>
 
                                                     <div class="copyable_code">
                             <pre><code class="copy_content" id="button_code">.small_print {
   font-weight: 600;
-  font-size: 12px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 26px;
   color: #999;
 }</code></pre>
                             <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
@@ -342,9 +352,10 @@
                             </ul>
 
                             <div class="copyable_code">
-                            <pre><code class="copy_content" id="button_code">ul.bullets li {
-  list-style-type:disc;
-  margin-left:40px;
+                            <pre><code class="copy_content" id="button_code">.bulleted li {
+  list-style-type: disc;
+  padding: 5px 0px;
+  margin: 0;
 }</code></pre>
                             <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
                             </div>
@@ -356,20 +367,33 @@
                                 <li>Numbered list item</li>
                                 <li>Numbered list item</li>
                             </ol> 
+                            <div class="copyable_code">
+                            <pre><code class="copy_content" id="button_code">.numbered li {
+  list-style-type: decimal;
+  padding: 5px 0px;
+  margin: 0;
+}</code></pre>
+                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                            </div>
                         </li> 
                         <li>
                             <div class="example wnyc-red background">
-                                <p>Text used on a color background</p>
-                            </div>  
+                                <p class="on_color">Text used on a color background</p>
+                            </div> 
+
+                            <div class="copyable_code">
+                            <pre><code class="copy_content" id="button_code">p.on_color {
+  font-weight: 600;
+}</code></pre>
+                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                            </div> 
                         </li>
-                    </ul>
-                
-                              
+                    </ul>         
                 </section>  
 
 
                 <section id="hoverstates">
-                    <span class="anchor_nudge">test</span><h2>Links and Hover States</h2>
+                    <h2>Links and Hover States</h2>
                     <p>Coming soon.</p>
                 </section>     
 
@@ -388,8 +412,36 @@
                 
                 <section id="buttons">
                     <h2>Buttons</h2>
-                    <p>Some buttons should be emphasized more than others, such as buttons that contain a primary call-to-action for a page. Examples of these include a'listen' buttons on story pages or 'buy tickets' buttons on event pages.</p>
-                    <button>Listen</button>
+                    <p>We have a variety of buttons depending on the emphasize desired for the call to action.</p>
+                    <ul class="typo">
+                        <li>
+                            <button>button here</button>
+                            <div class="copyable_code">
+                                <pre><code class="copy_content" id="button_code">code here</code></pre>
+                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                            </div> 
+                        </li>
+                        <li>
+                            <button>button here</button>
+                            <div class="copyable_code">
+                                <pre><code class="copy_content" id="button_code">code here</code></pre>
+                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                            </div> 
+                        </li>
+                        <li>
+                            <button>button here</button>
+                            <div class="copyable_code">
+                                <pre><code class="copy_content" id="button_code">code here</code></pre>
+                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                            </div> 
+                        </li>
+                        <li>
+                            <button>button here</button>
+                            <div class="copyable_code">
+                                <pre><code class="copy_content" id="button_code">code here</code></pre>
+                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                            </div> 
+                        </li>
         
                 </section>
 
@@ -398,29 +450,76 @@
                     <h2>Inputs</h2>
 
                     <ul class="typo">
-                        <li><h4>Text Field</h4>
-                            <input type='text' placeholder="Enter your email"></div>
+                        <li>
+                            <input type='text' placeholder="Enter your email"></input>
+                            <div class="copyable_code">
+                                <pre><code class="copy_content" id="button_code">code here</code></pre>
+                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                            </div> 
                         </li>
                         <li>
-                            <h4>Drop Down Selector</h4>
-                            Coming soon.
+                            Drop down selector coming soon.
+                            <div class="copyable_code">
+                                <pre><code class="copy_content" id="button_code">code here</code></pre>
+                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                            </div> 
                         </li>
                         <li>
-                            <h4>Multi-line Text Field</h4>
-                            Coming soon.
+                            Radio buttons coming soon.
+                            <div class="copyable_code">
+                                <pre><code class="copy_content" id="button_code">code here</code></pre>
+                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                            </div> 
+                        </li>
+                        <li>
+                            Multi-select buttons coming soon.
+                            <div class="copyable_code">
+                                <pre><code class="copy_content" id="button_code">code here</code></pre>
+                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                            </div> 
+                        </li>
+                        <li>
+                            Search field coming soon.
+                            <div class="copyable_code">
+                                <pre><code class="copy_content" id="button_code">code here</code></pre>
+                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                            </div> 
                         </li>
                     </ul>
                 </section>
 
                 <section id="loaders">
                     <h2>Loaders and Transitions</h2>
+                    <p>If elements require <span class="strong">any</span> loading time and it's not possible to determine the accurate progressive load time, a spinning indicator can be used. This should only be used on elements within a page, not for the loading of an entire page. Here's an example of a spinning indicator used to indicate loading of audio:</p>
                     <ul class="typo">
-                        <li><h4>Spinning Indicator</h4>
-                            Coming Soon
-                        </li>
                         <li>
-                            <h4>Skeleton Page Load</h4>
+                            Coming Soon
+                            <div class="copyable_code">
+                                <pre><code class="copy_content" id="button_code">code here</code></pre>
+                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                            </div> 
+                        </li>
+                    </ul>
+
+                    <p>Here's an example of a spinning indicator used to indicate loading of content within a section of a page:</p>
+                    <ul class="typo">
+                        <li>
+                            Coming Soon
+                            <div class="copyable_code">
+                                <pre><code class="copy_content" id="button_code">code here</code></pre>
+                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                            </div> 
+                        </li>
+                    </ul>
+
+                    <p>When loading an entire page, the impression of a quicker load time can be achieved by first loading a basic 'skeleton' of the page, using simple wireframed elements. Example:</p>
+                    <ul class="typo">
+                        <li>
                             Coming soon.
+                            <div class="copyable_code">
+                                <pre><code class="copy_content" id="button_code">code here</code></pre>
+                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                            </div> 
                         </li>
                     </ul>
                 </section>
@@ -439,7 +538,8 @@
 
                 <section id="notifications">
                     <h2>Notifications</h2>
-                    <p>Coming soon.</p>
+                    <p>Example coming soon.</p>
+                    <!-- <div class="notification">Notification here. If it contains a link it should look like <a href="">this.</a></div> -->
                 </section>
                 
             </article>
@@ -451,22 +551,39 @@
 
                  <section id="modals">
                     <h2>Modals</h2>
-                    <p>Coming soon.</p>
+                    <ul class="typo">
+                        <li>
+                            <p>Example of a mailing list signup modal coming soon.<p>
+                            <div class="copyable_code">
+                                <pre><code class="copy_content" id="button_code">code here</code></pre>
+                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                            </div> 
+                        </li>
+
+                        <li>
+                            <p>Example of a CTA modal coming soon.<p>
+                            <div class="copyable_code">
+                                <pre><code class="copy_content" id="button_code">code here</code></pre>
+                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                            </div> 
+                        </li>
+
+                    </ul>
                 </section>
             </article>
 
     <!-- ********** ASSETS SECTION ********** -->
 
-            <article id="assets">
+            <article id="more">
                 
-                <h1>Assets</h1>
+                <h1>More...</h1>
 
                 <section id="icons">
                     <h2>Icons</h2>
                     <p>We maintain a custom icon set with a consistent style that is simple, airy, and legible, serving to compliment a visual aesthetic without detracting from usability. We heavily user-test our icons to ensure that they are interpreted correctly and perceived as consistent with the brand. As our user demographic is often not tech-savvy, any icons that are not easily recognized must also be accompanied with a text label. All icons used must be inline with WNYC’s icon style in terms of consistent line thickness and rounding of edges, and they must be legible on small mobile screens.</p>
                     <p>Our library of icons are from <a href="https://thenounproject.com/" target="_blank">Noun Project</a>, <a href="http://fontawesome.io/" target="_blank">Fontawesome</a>, or they are custom designed by our team. All icons must be in SVG format.</p>
                     <p>Icons we use (this list is in progress):</p>
-                    <ul class="icons">
+                    <!-- <ul class="icons">
                         <li>
                             <img src="/includes/icons/antenna.svg" alt="antenna icon">
                             <span>antenna</span>
@@ -521,7 +638,7 @@
                             <a download href="/includes/icons/play-hollow.svg" class="download"><img src="includes/img/download-thin.svg"></a>
                             <a target="_blank" href="includes/icons/play-hollow.svg" class="link"><img src="includes/img/link.svg"></a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </section>
                 
                 <section id="kits">
