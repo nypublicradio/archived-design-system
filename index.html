@@ -19,13 +19,68 @@
     </head>
     <body id="home">
 
-        <div class="hero">  
-                <div class="logo"></div>              
-                <h1>Design System</h1>
-        </div>
+<!-- ********* MOBILE MENU ********** -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <ul class="primary">
+                <li>
+                    <a href=""><h4>Introduction</h4></a>
 
-        <div id="mobile_nav_bar">
-            mobile menu to come >
+                    <ul class="sub">
+                        <li><a href="#intro">About</a></li>
+                        <li><a href="#team">The Team</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=""><h4>Atoms</h4></a>
+
+                    <ul class="sub">
+                        <li><a href="#atoms">Grids</a></li>
+                        <li><a href="#colors">Colors</a></li>
+                        <li><a href="#hoverstates">Links and Hover States</a></li>
+                        <li><a href="#typography">Typography</a></li>
+                        <li><a href="#dates">Dates and Times</a></li>
+                        <li><a href="#buttons">Buttons</a></li>
+                        <li><a href="#inputs">Inputs</a></li>
+                        <li><a href="#loaders">Loaders and Transitions</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=""><h4>Molecules</h4></a>
+                    
+                    <ul class="sub">
+                        <li><a href="#molecules">Forms</a></li>
+                        <li><a href="#notifications">Notifications</a></li>
+                    </ul>  
+                </li>
+                <li>
+                    <a href=""><h4>Organisms</h4></a>
+                    
+                    <ul class="sub">
+                        <li><a href="#organisms">Mailing List Modals</a></li>
+                        <li><a href="#organisms">Call-To-Action Modals</a></li>
+                    </ul>  
+                </li>
+                <li>
+                    <a href=""><h4>More</h4></a>
+                    
+                    <ul class="sub">
+                        <li><a href="#icons">Icons</a></li>
+                        <li><a href="#kits">Kits and Templates</a></li>
+                        <li><a href="#media">Media</a></li>
+                    </ul>  
+                </li>
+            </ul>
+        </div>
+        <div class="modal_action">
+        <span onclick="openNav()"><h4>Menu</h4></span></div>
+
+
+<!-- ********* TESTING SIDEBAR ********** -->
+
+        <div class="hero">  
+            <div class="logo"></div>              
+            <h1>Design System</h1>
         </div>
 
         <div id="nav_bar">
@@ -60,7 +115,8 @@
             <li>
               <a href=""><h4>Organisms</h4></a>
               <ul class="sub">
-                <li><a href="#organisms">Modals</a></li>
+                    <li><a href="#organisms">Mailing List Modals</a></li>
+                    <li><a href="#organisms">Call-To-Action Modals</a></li>
               </ul>  
             </li>
             <li>
@@ -107,11 +163,15 @@
 
                 <section id="grid">
                     <h2>Grids</h2>
+                    
                     <div class="row">
+                        <h4>2 column:</h4>
                         <div class="col col1">Row 1: Col 1</div>
                         <div class="col col2">Row 1: Col 2</div>
                     </div>
-                    <div class="row row2">
+
+                    <div class="row row2">                    
+                        <h4>1 column:</h4>
                         <div class="col col3">Row 2: Col 1</div>
                     </div>
                 </section>
@@ -191,41 +251,6 @@
                         </li>
                     </ul>
 
-                    <h4>Data News Color Palettes (in progress)</h4>
-                    <ul class="swatches">
-                        <li>
-                            <div class="swatch wnyc-red background"></div>
-                            <ul>
-                                <li class="copyable" data-clipboard-target="#copy-wnyc-red" id="copy-wnyc-red">.wnyc-red</li>
-                                <li class="copyable" data-clipboard-target="#copy-wnyc-red-hex" id="copy-wnyc-red-hex">#DE1E3D</li>
-                                <li class="copyable" data-clipboard-target="#copy-wnyc-red-rgba" id="copy-wnyc-red-rgba">rgba(222,30,61,1)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="swatch grey-blue background"></div>
-                            <ul>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue" id="copy-grey-blue">.grey-blue</li>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue-hex" id="copy-grey-blue-hex">#201F27</li>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue-rgba" id="copy-grey-blue-rgba">rgba(32,31,39,1)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="swatch grey-blue background"></div>
-                            <ul>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue" id="copy-grey-blue">.grey-blue</li>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue-hex" id="copy-grey-blue-hex">#201F27</li>
-                                <li class="copyable" data-clipboard-target="#copy-grey-blue-rgba" id="copy-grey-blue-rgba">rgba(32,31,39,1)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="swatch light background"></div>
-                            <ul>
-                                <li class="copyable" data-clipboard-target="#copy-light" id="copy-light">.light</li>
-                                <li class="copyable" data-clipboard-target="#copy-light-hex" id="copy-light-hex">#F1F1F1</li>
-                                <li class="copyable" data-clipboard-target="#copy-light-rgba" id="copy-light-rgba">rgba(241,241,241,1)</li>
-                            </ul>
-                        </li>
-                    </ul>
 
 
                 </section>
@@ -412,7 +437,7 @@
                 
                 <section id="buttons">
                     <h2>Buttons</h2>
-                    <p>We have a variety of buttons depending on the emphasize desired for the call to action.</p>
+                    <p>We have a variety of buttons depending on the emphasis desired for the call to action.</p>
                     <ul class="typo">
                         <li>
                             <button>button here</button>
@@ -492,12 +517,7 @@
                     <h2>Loaders and Transitions</h2>
                     <p>If elements require <span class="strong">any</span> loading time and it's not possible to determine the accurate progressive load time, a spinning indicator can be used. This should only be used on elements within a page, not for the loading of an entire page. Here's an example of a spinning indicator used to indicate loading of audio:</p>
                     <ul class="typo">
-                        <li>
-                            Coming Soon
-                            <div class="copyable_code">
-                                <pre><code class="copy_content" id="button_code">code here</code></pre>
-                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                            </div> 
+                        <li>Coming soon
                         </li>
                     </ul>
 
@@ -550,7 +570,40 @@
                 <h1>Organisms</h1>
 
                  <section id="modals">
-                    <h2>Modals</h2>
+
+                    <h2>Call-To-Action Modals</h2>
+                    <ul class="typo">
+                        <li>
+                            <p>A simple call-to-action modal that can be used for a variety of actions. It can be placed within a single column or stretched to fit the width of the page. The colors are customizable to match the brand.<p>
+                            <div class="modal">
+                                <h2>Short title goes here</h2>
+                                <p>Explanatory text goes here. These types of modals can be used for buying tickets, taking quizzes, and more.</p>
+                                <button class="emphasis">Call to action</button>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <p>The call-to-action modal can also have a customizable image in the background. If the modal stretches across the width of the page, the background image must either be a repeating pattern or it must fade to a solid color on the right and left sides.<p>
+                            <div class="modal with_image">
+                                <h2>Short title goes here</h2>
+                                <p>Explanatory text goes here. These types of modals can be used for buying tickets, taking quizzes, and more.</p>
+                                <button class="dark-blue">Call to action</button>
+                                <div class="gradient"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <p>The background image can also move as you scroll down the page, as shown here. This works best when using a repeating pattern as the background:<p>
+                            <div class="modal with_image fixed">
+                                <h2>Short title goes here</h2>
+                                <p>Explanatory text goes here. These types of modals can be used for buying tickets, taking quizzes, and more.</p>
+                                <button class="dark-blue">Call to action</button>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h2>Mailing List Modals</h2>
                     <ul class="typo">
                         <li>
                             <p>Example of a mailing list signup modal coming soon.<p>
@@ -559,15 +612,6 @@
                                 <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
                             </div> 
                         </li>
-
-                        <li>
-                            <p>Example of a CTA modal coming soon.<p>
-                            <div class="copyable_code">
-                                <pre><code class="copy_content" id="button_code">code here</code></pre>
-                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                            </div> 
-                        </li>
-
                     </ul>
                 </section>
             </article>
@@ -583,7 +627,7 @@
                     <p>We maintain a custom icon set with a consistent style that is simple, airy, and legible, serving to compliment a visual aesthetic without detracting from usability. We heavily user-test our icons to ensure that they are interpreted correctly and perceived as consistent with the brand. As our user demographic is often not tech-savvy, any icons that are not easily recognized must also be accompanied with a text label. All icons used must be inline with WNYC’s icon style in terms of consistent line thickness and rounding of edges, and they must be legible on small mobile screens.</p>
                     <p>Our library of icons are from <a href="https://thenounproject.com/" target="_blank">Noun Project</a>, <a href="http://fontawesome.io/" target="_blank">Fontawesome</a>, or they are custom designed by our team. All icons must be in SVG format.</p>
                     <p>Icons we use (this list is in progress):</p>
-                    <!-- <ul class="icons">
+                    <ul class="icons">
                         <li>
                             <img src="/includes/icons/antenna.svg" alt="antenna icon">
                             <span>antenna</span>
@@ -638,7 +682,7 @@
                             <a download href="/includes/icons/play-hollow.svg" class="download"><img src="includes/img/download-thin.svg"></a>
                             <a target="_blank" href="includes/icons/play-hollow.svg" class="link"><img src="includes/img/link.svg"></a>
                         </li>
-                    </ul> -->
+                    </ul>
                 </section>
                 
                 <section id="kits">
