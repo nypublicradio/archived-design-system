@@ -403,7 +403,7 @@ pre {
     color: #fff;
     font-weight: 600;
     margin: 20px 0;
-    padding: 30px 40px;
+    padding: 20px 20px 30px 20px;
 }
 
 .modal p {
@@ -457,6 +457,10 @@ pre {
 
     .logo {
         margin-bottom: 45px;
+    }
+
+    .modal {
+        padding: 30px 40px;
     }
 
 
@@ -999,9 +1003,9 @@ ul.primary li:hover > a{
 .icons li {
     width: 50%;
     box-sizing:border-box;
-    padding: 10px 10px;
+    padding: 15px 0px;
     border-radius: 6px;
-    font-size: 0.9em;
+    font-size: 12px;
     white-space:nowrap;
 }
     .icons li:hover {
@@ -1064,12 +1068,12 @@ ul.primary li:hover > a{
    ========================================================================== */
 
 ul.swatches {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content:space-between;
-            justify-content: space-between;
-    -webkit-flex-wrap:wrap;
-            flex-wrap:wrap;
+    display: block;
+    margin-top: 0;
+}
+
+.swatches ul {
+    margin-top: 0;
 }
 
 ul.swatches li {
@@ -1081,7 +1085,7 @@ ul.swatches > li {
     display: block;
     border: 1px solid #ddd;
     margin-bottom: 20px;
-    width: 45%;
+    width: 100%;
     clear: both;
 }
 
@@ -1171,13 +1175,32 @@ ul.swatches.swatches_micro > li:hover > ul {
     display:block;
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
+
+    ul.swatches {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content:space-between;
+            justify-content: space-between;
+    -webkit-flex-wrap:wrap;
+            flex-wrap:wrap;
+}
+
+ul.swatches > li {
+    position: relative;
+    display: block;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+    width: 45%;
+    clear: both;
+}
+
     ul.swatches > li {
         width:33%;
     }
 }
 
-@media only screen and (min-width:968px) {
+@media only screen and (min-width: 968px) {
     
     ul.swatches {
         margin: 0 0 20px 0;
