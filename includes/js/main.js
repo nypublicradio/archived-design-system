@@ -7,14 +7,31 @@ $(document).ready(function() {
       console.log($(window).scrollTop())
     if ($(window).scrollTop() > 397) {
       $('#nav_bar').addClass('nav_bar-fixed');
-      $('#mobile_nav_bar').addClass('mobile_navbar-fixed');
     }
     if ($(window).scrollTop() < 397) {
       $('#nav_bar').removeClass('nav_bar-fixed');
-      $('#mobile_nav_bar').removeClass('mobile_navbarfixed');
+    }
+
+    if ($(window).scrollTop() > 222) {
+      $('#mobile_nav_bar').addClass('mobile_nav_bar-fixed');
+    }
+    if ($(window).scrollTop() < 222) {
+      $('#mobile_nav_bar').removeClass('mobile_nav_bar-fixed');
     }
   });
 });
+
+
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
 
 $(function() {
     

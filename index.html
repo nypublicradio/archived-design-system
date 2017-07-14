@@ -19,13 +19,67 @@
     </head>
     <body id="home">
 
-        <div class="hero">  
-                <div class="logo"></div>              
-                <h1>Design System</h1>
-        </div>
+<!-- ********* MOBILE MENU ********** -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <ul class="primary">
+                <li>
+                    <a href=""><h4>Introduction</h4></a>
 
-        <div id="mobile_nav_bar">
-            mobile menu to come >
+                    <ul class="sub">
+                        <li><a href="#intro">About</a></li>
+                        <li><a href="#team">The Team</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=""><h4>Atoms</h4></a>
+
+                    <ul class="sub">
+                        <li><a href="#atoms">Grids</a></li>
+                        <li><a href="#colors">Colors</a></li>
+                        <li><a href="#hoverstates">Links and Hover States</a></li>
+                        <li><a href="#typography">Typography</a></li>
+                        <li><a href="#dates">Dates and Times</a></li>
+                        <li><a href="#buttons">Buttons</a></li>
+                        <li><a href="#inputs">Inputs</a></li>
+                        <li><a href="#loaders">Loaders and Transitions</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=""><h4>Molecules</h4></a>
+                    
+                    <ul class="sub">
+                        <li><a href="#molecules">Forms</a></li>
+                        <li><a href="#notifications">Notifications</a></li>
+                    </ul>  
+                </li>
+                <li>
+                    <a href=""><h4>Organisms</h4></a>
+                    
+                    <ul class="sub">
+                        <li><a href="#organisms">Modals</a></li>
+                    </ul>  
+                </li>
+                <li>
+                    <a href=""><h4>More</h4></a>
+                    
+                    <ul class="sub">
+                        <li><a href="#icons">Icons</a></li>
+                        <li><a href="#kits">Kits and Templates</a></li>
+                        <li><a href="#media">Media</a></li>
+                    </ul>  
+                </li>
+            </ul>
+        </div>
+<div class="modal_action">
+<span onclick="openNav()"><h4>Menu</h4></span></div>
+
+
+<!-- ********* TESTING SIDEBAR ********** -->
+
+        <div class="hero">  
+            <div class="logo"></div>              
+            <h1>Design System</h1>
         </div>
 
         <div id="nav_bar">
@@ -412,7 +466,7 @@
                 
                 <section id="buttons">
                     <h2>Buttons</h2>
-                    <p>We have a variety of buttons depending on the emphasize desired for the call to action.</p>
+                    <p>We have a variety of buttons depending on the emphasis desired for the call to action.</p>
                     <ul class="typo">
                         <li>
                             <button>button here</button>
