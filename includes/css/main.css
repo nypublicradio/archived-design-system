@@ -119,8 +119,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 p.list {
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 26px;
 }
 
 .strong {
@@ -140,7 +140,7 @@ p.list {
 }
 
 a, a:active {
-    color: #0073d5;
+    color: #128cf4;
     text-decoration: none;
     border-bottom: 2px solid transparent;
     transition: all 0.2s ease;
@@ -160,10 +160,33 @@ h2, article h2 {
 }
 
 h3, article h3 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
     font-weight: 600;
     margin-bottom: 10px;
+}
+
+h3 a, a:active {
+    color: #333;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+h3 a:hover {
+    color: #128cf4;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+h3.on_color a, a:active {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+h3.on_color a:hover {
+    opacity: 1;
+    color: #fff;
+    text-decoration: none;
 }
 
 h4, article h4 {
@@ -180,11 +203,33 @@ p {
     line-height: 28px;
 }
 
-p.on_color {
+.on_color {
+    background: #333;
+    padding: 20px;
     font-weight: 600;
+    color: #fff;
 }
 
-@media only screen and (min-width:768px) {
+.on_color a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.on_color a:hover {
+    opacity: .7;
+    border-bottom: 1px solid #fff;
+}
+
+.desktop {
+    display: none;
+}
+
+.mobile_code {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+@media only screen and (min-width: 768px) {
     .small_print {
         font-size: 14px;
         line-height: 26px;
@@ -196,7 +241,7 @@ p.on_color {
     }
 
     a:hover {
-        border-bottom: 2px solid #0073d5;
+        border-bottom: 2px solid #128cf4;
     }
 
     h1, article h1 {
@@ -205,7 +250,7 @@ p.on_color {
         margin-bottom: 15px;
     }
 
-    h2, h2 {
+    h2, article h2 {
         font-size: 32px;
         line-height: 44px;
         margin-bottom: 15px;
@@ -230,6 +275,18 @@ p.on_color {
     p {
         font-size: 18px;
         line-height: 30px;
+    }
+
+    p.list {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .desktop {
+        display: block;
+    }
+
+    .mobile_code {
+        display: none;
     }
 
 }
@@ -266,12 +323,12 @@ p.on_color {
     font-weight: 600;
 }
 
-.wnyc-dark-blue {
-    color: #1068b2;
+.wnyc-blue {
+    color: #128cf4;
 }
 
-.wnyc-dark-blue.background {
-    background-color: #1068b2;
+.wnyc-blue.background {
+    background-color: #128cf4;
     color: white;
     font-weight: 600;
 }
@@ -396,6 +453,18 @@ pre {
     background-size: 248px 100px;
 }
 
+.test_img {
+    height: 150px;
+    width: 150px;
+    background: #000 url('../img/cubes.png') 
+}
+
+a:hover img, a:active img {
+    opacity: .7;
+    text-decoration: none;
+    border-bottom: none;
+}
+
 .modal {
     max-width: 100%;
     background: #0eb8ba;
@@ -409,6 +478,18 @@ pre {
 .modal p {
     margin-top: 5px;
     padding: 0;
+}
+
+.modal_signup {
+    max-width: 100%;
+    background: #0eb8ba;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    margin: 0px 0;
+    padding: 25px 20px 30px 20px;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-align: center;
 }
 
 .with_image {
@@ -524,6 +605,26 @@ input[type=text] {
     font-size: 18px;
 }
 
+input[type=text].email_modal {
+    background: rgba(255,255,255,.4);
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+input[type=radio] {
+    -webkit-appearance: radio;
+    box-sizing: border-box;
+    background-color: initial;
+    margin: 3px 0.5ex;
+    padding: initial;
+    border: initial;
+}
+
+.email_modal::-webkit-input-placeholder {
+    color: #fff;
+}
+
 .quote {
     padding: 20px 0px;
     max-width: 100%;
@@ -556,7 +657,7 @@ input[type=text] {
     letter-spacing: 2px;
     font-size: 0.8rem;
     font-weight: 600;
-    color: #627FDD;
+    color: #128cf4;
     box-shadow: none;
 }
 .btn_copy_code:hover {
@@ -593,22 +694,49 @@ input[type=text] {
 
 button, 
 input[type=button] {
-    color: #fff;
+    width: auto;
     border-radius: 50px;
-    font-weight: 600;
-    box-sizing: border-box;
-    padding: 12px 25px;
-    -webkit-appearance:none;
-    background-color: #128cf4;
-    border-radius: 30px;
-    border: none;
+    font-weight: 400;
+    padding: 8px 25px;
     font-size: 18px;
+    border: 2px solid;
+    border-color: rgba(241,241,241,1);
+    background: none;
+    line-height: 34px;
+    cursor: pointer;
+    color: #128cf4;
+    transition: opacity 250ms,background-color 250ms,border-color 250ms,color 250ms;
 }
 
 button.emphasis {
+    background: #128cf4;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+
+button.small{
+    font-size: 14px;
+    line-height: 34px;
+    padding: 3px 20px;
+    cursor: pointer;
+}
+
+
+button.duration {
+    font-size: 12px;
+}
+
+button.dark-blue {
+    width: 100%;
+}
+
+button.black {
     background: #000;
     color: #fff;
+    width: 100%;
 }
+
 
 @media only screen and (min-width:768px) {
     
@@ -622,11 +750,29 @@ button.emphasis {
     }
 
     .copyable_code {
-/*        display: block;*/
-        display: none;
+        display: block;
+        /*display: none;*/
         position: relative;
         margin: 30px 0;
-}
+    }
+
+    button, input[type=button] {
+        width: auto;
+    }
+
+    input[type=text].email_modal {
+        margin: 0 15px 0 0;
+    }
+
+    button.dark-blue {
+        width: auto;
+    }
+
+    button.black {
+        background: #000;
+        color: #fff;
+        width: auto;
+    }
 
 }
 
@@ -634,9 +780,6 @@ button.emphasis {
 /* ==========================================================================
    Navigation
    ========================================================================== */
-
-
-/*****TESTING*****/
 
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -653,14 +796,14 @@ button.emphasis {
 }
 
 /* The navigation menu links */
-.sidenav a {
+.sidenav a , .sidenav a:hover{
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
     display: block;
-    transition: 0.3s
+    background-color: #000;
+    transition: 0.3s;
 }
-
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
@@ -671,12 +814,9 @@ button.emphasis {
     font-size: 36px;
 }
 
-
 #nav_bar {
     display: none;
 }
-
-
 
 .btn_nav {
     z-index: 805;
@@ -712,6 +852,8 @@ ul.typo {
     padding: 0px;
     float: none;
     margin: 40px 0 50px 0px;
+    border-left: 4px solid #f1f1f1;
+    padding-left: 15px;
 }
 
 .typo li:first-child {
@@ -804,13 +946,13 @@ ul:after {
 }
 
 #nav_bar a:hover {
-    border-bottom: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 
 ul h4 {
-    margin: 0;
-    padding: 0;
-    font-weight: 700;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
 }
 
 ul a, ul a:active {
@@ -821,10 +963,10 @@ ul.primary li a {
   display: block;
   padding: 12px 0px 0px 20px;
   text-decoration: none;
-  color: #fff;
+  color: #fff; 
 }
 
-ul.primary li a:hover {  
+ul.primary li a:hover, ul.primary li a:active {  
   color: #000;
 }
 
@@ -863,18 +1005,18 @@ ul.sub li a:hover {
 /* sub display*/
 ul.primary li:hover ul {
   display: block;
-  background: #fff;
+  background: #fff; 
 }
 
-/* keeps the tab background white */
-ul.primary li:hover a {
-  background: #fff;
-  color: #666;
+/*mobile menu options*/
+ul.primary li:hover a, ul.primary li:hover a:hover {
   text-shadow: none;
+  color: #fff;
+  background: #000;
 }
 
 ul.primary li:hover > a{
-  color: #000;
+  color: #fff;
 } 
 
 
@@ -883,7 +1025,7 @@ ul.primary li:hover > a{
  li {
     float: none;
   }
-  
+
   ul.sub {
     display: block;  
     position: static;
@@ -940,7 +1082,7 @@ ul.primary li:hover > a{
     }
 
     .typo li {
-        padding: 0px 0px 0px 40px;
+        padding: 0px 0px 0px 30px;
         margin: 80px 0 80px 0px;
         border-left: 4px solid #f1f1f1;
     }
@@ -961,15 +1103,38 @@ ul.primary li:hover > a{
         margin: 0;
     }
 
+
+    li a, li a:active, li a:hover {
+        text-decoration: none;
+        border-bottom: 1px solid #fff;
+    }  
+
     ul.primary li a {
         padding: 25px 30px 10px 30px;
         border-top: none;
         color: #333;
     }
 
-    ul.sub li a {
-        border-bottom: 1px solid #f1f1f1;
-        padding: 15px 15px;
+    ul.primary li:hover a  {
+       background: #fff;
+       color: #333;
+       border-bottom: 1px solid white;
+       text-decoration: none;
+    }
+
+    ul.primary li:hover a:hover  {
+       background: #f1f1f1;
+       color: #000;
+    }
+
+    ul.sub li a, ul.sub li a:hover, ul.sub li a:active {
+        padding: 15px 30px;
+        text-decoration: none;
+    }
+
+    ul.sub li a:hover {
+        text-decoration: none;
+        padding-left: 35px;
     }
 
     #overlay_mobile {
@@ -977,7 +1142,6 @@ ul.primary li:hover > a{
     }
 
     .sidenav {
-     background: green;
         display: none;
     }
 
