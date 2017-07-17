@@ -26,7 +26,7 @@
                 <li>
                     <a href=""><h4>Introduction</h4></a>
 
-                    <ul class="sub">
+                    <ul class="sub" onclick="closeNav()">
                         <li><a href="#intro">About</a></li>
                         <li><a href="#team">The Team</a></li>
                     </ul>
@@ -48,7 +48,7 @@
                 <li>
                     <a href=""><h4>Molecules</h4></a>
                     
-                    <ul class="sub">
+                    <ul class="sub" onclick="closeNav()">
                         <li><a href="#molecules">Forms</a></li>
                         <li><a href="#notifications">Notifications</a></li>
                     </ul>  
@@ -56,7 +56,7 @@
                 <li>
                     <a href=""><h4>Organisms</h4></a>
                     
-                    <ul class="sub">
+                    <ul class="sub" onclick="closeNav()">
                         <li><a href="#organisms">Mailing List Modals</a></li>
                         <li><a href="#organisms">Call-To-Action Modals</a></li>
                     </ul>  
@@ -64,7 +64,7 @@
                 <li>
                     <a href=""><h4>More</h4></a>
                     
-                    <ul class="sub">
+                    <ul class="sub" onclick="closeNav()">
                         <li><a href="#icons">Icons</a></li>
                         <li><a href="#kits">Kits and Templates</a></li>
                         <li><a href="#media">Media</a></li>
@@ -194,15 +194,15 @@
                             <ul>
                                 <li class="copyable" data-clipboard-target="#copy-dark-red" id="copy-dark-red">.dark-red</li>
                                 <li class="copyable" data-clipboard-target="#copy-dark-red-hex" id="copy-dark-red-hex">#52000A</li>
-                                <li class="copyable" data-clipboard-target="#copy-dark-red-rgba" id="copy-dark-red-rgba">rgba(82, 0, 10)</li>
+                                <li class="copyable" data-clipboard-target="#copy-dark-red-rgba" id="copy-dark-red-rgba">rgba(82,0,10,1)</li>
                             </ul>
                         </li>
                         <li>
-                            <div class="swatch wnyc-dark-blue background"></div>
+                            <div class="swatch wnyc-blue background"></div>
                             <ul>
-                                <li class="copyable" data-clipboard-target="#copy-wnyc-dark-blue" id="copy-wnyc-dark-blue">.wnyc-dark-blue</li>
-                                <li class="copyable" data-clipboard-target="#copy-wnyc-dark-blue-hex" id="copy-wnyc-dark-blue-hex">#1068b2</li>
-                                <li class="copyable" data-clipboard-target="#copy-wnyc-dark-blue-rgba" id="copy-wnyc-dark-blue-rgba">rgba(32,31,39,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-wnyc-dark-blue" id="copy-wnyc-blue">.wnyc-blue</li>
+                                <li class="copyable" data-clipboard-target="#copy-wnyc-dark-blue-hex" id="copy-wnyc-blue-hex">#128cf4</li>
+                                <li class="copyable" data-clipboard-target="#copy-wnyc-dark-blue-rgba" id="copy-wnyc-blue-rgba">rgba(18,140,244,1)</li>
                             </ul>
                         </li>
                         <li>
@@ -210,7 +210,7 @@
                             <ul>
                                 <li class="copyable" data-clipboard-target="#copy-light" id="copy-light">.light</li>
                                 <li class="copyable" data-clipboard-target="#copy-light-hex" id="copy-light-hex">#F1F1F1</li>
-                                <li class="copyable" data-clipboard-target="#copy-light-rgba" id="copy-light-rgba">rgba(16, 104, 178)</li>
+                                <li class="copyable" data-clipboard-target="#copy-light-rgba" id="copy-light-rgba">rgba(241,241,241,1)</li>
                             </ul>
                         </li>
                     </ul>
@@ -230,7 +230,7 @@
                             <ul>
                                 <li class="copyable" data-clipboard-target="#copy-wqxr-dark-blue" id="copy-wqxr-dark-blue">.wqxr-dark-blue</li>
                                 <li class="copyable" data-clipboard-target="#copy-wqxr-dark-blue-hex" id="copy-wqxr-dark-blue-hex">#1164b4</li>
-                                <li class="copyable" data-clipboard-target="#copy-wqxr-dark-blue-rgba" id="copy-wqxr-dark-blue-rgba">rgba(0,175,255,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-wqxr-dark-blue-rgba" id="copy-wqxr-dark-blue-rgba">rgba(17,100,180,1)</li>
                             </ul>
                         </li>
                         <li>
@@ -263,92 +263,162 @@
                     <p>Our typography styles:</p>
 
                     <ul class="typo">
-                        <li><h1>Heading Level One</h1>
-                            <h2>Heading Level Two</h2>
-                            <h3>Heading Level Three</h3>
-                            <h4>Heading Level Three</h4>
-                        <div class="copyable_code">
+                        <li>
+                            <h1>Heading Level One</h1>
+                              
+                              <div class="copyable_code desktop">
                             <pre><code class="copy_content" id="button_code">h1 {
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 45px;
   line-height: 55px;
-  margin-bottom: 15px;
 }</code></pre>
-                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+<button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
                         </div>
 
-                        <div class="copyable_code">
+                            <p class="mobile_code">h1 {</br>
+                                font-family: 'Open Sans', sans-serif;</br>
+                                font-weight: 400;</br>
+                                font-size: 32px;</br>
+                                line-height: 42px;</br>
+                            }</p>
+                        </li>
+                        <li>
+                            <h2>Heading Level Two</h2>
+
+                            <div class="copyable_code desktop">
                             <pre><code class="copy_content" id="button_code">h2 {
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  margin-bottom: 15px;
 }</code></pre>
-                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-
+<button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
                         </div>
 
-                        <div class="copyable_code">
-                            <pre><code class="copy_content" id="button_code">h3 {
+                            <p class="mobile_code">h2 {</br>
+                                font-family: 'Open Sans', sans-serif;</br>
+                                font-weight: 400;</br>
+                                font-size: 24px;</br>
+                                line-height: 36px;</br>
+                            }</p>
+
+                        </li>
+
+                        <li>
+                            <h3>Heading Level Three</h3>
+
+                            <div class="copyable_code desktop">
+                            <pre><code class="copy_content" id="button_code">h1 {
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
-  margin-bottom: 15px;
 }</code></pre>
-                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+<button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
                         </div>
+                            
+                             <p class="mobile_code">h3 {</br>
+                                font-family: 'Open Sans', sans-serif;</br>
+                                font-weight: 400;</br>
+                                font-size: 20px;</br>
+                                line-height: 30px;</br>
+                            }</p>
 
-                        <div class="copyable_code">
-                            <pre><code class="copy_content" id="button_code">h4 {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-}</code></pre>
-                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-
-                        </div>
-                    </div>
                         </li>
                         <li>
-                            <p>This is normal paragraph text. If part of the text needs to be emphasized, it should <span class="strong">be bolded</span>. This is what a <a href="">link</a> should look like within a normal paragraph.</p>
+                            <h4>Heading Level Four</h4>
 
-                                                    <div class="copyable_code">
+<div class="copyable_code desktop">
+                            <pre><code class="copy_content" id="button_code">h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  line-height: 24px;
+}</code></pre>
+<button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                        </div>
+
+                            <p class="mobile_code">h3 {</br>
+                                font-family: 'Open Sans', sans-serif;</br>
+                                font-weight: 700;</br>
+                                text-transform: uppercase;</br>
+                                letter-spacing: 2px;</br>
+                                font-size: 12px;</br>
+                                line-height: 22px;</br>
+                            }</p>
+
+                        </li>
+                        
+
+                        <li>
+                            <p>This is normal paragraph text. If part of the text needs to be emphasized, it should <span class="strong">be bolded</span>. This is what a <a href="">link</a> should look like within a normal paragraph.</p> 
+                            <div class="copyable_code desktop">
                             <pre><code class="copy_content" id="button_code">p {
-  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
 }</code></pre>
-                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+<button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
                         </div>
+
+                            <p class="mobile_code">p {</br>
+                                    font-family: 'Open Sans', sans-serif;</br>
+                                    font-weight: 400;</br>
+                                    font-size: 16px;</br>
+                                    line-height: 28px;</br>
+                                }
+                            </p>
+
                         </li>
+
                         <li>
                             <p class="list">This is smaller paragraph text. This is typically used in list views.</p>
-
-                                                    <div class="copyable_code">
-                            <pre><code class="copy_content" id="button_code">p list{
-  font-weight: 600;
+                              
+                              <div class="copyable_code desktop">
+                            <pre><code class="copy_content" id="button_code">p.list {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 28px;
 }</code></pre>
-                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                        </div>
+<button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                        </div> 
+
+                            <p class="mobile_code">p.list {</br>
+                                    font-family: 'Open Sans', sans-serif;</br>
+                                    font-weight: 400;</br>
+                                    font-size: 14px;</br>
+                                    line-height: 26px;</br>
+                                }
+                            </p>
                         </li>
+
                         <li>
                             <div class="small_print">This is small print. It's used for legalese text, metadata, or other info that is important but not primary to the page. This is what <a href="">a link should look like</a> here.</div>
 
-                                                    <div class="copyable_code">
-                            <pre><code class="copy_content" id="button_code">.small_print {
-  font-weight: 600;
+                            <div class="copyable_code desktop">
+                            <pre><code class="copy_content" id="button_code">small_print {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 26px;
-  color: #999;
+  line-height: 22px;
 }</code></pre>
-                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                        </div>
+<button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                        </div> 
+
+                            <p class="mobile_code">.small_print {</br>
+                                    font-family: 'Open Sans', sans-serif;</br>
+                                    font-weight: 400;</br>
+                                    font-size: 12px;</br>
+                                    line-height: 22px;</br>
+                                }
+                            </p>
                         </li>
+
                         <li>
                             <div class="quote">
                                 <h2>"This is how we display a quote. The quote should be no more than 120 characters in length, including spaces."</h2>
@@ -366,6 +436,16 @@
 }</code></pre>
                             <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
                         </div>
+
+                            <p class="mobile_code">.quote {</br>
+                                    max-width: 100%;</br>
+                                    text-align: center;</br>
+                                    margin: 10px 0;</br>
+                                    padding: 20px 0px;</br>
+                                    border-top: 4px solid #f1f1f1;</br>
+                                    border-bottom: 4px solid #f1f1f1;</br>
+                                }
+                            </p>
 
                         </li>
                         <li>
@@ -401,25 +481,29 @@
                             <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
                             </div>
                         </li> 
-                        <li>
-                            <div class="example wnyc-red background">
-                                <p class="on_color">Text used on a color background</p>
-                            </div> 
-
-                            <div class="copyable_code">
-                            <pre><code class="copy_content" id="button_code">p.on_color {
-  font-weight: 600;
-}</code></pre>
-                            <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                            </div> 
-                        </li>
                     </ul>         
                 </section>  
 
 
                 <section id="hoverstates">
                     <h2>Links and Hover States</h2>
-                    <p>Coming soon.</p>
+                    <ul class="typo">
+                        <li>
+                            <h3><a href="">This is what a header looks like, when it's a link</a></h3>
+                            <h3 class="on_color"><a href="">This is what a header looks like, when it's a link on a dark background.</a></h3>
+                        </li>
+                        <li>
+                            <p>This is what a <a href="">link looks like</a>, when it's in a paragraph.</a></p>
+                            <p class="on_color">This is what a <a href="">link looks like</a>, when it's in a paragraph on a dark background.</a></p>
+                        </li>
+                        <li>
+                            <p class="small_print">This is what a <a href="">link looks like</a>, when it's in small print.</a></p>
+                            <p class="small_print on_color">This is what a <a href="">link looks like</a>, when it's in small print on a dark background.</a></p>
+                        </li>
+<!--                         <li>
+                            <a href=""><img src="../includes/img/cubes.png"></img></a>
+                        </li> -->
+                    </ul>
                 </section>     
 
                 <section id="dates">
@@ -440,33 +524,24 @@
                     <p>We have a variety of buttons depending on the emphasis desired for the call to action.</p>
                     <ul class="typo">
                         <li>
-                            <button>button here</button>
-                            <div class="copyable_code">
-                                <pre><code class="copy_content" id="button_code">code here</code></pre>
-                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                            </div> 
+                            <p>With emphasis, big:</p>
+                            <button class="emphasis">Listen <span class="duration">9 min</span></button>
                         </li>
                         <li>
-                            <button>button here</button>
-                            <div class="copyable_code">
-                                <pre><code class="copy_content" id="button_code">code here</code></pre>
-                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                            </div> 
+                            <p>With emphasis, small:</p>
+                            <button class="emphasis small">Donate to the show</button>
+                        </li>
+
+                        <li>
+                            <p>No emphasis, big:</p>
+                            <button>View more options</button>
                         </li>
                         <li>
-                            <button>button here</button>
-                            <div class="copyable_code">
-                                <pre><code class="copy_content" id="button_code">code here</code></pre>
-                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                            </div> 
+                            <p>No emphasis, small:</p>
+                            <button class="small">Sign up for the newsletter</button>
                         </li>
-                        <li>
-                            <button>button here</button>
-                            <div class="copyable_code">
-                                <pre><code class="copy_content" id="button_code">code here</code></pre>
-                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                            </div> 
-                        </li>
+                        
+                        
         
                 </section>
 
@@ -477,38 +552,19 @@
                     <ul class="typo">
                         <li>
                             <input type='text' placeholder="Enter your email"></input>
-                            <div class="copyable_code">
-                                <pre><code class="copy_content" id="button_code">code here</code></pre>
-                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                            </div> 
                         </li>
                         <li>
                             Drop down selector coming soon.
-                            <div class="copyable_code">
-                                <pre><code class="copy_content" id="button_code">code here</code></pre>
-                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                            </div> 
                         </li>
                         <li>
                             Radio buttons coming soon.
-                            <div class="copyable_code">
-                                <pre><code class="copy_content" id="button_code">code here</code></pre>
-                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                            </div> 
+                            <!-- <input type='radio' placeholder="Enter your email">Option 1</input> -->
                         </li>
                         <li>
                             Multi-select buttons coming soon.
-                            <div class="copyable_code">
-                                <pre><code class="copy_content" id="button_code">code here</code></pre>
-                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                            </div> 
                         </li>
                         <li>
                             Search field coming soon.
-                            <div class="copyable_code">
-                                <pre><code class="copy_content" id="button_code">code here</code></pre>
-                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                            </div> 
                         </li>
                     </ul>
                 </section>
@@ -525,10 +581,6 @@
                     <ul class="typo">
                         <li>
                             Coming Soon
-                            <div class="copyable_code">
-                                <pre><code class="copy_content" id="button_code">code here</code></pre>
-                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                            </div> 
                         </li>
                     </ul>
 
@@ -536,10 +588,6 @@
                     <ul class="typo">
                         <li>
                             Coming soon.
-                            <div class="copyable_code">
-                                <pre><code class="copy_content" id="button_code">code here</code></pre>
-                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                            </div> 
                         </li>
                     </ul>
                 </section>
@@ -578,7 +626,7 @@
                             <div class="modal">
                                 <h2>Short title goes here</h2>
                                 <p>Explanatory text goes here. These types of modals can be used for buying tickets, taking quizzes, and more.</p>
-                                <button class="emphasis">Call to action</button>
+                                <button class="emphasis black">Call to action</button>
                             </div>
                         </li>
 
@@ -588,17 +636,17 @@
                             <div class="modal with_image">
                                 <h2>Short title goes here</h2>
                                 <p>Explanatory text goes here. These types of modals can be used for buying tickets, taking quizzes, and more.</p>
-                                <button class="dark-blue">Call to action</button>
+                                <button class="emphasis dark-blue">Call to action</button>
                                 <div class="gradient"></div>
                             </div>
                         </li>
 
-                        <li>
+                        <li class="desktop">
                             <p>The background image can also move as you scroll down the page, as shown here. This works best when using a repeating pattern as the background:<p>
                             <div class="modal with_image fixed">
                                 <h2>Short title goes here</h2>
                                 <p>Explanatory text goes here. These types of modals can be used for buying tickets, taking quizzes, and more.</p>
-                                <button class="dark-blue">Call to action</button>
+                                <button class="emphasis dark-blue">Call to action</button>
                             </div>
                         </li>
                     </ul>
@@ -606,11 +654,14 @@
                     <h2>Mailing List Modals</h2>
                     <ul class="typo">
                         <li>
-                            <p>Example of a mailing list signup modal coming soon.<p>
-                            <div class="copyable_code">
-                                <pre><code class="copy_content" id="button_code">code here</code></pre>
-                                <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                            </div> 
+                            <p>The colors are customizable to match the brand, and relevant social links can be added at the bottom.<p>
+                            <div class="modal_signup">
+                                <h2>Stay connected with us</h2>
+                                 <input type='text' placeholder="Enter your email" class="email_modal"></input> <button class="emphasis black">Subscribe</button> 
+                            </div>
+                            <div class="modal_signup">
+                                [social links here]
+                            </div>
                         </li>
                     </ul>
                 </section>
