@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>circle-hollow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="circle-hollow" transform="translate(-1.000000, -1.000000)" fill="#000000">
+            <path d="M12.0550003,23.1100006 C5.94949223,23.1100006 1,18.1605084 1,12.0550003 C1,5.94949223 5.94949223,1 12.0550003,1 C18.1605084,1 23.1100006,5.94949223 23.1100006,12.0550003 C23.1100006,18.1605084 18.1605084,23.1100006 12.0550003,23.1100006 Z M12.0550003,22.0061005 C17.5508412,22.0061005 22.0061005,17.5508412 22.0061005,12.0550003 C22.0061005,6.55915944 17.5508412,2.10390015 12.0550003,2.10390015 C6.55915944,2.10390015 2.10390015,6.55915944 2.10390015,12.0550003 C2.10390015,17.5508412 6.55915944,22.0061005 12.0550003,22.0061005 Z"></path>
+        </g>
+    </g>
+</svg>
