@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>SimpleArrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow-simple" transform="translate(-2.000000, -2.000000)" fill="#000000">
+            <path d="M13.2481204,3.52157585 C13.2481204,3.52157585 13.918892,3.054409 14.5684287,3.7039458 C15.2189648,4.35373244 14.5684287,4.92232697 14.5684287,4.92232697 L3.41887968,16.0721259 L14.0405552,26.6935515 C14.0405552,26.6935515 14.5929114,27.3595766 13.9995844,27.9524038 C13.4067572,28.5457306 12.5785977,27.9524038 12.5785977,27.9524038 L0.717556034,16.0521401 L13.2481204,3.52157585 L13.2481204,3.52157585 Z" id="SimpleArrow" transform="translate(7.787556, 15.787556) rotate(-45.000000) translate(-7.787556, -15.787556) "></path>
+        </g>
+    </g>
+</svg>
