@@ -193,8 +193,8 @@
                             <div class="swatch dark-red background"></div>
                             <ul>
                                 <li class="copyable" data-clipboard-target="#copy-dark-red" id="copy-dark-red">.dark-red</li>
-                                <li class="copyable" data-clipboard-target="#copy-dark-red-hex" id="copy-dark-red-hex">#52000A</li>
-                                <li class="copyable" data-clipboard-target="#copy-dark-red-rgba" id="copy-dark-red-rgba">rgba(82,0,10,1)</li>
+                                <li class="copyable" data-clipboard-target="#copy-dark-red-hex" id="copy-dark-red-hex">#8d2131</li>
+                                <li class="copyable" data-clipboard-target="#copy-dark-red-rgba" id="copy-dark-red-rgba">rgba(141,33,49,1)</li>
                             </ul>
                         </li>
                         <li>
@@ -203,6 +203,22 @@
                                 <li class="copyable" data-clipboard-target="#copy-wnyc-dark-blue" id="copy-wnyc-blue">.wnyc-blue</li>
                                 <li class="copyable" data-clipboard-target="#copy-wnyc-dark-blue-hex" id="copy-wnyc-blue-hex">#128cf4</li>
                                 <li class="copyable" data-clipboard-target="#copy-wnyc-dark-blue-rgba" id="copy-wnyc-blue-rgba">rgba(18,140,244,1)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="swatch teal background"></div>
+                            <ul>
+                                <li class="copyable" data-clipboard-target="#copy-teal" id="copy-teal">.teal</li>
+                                <li class="copyable" data-clipboard-target="#copy-teal-hex" id="copy-teal-hex">#0EB8BA</li>
+                                <li class="copyable" data-clipboard-target="#copy-teal-rgba" id="copy-teal-rgba">rgba(14,184,186,1)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="swatch dark background"></div>
+                            <ul>
+                                <li class="copyable" data-clipboard-target="#copy-dark" id="copy-dark">.dark</li>
+                                <li class="copyable" data-clipboard-target="#copy-dark-hex" id="copy-dark-hex">#333333</li>
+                                <li class="copyable" data-clipboard-target="#copy-dark-rgba" id="copy-dark-rgba">rgba(241,241,241,1)</li>
                             </ul>
                         </li>
                         <li>
@@ -523,24 +539,70 @@
                     <h2>Buttons</h2>
                     <p>We have a variety of buttons depending on the emphasis desired for the call to action.</p>
                     <ul class="typo">
+
                         <li>
-                            <p>With emphasis, big:</p>
-                            <button class="emphasis">Listen <span class="duration">9 min</span></button>
+                            <p>Basic button</p>
+                            <button>View more options</button>
+                            <div class="copyable_code desktop">
+                            <pre><code class="copy_content" id="button_code">input[type=button] {
+  width: auto;
+  border-radius: 50px;
+  font-weight: 400;
+  padding: 8px 25px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid;
+  border-color: #f1f1f1;
+  background: none;
+  color: #128cf4;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #ddd;
+  color: #1068b2;
+}</code></pre>
+<button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                        </div> 
                         </li>
                         <li>
-                            <p>With emphasis, small:</p>
+                            <p>Basic button, small</p>
+                            <button class="small">Sign up for the newsletter</button>
+                            <div class="copyable_code desktop">
+                            <pre><code class="copy_content" id="button_code">button.small {
+  font-size: 14px;
+  line-height: 26px;
+  padding: 7px 20px;
+  cursor: pointer;
+}</code></pre>
+<button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                        </div> 
+                        </li>
+                        
+                        <li>
+                            <p>Basic button with emphasis</p>
+                            <button class="emphasis">Listen <span class="duration">9 min</span></button>
+                            <div class="copyable_code desktop">
+                            <pre><code class="copy_content" id="button_code">button.emphasis {
+  background: #128cf4;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+
+button.emphasis:hover{
+    background: #1068b2;
+}
+</code></pre>
+<button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                        </div> 
+                        </li>
+                        <li>
+                            <p>Basic button small, with emphasis</p>
                             <button class="emphasis small">Donate to the show</button>
                         </li>
 
-                        <li>
-                            <p>No emphasis, big:</p>
-                            <button>View more options</button>
-                        </li>
-                        <li>
-                            <p>No emphasis, small:</p>
-                            <button class="small">Sign up for the newsletter</button>
-                        </li>
-                        
+
                         
         
                 </section>
