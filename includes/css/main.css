@@ -1205,13 +1205,13 @@ ul.primary li:hover > a{
 .icons li {
     width: 50%;
     box-sizing:border-box;
-    padding: 15px 0px;
+    padding: 15px 10px 0px 10px;
     border-radius: 6px;
     font-size: 12px;
     white-space:nowrap;
 }
     .icons li:hover {
-        background-color:#F4F4F4;
+        background-color: #F4F4F4;
     }
     
     .icons li * {
@@ -1223,44 +1223,45 @@ ul.primary li:hover > a{
     }
     
     .icons li img {
-        margin-right:5px;
+        margin-right: 5px;
     }
     
     .icons li a.download,
     .icons li a.link {
-        display:none;
+        display: none;
+        border-bottom: none;
     }
     
     html.no-adownload a.download {display:none !important; }
         .icons li:hover a.download, .icons li:hover a.link {
-            opacity:1;
+            opacity: 1;
         } 
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
 
     .icons li {
         white-space:nowrap;
-        width:32%;        
+        width: 33%; 
+        margin: 10px 0;       
     }
 
     .icons li a.download,
     .icons li a.link {
-        display:block;
-        text-decoration:none;
-        float:right;
-        margin-left:2px;
-        opacity:0;
+        display: block;
+        text-decoration: none;
+        float: right;
+        opacity: 0;
     }
     .icons li a.download img,
     .icons li a.link img{
-        width:12px;
-        height:12px;
+        width: 12px;
+        height: 12px;
     }    
 }
 
 @media only screen and (min-width:1100px) {
     .icons li {
-        width:24%;        
+        width: 33%;        
     }
 }
 
