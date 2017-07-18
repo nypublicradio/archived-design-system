@@ -1205,37 +1205,41 @@ ul.primary li:hover > a{
 .icons li {
     width: 50%;
     box-sizing:border-box;
-    padding: 15px 10px 0px 10px;
+    padding: 15px 15px 10px 15px;
     border-radius: 6px;
-    font-size: 12px;
-    white-space:nowrap;
+    font-size: 14px;
+    white-space: nowrap;
 }
     .icons li:hover {
         background-color: #F4F4F4;
     }
     
     .icons li * {
-        vertical-align:middle;
+        vertical-align: middle;
     }
     
     .icons li span {
-        cursor:default;
+        cursor: default;
     }
     
     .icons li img {
         margin-right: 5px;
     }
     
-    .icons li a.download,
-    .icons li a.link {
-        display: none;
+    .icons li a {
+        color: #333;
+        border-bottom: none;
+    }
+
+    .icons li a.download {
+        transform: scale(1.5);
         border-bottom: none;
     }
     
-    html.no-adownload a.download {display:none !important; }
-        .icons li:hover a.download, .icons li:hover a.link {
+    .icons li:hover a.download, .icons li:hover a, .icons li:hover img{
             opacity: 1;
         } 
+
 
 @media only screen and (min-width: 768px) {
 
