@@ -1205,7 +1205,7 @@ ul.primary li:hover > a{
 .icons li {
     width: 50%;
     box-sizing:border-box;
-    padding: 15px 15px 10px 15px;
+    padding: 15px 5px 17px 15px;
     border-radius: 6px;
     font-size: 14px;
     white-space: nowrap;
@@ -1223,7 +1223,7 @@ ul.primary li:hover > a{
     }
     
     .icons li img {
-        margin-right: 5px;
+        margin-right: 10px;
     }
     
     .icons li a {
