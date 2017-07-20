@@ -820,11 +820,13 @@ ul.primary li:hover > a {
 ul.swatches {
   display: block;
   margin: 0 0 40px 0; }
+  ul.swatches:before, ul.swatches:after {
+    display: none; }
 
 .swatches ul {
   margin-top: 0; }
 
-ul.swatches li {
+.swatches li {
   clear: both; }
 
 ul.swatches > li {
@@ -911,9 +913,7 @@ ul.swatches.swatches_micro > li:hover > ul {
   ul.swatches {
     display: -webkit-flex;
     display: flex;
-    -webkit-justify-content: space-between;
     justify-content: space-between;
-    -webkit-flex-wrap: wrap;
     flex-wrap: wrap; }
   ul.swatches > li {
     position: relative;

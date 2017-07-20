@@ -120,6 +120,8 @@ ul:after {
   clear: both;
 }
 
+// TODO: MB: commenting this out, not sure why it was there.
+// when I comment it out, it breaks various things. :( this code is old
 ul:before,
 ul:after {
     content: " ";

@@ -1,16 +1,23 @@
+// TODO:
+// 1. Create variables for each color
+// 2. Make sure they're replaced throughout the code
+
+$wnyc-red: #DE1E3D;
+$wnyc-blue: #128cf4;
+
 .wnyc-red {
-    color: #DE1E3D;
+    color: $wnyc-red;
 }
 .wnyc-red.background {
-    background-color: #DE1E3D;
+    background-color: $wnyc-red;
     color: inherit;
 }
 
 .wnyc-red {
-    color: #DE1E3D;
+    color: $wnyc-red;
 }
 .wnyc-red.background {
-    background-color: #DE1E3D;
+    background-color: $wnyc-red;
     color: white;
 }
 
@@ -25,7 +32,7 @@
 }
 
 .wnyc-blue {
-    color: #128cf4;
+    color: $wnyc-blue;
 }
 
 .wnyc-blue.background {

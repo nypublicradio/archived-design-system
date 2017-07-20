@@ -1,13 +1,18 @@
 ul.swatches {
     display: block;
     margin: 0 0 40px 0;
+
+    &:before,
+    &:after {
+        display: none;
+    }
 }
 
 .swatches ul {
     margin-top: 0;
 }
 
-ul.swatches li {
+.swatches li {
     clear: both;
 }
 
@@ -109,22 +114,20 @@ ul.swatches.swatches_micro > li:hover > ul {
 @media only screen and (min-width: 768px) {
 
     ul.swatches {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content:space-between;
-            justify-content: space-between;
-    -webkit-flex-wrap:wrap;
-            flex-wrap:wrap;
-}
+      display: -webkit-flex;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap:wrap;
+    }
 
-ul.swatches > li {
-    position: relative;
-    display: block;
-    border: 1px solid #ddd;
-    margin-bottom: 30px;
-    width: 45%;
-    clear: both;
-}
+    ul.swatches > li {
+      position: relative;
+      display: block;
+      border: 1px solid #ddd;
+      margin-bottom: 30px;
+      width: 45%;
+      clear: both;
+    }
 
     ul.swatches > li {
         width:33%;
