@@ -1,12 +1,4 @@
-/*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 html {
   font-family: 'Open Sans', sans-serif;
   text-rendering: optimizeLegibility;
@@ -81,151 +73,6 @@ ul, li {
 .clearfix:after {
   clear: both; }
 
-/* ==========================================================================
-   Type
-   ========================================================================== */
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-  font-weight: 400; }
-
-p.list {
-  font-size: 14px;
-  line-height: 26px; }
-
-.strong {
-  font-weight: 700; }
-
-.small_print {
-  font-size: 12px;
-  line-height: 22px;
-  font-weight: 400;
-  color: #888; }
-
-.small_print a {
-  color: #888;
-  border-bottom: 2px solid #ddd; }
-
-a, a:active {
-  color: #128cf4;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: all 0.2s ease; }
-
-a:focus {
-  outline: thin dotted; }
-
-h1, article h1 {
-  font-size: 32px;
-  line-height: 42px;
-  margin-bottom: 10px; }
-
-h2, article h2 {
-  font-size: 24px;
-  line-height: 36px;
-  margin-bottom: 10px; }
-
-h3, article h3 {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 600;
-  margin-bottom: 10px; }
-
-h3 a, a:active {
-  color: #333;
-  text-decoration: none;
-  border-bottom: none; }
-
-h3 a:hover {
-  color: #128cf4;
-  text-decoration: none;
-  border-bottom: none; }
-
-h3.on_color a, a:active {
-  text-decoration: none;
-  border-bottom: none; }
-
-h3.on_color a:hover {
-  opacity: 1;
-  color: #fff;
-  text-decoration: none; }
-
-h4, article h4 {
-  font-size: 12px;
-  line-height: 22px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 700;
-  margin-bottom: 10px; }
-
-p {
-  font-size: 16px;
-  line-height: 28px; }
-
-.on_color {
-  background: #333;
-  padding: 20px;
-  font-weight: 600;
-  color: #fff; }
-
-.on_color a {
-  color: #fff;
-  border-bottom: 1px solid #fff; }
-
-.on_color a:hover {
-  opacity: .7;
-  border-bottom: 1px solid #fff; }
-
-.desktop {
-  display: none; }
-
-.mobile_code {
-  font-size: 12px;
-  line-height: 20px; }
-
-@media only screen and (min-width: 768px) {
-  .small_print {
-    font-size: 14px;
-    line-height: 26px; }
-  .small_print a:hover {
-    opacity: .6;
-    border-bottom: 2px solid #ddd; }
-  a:hover {
-    border-bottom: 2px solid #128cf4; }
-  h1, article h1 {
-    font-size: 45px;
-    line-height: 55px;
-    margin-bottom: 15px; }
-  h2, article h2 {
-    font-size: 32px;
-    line-height: 44px;
-    margin-bottom: 15px; }
-  h3, article h3 {
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 600;
-    margin-bottom: 15px; }
-  h4, article h4 {
-    font-size: 12px;
-    line-height: 24px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 700;
-    margin-bottom: 10px; }
-  p {
-    font-size: 18px;
-    line-height: 30px; }
-  p.list {
-    font-size: 16px;
-    line-height: 28px; }
-  .desktop {
-    display: block; }
-  .mobile_code {
-    display: none; } }
-
-/* ==========================================================================
-   WNYC Palette
-   ========================================================================== */
 .wnyc-red {
   color: #DE1E3D; }
 
@@ -308,9 +155,65 @@ p {
   background-color: #0EB8BA;
   color: inherit; }
 
-/* ==========================================================================
-   Page layout
-   ========================================================================== */
+.icons {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
+
+.icons li {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 15px 5px 17px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap; }
+
+.icons li:hover {
+  background-color: #F4F4F4; }
+
+.icons li * {
+  vertical-align: middle; }
+
+.icons li span {
+  cursor: default; }
+
+.icons li img {
+  margin-right: 10px; }
+
+.icons li a {
+  color: #333;
+  border-bottom: none; }
+
+.icons li a.download {
+  transform: scale(1.5);
+  border-bottom: none; }
+
+.icons li:hover a.download, .icons li:hover a, .icons li:hover img {
+  opacity: 1; }
+
+@media only screen and (min-width: 768px) {
+  .icons li {
+    white-space: nowrap;
+    width: 33%;
+    margin: 10px 0; }
+  .icons li a.download,
+  .icons li a.link {
+    display: block;
+    text-decoration: none;
+    float: right;
+    opacity: 0; }
+  .icons li a.download img,
+  .icons li a.link img {
+    width: 12px;
+    height: 12px; } }
+
+@media only screen and (min-width: 1100px) {
+  .icons li {
+    width: 33%; } }
+
 main {
   max-width: 100%;
   margin: 20px 20px; }
@@ -457,9 +360,6 @@ a:hover img, a:active img {
     margin: 80px 0px;
     clear: both; } }
 
-/* ==========================================================================
-   Modules
-   ========================================================================== */
 .notification {
   width: 100%;
   padding: 20px 20px;
@@ -628,9 +528,6 @@ button.black {
     color: #fff;
     width: auto; } }
 
-/* ==========================================================================
-   Navigation
-   ========================================================================== */
 .sidenav {
   height: 100%;
   /* 100% Full-height */
@@ -920,71 +817,6 @@ ul.primary li:hover > a {
   .modal_action {
     display: none; } }
 
-/* ==========================================================================
-   Icons
-   ========================================================================== */
-.icons {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-  justify-content: space-between; }
-
-.icons li {
-  width: 50%;
-  box-sizing: border-box;
-  padding: 15px 5px 17px 15px;
-  border-radius: 6px;
-  font-size: 14px;
-  white-space: nowrap; }
-
-.icons li:hover {
-  background-color: #F4F4F4; }
-
-.icons li * {
-  vertical-align: middle; }
-
-.icons li span {
-  cursor: default; }
-
-.icons li img {
-  margin-right: 10px; }
-
-.icons li a {
-  color: #333;
-  border-bottom: none; }
-
-.icons li a.download {
-  transform: scale(1.5);
-  border-bottom: none; }
-
-.icons li:hover a.download, .icons li:hover a, .icons li:hover img {
-  opacity: 1; }
-
-@media only screen and (min-width: 768px) {
-  .icons li {
-    white-space: nowrap;
-    width: 33%;
-    margin: 10px 0; }
-  .icons li a.download,
-  .icons li a.link {
-    display: block;
-    text-decoration: none;
-    float: right;
-    opacity: 0; }
-  .icons li a.download img,
-  .icons li a.link img {
-    width: 12px;
-    height: 12px; } }
-
-@media only screen and (min-width: 1100px) {
-  .icons li {
-    width: 33%; } }
-
-/* ==========================================================================
-   Swatches
-   ========================================================================== */
 ul.swatches {
   display: block;
   margin: 0 0 40px 0; }
@@ -1103,3 +935,142 @@ ul.swatches.swatches_micro > li:hover > ul {
   ul.swatches > li > ul {
     padding: 15px;
     font-size: 0.9rem; } }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400; }
+
+p.list {
+  font-size: 14px;
+  line-height: 26px; }
+
+.strong {
+  font-weight: 700; }
+
+.small_print {
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #888; }
+
+.small_print a {
+  color: #888;
+  border-bottom: 2px solid #ddd; }
+
+a, a:active {
+  color: #128cf4;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease; }
+
+a:focus {
+  outline: thin dotted; }
+
+h1, article h1 {
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 10px; }
+
+h2, article h2 {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 10px; }
+
+h3, article h3 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-bottom: 10px; }
+
+h3 a, a:active {
+  color: #333;
+  text-decoration: none;
+  border-bottom: none; }
+
+h3 a:hover {
+  color: #128cf4;
+  text-decoration: none;
+  border-bottom: none; }
+
+h3.on_color a, a:active {
+  text-decoration: none;
+  border-bottom: none; }
+
+h3.on_color a:hover {
+  opacity: 1;
+  color: #fff;
+  text-decoration: none; }
+
+h4, article h4 {
+  font-size: 12px;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 10px; }
+
+p {
+  font-size: 16px;
+  line-height: 28px; }
+
+.on_color {
+  background: #333;
+  padding: 20px;
+  font-weight: 600;
+  color: #fff; }
+
+.on_color a {
+  color: #fff;
+  border-bottom: 1px solid #fff; }
+
+.on_color a:hover {
+  opacity: .7;
+  border-bottom: 1px solid #fff; }
+
+.desktop {
+  display: none; }
+
+.mobile_code {
+  font-size: 12px;
+  line-height: 20px; }
+
+@media only screen and (min-width: 768px) {
+  .small_print {
+    font-size: 14px;
+    line-height: 26px; }
+  .small_print a:hover {
+    opacity: .6;
+    border-bottom: 2px solid #ddd; }
+  a:hover {
+    border-bottom: 2px solid #128cf4; }
+  h1, article h1 {
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 15px; }
+  h2, article h2 {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 15px; }
+  h3, article h3 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    margin-bottom: 15px; }
+  h4, article h4 {
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 10px; }
+  p {
+    font-size: 18px;
+    line-height: 30px; }
+  p.list {
+    font-size: 16px;
+    line-height: 28px; }
+  .desktop {
+    display: block; }
+  .mobile_code {
+    display: none; } }
