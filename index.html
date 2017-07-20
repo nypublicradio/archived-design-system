@@ -6,15 +6,14 @@
         <title>WNYC Design System</title>
         <meta name="description" content="WNYC Radio’s Design System and Best Practices">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="icon" type="image/png" href="favicon.png">
 
-        <link rel="stylesheet" href="includes/css/normalize.css">
-        <link rel="stylesheet" href="includes/css/main.css">
-        
+        <link rel="stylesheet" href="includes/app.css">
+
         <script src="includes/js/vendor/modernizr-custom.js"></script>
     </head>
     <body id="home">
@@ -24,18 +23,18 @@
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <ul class="primary">
                 <li>
-                    <a href=""><h4>Introduction</h4></a>
+                    <a href="#intro"><h4>Introduction</h4></a>
 
                     <ul class="sub" onclick="closeNav()">
-                        <li><a href="#intro">About</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#team">The Team</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href=""><h4>Atoms</h4></a>
+                    <a href="#atoms"><h4>Atoms</h4></a>
 
                     <ul class="sub" onclick="closeNav()">
-                        <li><a href="#atoms">Grids</a></li>
+                        <li><a href="#grids">Grids</a></li>
                         <li><a href="#colors">Colors</a></li>
                         <li><a href="#hoverstates">Links and Hover States</a></li>
                         <li><a href="#typography">Typography</a></li>
@@ -46,29 +45,29 @@
                     </ul>
                 </li>
                 <li>
-                    <a href=""><h4>Molecules</h4></a>
-                    
+                    <a href="#molecules"><h4>Molecules</h4></a>
+
                     <ul class="sub" onclick="closeNav()">
-                        <li><a href="#molecules">Forms</a></li>
+                        <li><a href="#forms">Forms</a></li>
                         <li><a href="#notifications">Notifications</a></li>
-                    </ul>  
+                    </ul>
                 </li>
                 <li>
-                    <a href=""><h4>Organisms</h4></a>
-                    
+                    <a href="#organisms"><h4>Organisms</h4></a>
+
                     <ul class="sub" onclick="closeNav()">
                         <li><a href="#organisms">Mailing List Modals</a></li>
                         <li><a href="#organisms">Call-To-Action Modals</a></li>
-                    </ul>  
+                    </ul>
                 </li>
                 <li>
-                    <a href=""><h4>More</h4></a>
-                    
+                    <a href="#more"><h4>More</h4></a>
+
                     <ul class="sub" onclick="closeNav()">
                         <li><a href="#icons">Icons</a></li>
                         <li><a href="#kits">Kits and Templates</a></li>
                         <li><a href="#media">Media</a></li>
-                    </ul>  
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -78,24 +77,24 @@
 
 <!-- ********* TESTING SIDEBAR ********** -->
 
-        <div class="hero">  
-            <div class="logo"></div>              
+        <div class="hero">
+            <div class="logo"></div>
             <h1>Design System</h1>
         </div>
 
         <div id="nav_bar">
           <ul class="primary">
             <li>
-              <a href=""><h4>Introduction</h4></a>
+              <a href="#intro"><h4>Introduction</h4></a>
               <ul class="sub">
-                <li><a href="#intro">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#team">The Team</a></li>
               </ul>
             </li>
             <li>
-              <a href=""><h4>Atoms</h4></a>
+              <a href="#atoms"><h4>Atoms</h4></a>
               <ul class="sub">
-                <li><a href="#atoms">Grids</a></li>
+                <li><a href="#grids">Grids</a></li>
                 <li><a href="#colors">Colors</a></li>
                 <li><a href="#hoverstates">Links and Hover States</a></li>
                 <li><a href="#typography">Typography</a></li>
@@ -106,26 +105,26 @@
               </ul>
             </li>
             <li>
-              <a href=""><h4>Molecules</h4></a>
+              <a href="#molecules"><h4>Molecules</h4></a>
               <ul class="sub">
-                <li><a href="#molecules">Forms</a></li>
+                <li><a href="#forms">Forms</a></li>
                 <li><a href="#notifications">Notifications</a></li>
-              </ul>  
+              </ul>
             </li>
             <li>
-              <a href=""><h4>Organisms</h4></a>
+              <a href="#organisms"><h4>Organisms</h4></a>
               <ul class="sub">
                     <li><a href="#organisms">Mailing List Modals</a></li>
                     <li><a href="#organisms">Call-To-Action Modals</a></li>
-              </ul>  
+              </ul>
             </li>
             <li>
-              <a href=""><h4>More</h4></a>
+              <a href="#more"><h4>More</h4></a>
               <ul class="sub">
                 <li><a href="#icons">Icons</a></li>
                 <li><a href="#kits">Kits and Templates</a></li>
                 <li><a href="#media">Media</a></li>
-              </ul>  
+              </ul>
             </li>
           </ul>
         </div>
@@ -133,50 +132,55 @@
        <main>
 
 <!-- ********** INTRO SECTION ********** -->
-
-            <article id="intro">
+            <div id="intro" class="anchor-link"></div>
+            <article>
 
                 <h1>Introduction</h1>
 
-                <section id="about">
+                <div id="about" class="anchor-link"></div>
+                <section>
                     <h2>About</h2>
                     <p>The NYPR Product Design team aims to maintain a consistent style across all NYPR products. To facilitate this, we have created the following style guide documenting a system of reusable components. Our goal is to achieve a faster and smarter process for product design and development.</p>
                     <p>Our design system is based on the principles of <a href="http://bradfrost.com/blog/post/atomic-web-design/" target="_blank">atomic design</a>. The idea behind this methodology is that small elements of our products (atoms) can be designed and then combined into larger modules (molecules) which can then be combined into organisms. These elements can then be stitched together to form templates and pages.</p>
                     <p>This design system is a living document and will be updated regularly.</p>
                 </section>
 
-                <section id="team">
+                <div id="team" class="anchor-link"></div>
+                <section>
                     <h2>The Product Design Team</h2>
                     <p><span class="strong">Marine Boudeau</span></br>Director, Design and User Experience</p>
                     <p><span class="strong">Fiona Carswell</span></br>Lead Designer, Design and User Experience</p>
                     <p><span class="strong">Clarisa Diaz</span></br>Interaction Designer, Data News</p>
                 </section>
-                
+
 
             </article>
-            
-    <!-- ********** ATOMS SECTION ********** -->        
 
-            <article id="atoms">
-                
+    <!-- ********** ATOMS SECTION ********** -->
+
+            <div id="atoms" class="anchor-link"></div>
+            <article>
+
                 <h1>Atoms</h1>
 
-                <section id="grid">
+                <div id="grid" class="anchor-link"></div>
+                <section>
                     <h2>Grids</h2>
-                    
+
                     <div class="row">
                         <h4>2 column:</h4>
                         <div class="col col1">Row 1: Col 1</div>
                         <div class="col col2">Row 1: Col 2</div>
                     </div>
 
-                    <div class="row row2">                    
+                    <div class="row row2">
                         <h4>1 column:</h4>
                         <div class="col col3">Row 2: Col 1</div>
                     </div>
                 </section>
-                
-                <section id="colors">
+
+                <div id="colors" class="anchor-link"></div>
+                <section>
                     <h2>Colors</h2>
                     <p></p>
                     <h4>WNYC Digital Colors (in progress)</h4>
@@ -270,18 +274,19 @@
 
 
                 </section>
-                
-                <section id="typography">
+
+                <div id="typography" class="anchor-link"></div>
+                <section>
                     <h2>Typography</h2>
                     <p><a href="https://fonts.google.com/specimen/Open+Sans" target="_blank">Open Sans</a> is the primary font used throughout NYPR products. We’ve chosen this font because it was designed as a sophisticated yet neutral font. It is optimized specifically for high legibility, and quick load times, across print, web, and small mobile screens. It is also elegant and stylized to fit well with flat design, while still being open-source and easily-available to contractors and collaborators. We primarily use regular, semibold, and bold weights. Italic is also occasionally used.</p>
-                    <p>For WQXR products, we sometimes use <a href="https://fonts.google.com/specimen/Lato" target="_blank">Lato</a> paired with Open Sans. 
+                    <p>For WQXR products, we sometimes use <a href="https://fonts.google.com/specimen/Lato" target="_blank">Lato</a> paired with Open Sans.
                     <p>In the past we’ve used Gotham. We retired this font from our digital products but it is still often used in images (ads, marquee images, logos, etc).</p>
                     <p>Our typography styles:</p>
 
                     <ul class="typo">
                         <li>
                             <h1>Heading Level One</h1>
-                              
+
                               <div class="copyable_code desktop">
                             <pre><code class="copy_content" id="button_code">h1 {
   font-family: 'Open Sans', sans-serif;
@@ -333,7 +338,7 @@
 }</code></pre>
 <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
                         </div>
-                            
+
                              <p class="mobile_code">h3 {</br>
                                 font-family: 'Open Sans', sans-serif;</br>
                                 font-weight: 400;</br>
@@ -367,10 +372,10 @@
                             }</p>
 
                         </li>
-                        
+
 
                         <li>
-                            <p>This is normal paragraph text. If part of the text needs to be emphasized, it should <span class="strong">be bolded</span>. This is what a <a href="">link</a> should look like within a normal paragraph.</p> 
+                            <p>This is normal paragraph text. If part of the text needs to be emphasized, it should <span class="strong">be bolded</span>. This is what a <a href="">link</a> should look like within a normal paragraph.</p>
                             <div class="copyable_code desktop">
                             <pre><code class="copy_content" id="button_code">p {
   font-family: 'Open Sans', sans-serif;
@@ -393,7 +398,7 @@
 
                         <li>
                             <p class="list">This is smaller paragraph text. This is typically used in list views.</p>
-                              
+
                               <div class="copyable_code desktop">
                             <pre><code class="copy_content" id="button_code">p.list {
   font-family: 'Open Sans', sans-serif;
@@ -402,7 +407,7 @@
   line-height: 28px;
 }</code></pre>
 <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                        </div> 
+                        </div>
 
                             <p class="mobile_code">p.list {</br>
                                     font-family: 'Open Sans', sans-serif;</br>
@@ -424,7 +429,7 @@
   line-height: 22px;
 }</code></pre>
 <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                        </div> 
+                        </div>
 
                             <p class="mobile_code">.small_print {</br>
                                     font-family: 'Open Sans', sans-serif;</br>
@@ -487,7 +492,7 @@
                                 <li>Numbered list item</li>
                                 <li>Numbered list item</li>
                                 <li>Numbered list item</li>
-                            </ol> 
+                            </ol>
                             <div class="copyable_code">
                             <pre><code class="copy_content" id="button_code">.numbered li {
   list-style-type: decimal;
@@ -496,12 +501,13 @@
 }</code></pre>
                             <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
                             </div>
-                        </li> 
-                    </ul>         
-                </section>  
+                        </li>
+                    </ul>
+                </section>
 
 
-                <section id="hoverstates">
+                <div id="hoverstates" class="anchor-link"></div>
+                <section>
                     <h2>Links and Hover States</h2>
                     <ul class="typo">
                         <li>
@@ -520,9 +526,10 @@
                             <a href=""><img src="../includes/img/cubes.png"></img></a>
                         </li> -->
                     </ul>
-                </section>     
+                </section>
 
-                <section id="dates">
+                <div id="dates" class="anchor-link"></div>
+                <section>
 
                     <h2>Dates and Times</h2>
                     <p>Keep abbreviations consistent across NYPR products: </br>
@@ -530,12 +537,13 @@
                     Minute(s) = “min”</br>
                     Seconds = should be rounded up to 1 minute
                     </p>
-                    
+
                     <p>Dates should be written out in standard format, with the month shortened to the first three letters. For example: Jan 4, 2017.</p>
 
                 </section>
-                
-                <section id="buttons">
+
+                <div id="buttons" class="anchor-link"></div>
+                <section>
                     <h2>Buttons</h2>
                     <p>We have a variety of buttons depending on the emphasis desired for the call to action.</p>
                     <ul class="typo">
@@ -544,58 +552,62 @@
                             <p>Basic button</p>
                             <button>View more options</button>
                             <div class="copyable_code desktop">
-                            <pre><code class="copy_content" id="button_code">input[type=button] {
-  width: auto;
-  border-radius: 50px;
-  font-weight: 400;
-  padding: 8px 25px;
-  font-size: 18px;
-  line-height: 30px;
-  border: 2px solid;
-  border-color: #f1f1f1;
-  background: none;
-  color: #128cf4;
-  cursor: pointer;
-}
+                            <pre><code class="copy_content" id="button_code">
+                              input[type=button] {
+                                width: auto;
+                                border-radius: 50px;
+                                font-weight: 400;
+                                padding: 8px 25px;
+                                font-size: 18px;
+                                line-height: 30px;
+                                border: 2px solid;
+                                border-color: #f1f1f1;
+                                background: none;
+                                color: #128cf4;
+                                cursor: pointer;
+                              }
 
-button:hover {
-  border-color: #ddd;
-  color: #1068b2;
-}</code></pre>
+                              button:hover {
+                                border-color: #ddd;
+                                color: #1068b2;
+                              }
+                            </code></pre>
 <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                        </div> 
+                        </div>
                         </li>
                         <li>
                             <p>Basic button, small</p>
                             <button class="small">Sign up for the newsletter</button>
                             <div class="copyable_code desktop">
-                            <pre><code class="copy_content" id="button_code">button.small {
-  font-size: 14px;
-  line-height: 26px;
-  padding: 7px 20px;
-  cursor: pointer;
-}</code></pre>
-<button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                        </div> 
+                            <pre><code class="copy_content" id="button_code">
+                              button.small {
+                                font-size: 14px;
+                                line-height: 26px;
+                                padding: 7px 20px;
+                                cursor: pointer;
+                              }</code></pre>
+                              <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
+                        </div>
                         </li>
-                        
+
                         <li>
                             <p>Basic button with emphasis</p>
                             <button class="emphasis">Listen <span class="duration">9 min</span></button>
                             <div class="copyable_code desktop">
-                            <pre><code class="copy_content" id="button_code">button.emphasis {
-  background: #128cf4;
-  color: #fff;
-  font-weight: 600;
-  border: none;
-}
+                            <pre><code class="copy_content" id="button_code">
+                            button.emphasis {
+                              background: #128cf4;
+                              color: #fff;
+                              font-weight: 600;
+                              border: none;
+                            }
 
-button.emphasis:hover{
-    background: #1068b2;
-}
+                            button.emphasis:hover{
+                                background: #1068b2;
+                            }
 </code></pre>
 <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
-                        </div> 
+                        </div>
                         </li>
                         <li>
                             <p>Basic button small, with emphasis</p>
@@ -603,11 +615,12 @@ button.emphasis:hover{
                         </li>
 
 
-                        
-        
+
+
                 </section>
 
-                <section id="inputs">
+                <div id="inputs" class="anchor-link"></div>
+                <section>
 
                     <h2>Inputs</h2>
 
@@ -631,7 +644,8 @@ button.emphasis:hover{
                     </ul>
                 </section>
 
-                <section id="loaders">
+                <div id="loaders" class="anchor-link"></div>
+                <section>
                     <h2>Loaders and Transitions</h2>
                     <p>If elements require <span class="strong">any</span> loading time and it's not possible to determine the accurate progressive load time, a spinning indicator can be used. This should only be used on elements within a page, not for the loading of an entire page. Here's an example of a spinning indicator used to indicate loading of audio:</p>
                     <ul class="typo">
@@ -658,28 +672,33 @@ button.emphasis:hover{
 
     <!-- ********** MOLECULES SECTION ********** -->
 
-            <article id="molecules">
+            <div id="molecules" class="anchor-link"></div>
+            <article>
                 <h1>Molecules</h1>
 
-                <section id="forms">
+                <div id="forms" class="anchor-link"></div>
+                <section>
                     <h2>Forms</h2>
                     <p>Coming soon.</p>
                 </section>
 
-                <section id="notifications">
+                <div id="notifications" class="anchor-link"></div>
+                <section>
                     <h2>Notifications</h2>
                     <p>Example coming soon.</p>
                     <!-- <div class="notification">Notification here. If it contains a link it should look like <a href="">this.</a></div> -->
                 </section>
-                
+
             </article>
 
     <!-- ********** ORGANISMS SECTION ********** -->
 
-            <article id="organisms">
+            <div id="organisms" class="anchor-link"></div>
+            <article>
                 <h1>Organisms</h1>
 
-                 <section id="modals">
+                 <div id="modals" class="anchor-link"></div>
+                 <section>
 
                     <h2>Call-To-Action Modals</h2>
                     <ul class="typo">
@@ -719,7 +738,7 @@ button.emphasis:hover{
                             <p>The colors are customizable to match the brand, and relevant social links can be added at the bottom.<p>
                             <div class="modal_signup">
                                 <h2>Stay connected with us</h2>
-                                 <input type='text' placeholder="Enter your email" class="email_modal"></input> <button class="emphasis black">Subscribe</button> 
+                                 <input type='text' placeholder="Enter your email" class="email_modal"></input> <button class="emphasis black">Subscribe</button>
                             </div>
                             <div class="modal_signup">
                                 [social links here]
@@ -731,11 +750,13 @@ button.emphasis:hover{
 
     <!-- ********** ASSETS SECTION ********** -->
 
-            <article id="more">
-                
+            <div id="more" class="anchor-link"></div>
+            <article>
+
                 <h1>More...</h1>
 
-                <section id="icons">
+                <div id="icons" class="anchor-link"></div>
+                <section>
                     <h2>Icons</h2>
                     <p>We maintain a custom icon set with a consistent style that is simple, airy, and legible, serving to compliment a visual aesthetic without detracting from usability. We heavily user-test our icons to ensure that they are interpreted correctly and perceived as consistent with the brand. As our user demographic is often not tech-savvy, any icons that are not easily recognized must also be accompanied with a text label. All icons used must be inline with WNYC’s icon style in terms of consistent line thickness and rounding of edges, and they must be legible on small mobile screens.</p>
                     <p>Our library of icons are from <a href="https://thenounproject.com/" target="_blank">Noun Project</a>, <a href="http://fontawesome.io/" target="_blank">Fontawesome</a>, or they are custom designed by our team. All icons must be in SVG format.</p>
@@ -923,15 +944,17 @@ button.emphasis:hover{
                         </li>
                     </ul>
                 </section>
-                
-                <section id="kits">
+
+                <div id="kits" class="anchor-link"></div>
+                <section>
                     <h2>Kits and Templates</h2>
                     <p>Coming soon.</p>
-                    
+
 
                 </section>
-                
-                <section id="media">
+
+                <div id="media" class="anchor-link"></div>
+                <section>
                     <h2>Media</h2>
                     <p>All images that accompany stories must be a minimum of 800px wide at the highest resolution possible.</p>
 
@@ -939,7 +962,7 @@ button.emphasis:hover{
 
                     <p>Wherever possible, logos should be delivered as svg files. If this isn't possible, they should be .pngs at the highest resolution and size possible.</p>
                 </section>
-                
+
             </article>
 
         </main>

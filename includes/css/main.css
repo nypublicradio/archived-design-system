@@ -73,7 +73,7 @@ textarea {
 }
 
 ul, li {
-    margin: 0; 
+    margin: 0;
     padding:0;
 }
 
@@ -112,8 +112,8 @@ ul, li {
    ========================================================================== */
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
     font-weight: 400;
 }
 
@@ -424,6 +424,11 @@ section {
     padding: 20px 0 20px 0;
 }
 
+.anchor-link {
+  height: 61px;
+  visibility: hidden;
+}
+
 .col {
     background: #f1f1f1;
     color: #888;
@@ -433,7 +438,7 @@ section {
     margin: 0px 0 20px 0;
 }
 
-.col1 {        
+.col1 {
     background: #f1f1f1;
     text-align: center;
     width: 100%;
@@ -476,7 +481,7 @@ pre {
 .test_img {
     height: 150px;
     width: 150px;
-    background: #000 url('../img/cubes.png') 
+    background: #000 url('../img/cubes.png')
 }
 
 a:hover img, a:active img {
@@ -527,7 +532,7 @@ a:hover img, a:active img {
 
 
 @media only screen and (min-width: 768px) {
-    
+
     main {
         position: relative;
         margin: 20px auto 0 auto;
@@ -537,11 +542,11 @@ a:hover img, a:active img {
     article {
         max-width: 750px;
         margin: 0 auto;
-        padding: 60px 80px 120px 80px;
+        padding: 20px 80px 20px 80px;
     }
 
     section {
-        margin: 40px 0px 60px 0;
+        margin: 0 0 20px 0;
     }
 
 
@@ -713,7 +718,7 @@ input[type=radio] {
 }
 
 /*basic button*/
-button, 
+button,
 input[type=button] {
     width: auto;
     border-radius: 50px;
@@ -773,7 +778,7 @@ button.black {
 
 
 @media only screen and (min-width:768px) {
-    
+
     input[type=text] {
         width: 60%;
     }
@@ -1001,10 +1006,10 @@ ul.primary li a {
   display: block;
   padding: 12px 0px 0px 20px;
   text-decoration: none;
-  color: #fff; 
+  color: #fff;
 }
 
-ul.primary li a:hover, ul.primary li a:active {  
+ul.primary li a:hover, ul.primary li a:active {
   color: #000;
 }
 
@@ -1043,7 +1048,7 @@ ul.sub li a:hover {
 /* sub display*/
 ul.primary li:hover ul {
   display: block;
-  background: #fff; 
+  background: #fff;
 }
 
 /*mobile menu options*/
@@ -1055,7 +1060,11 @@ ul.primary li:hover a, ul.primary li:hover a:hover {
 
 ul.primary li:hover > a{
   color: #fff;
-} 
+}
+
+#mySidenav ul li {
+  width: 100%;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -1065,40 +1074,40 @@ ul.primary li:hover > a{
   }
 
   ul.sub {
-    display: block;  
+    display: block;
     position: static;
     box-shadow: none;
     width: 100%;
   }
-  
+
   ul.sub li a {
     background: #000;
     border: none;
     color: #fff;
   }
-  
+
 }
 
 
 @media only screen and (min-width: 768px) {
-    
-    
+
+
     #nav_bar {
         display: block;
-        width: 700px;
         margin: 0 auto;
         text-align: center;
+
     }
 
     #nav_bar > ul {
-        width:100%;
-        margin:0;
+        max-width: 750px;
+        margin: 0 auto;
     }
 
     #nav_bar > ul > li > a {
         font-size: 16px;
     }
-    
+
     #nav_bar > ul > li > ul > li {
         font-size: 16px;
     }
@@ -1145,7 +1154,7 @@ ul.primary li:hover > a{
     li a, li a:active, li a:hover {
         text-decoration: none;
         border-bottom: 1px solid #fff;
-    }  
+    }
 
     ul.primary li a {
         padding: 25px 30px 10px 30px;
@@ -1213,19 +1222,19 @@ ul.primary li:hover > a{
     .icons li:hover {
         background-color: #F4F4F4;
     }
-    
+
     .icons li * {
         vertical-align: middle;
     }
-    
+
     .icons li span {
         cursor: default;
     }
-    
+
     .icons li img {
         margin-right: 10px;
     }
-    
+
     .icons li a {
         color: #333;
         border-bottom: none;
@@ -1235,18 +1244,18 @@ ul.primary li:hover > a{
         transform: scale(1.5);
         border-bottom: none;
     }
-    
+
     .icons li:hover a.download, .icons li:hover a, .icons li:hover img{
             opacity: 1;
-        } 
+        }
 
 
 @media only screen and (min-width: 768px) {
 
     .icons li {
         white-space:nowrap;
-        width: 33%; 
-        margin: 10px 0;       
+        width: 33%;
+        margin: 10px 0;
     }
 
     .icons li a.download,
@@ -1260,7 +1269,7 @@ ul.primary li:hover > a{
     .icons li a.link img{
         width: 12px;
         height: 12px;
-    }    
+    }
 }
 
 @media only screen and (min-width:1100px) {
@@ -1408,7 +1417,7 @@ ul.swatches > li {
 }
 
 @media only screen and (min-width: 968px) {
-    
+
     ul.swatches {
         margin: 20px 0 60px 0;
     }
@@ -1416,7 +1425,7 @@ ul.swatches > li {
     ul.swatches > li {
         width: 23%;
     }
-    
+
     ul.swatches.swatches_wide > li {
         width: 32%;
     }
