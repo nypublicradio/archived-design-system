@@ -1,0 +1,374 @@
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #000; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 40px; /* Place content 60px from the top */
+    transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
+    z-index: 2;
+}
+
+/* The navigation menu links */
+.sidenav a , .sidenav a:hover{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    background-color: #000;
+    transition: 0.3s;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+}
+
+#nav_bar {
+    display: none;
+}
+
+.btn_nav {
+    z-index: 805;
+    top: 35px;
+    right: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+    cursor:pointer;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  text-align: left;
+  margin-top: 10px;
+}
+
+li {
+  float: left;
+  text-align: left;
+}
+
+ul.typo {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.typo li {
+    padding: 0px;
+    float: none;
+    margin: 40px 0 50px 0px;
+    border-left: 4px solid #f1f1f1;
+    padding-left: 15px;
+}
+
+.typo li:first-child {
+    margin-top: 40px;
+}
+
+ul.bulleted {
+    margin-left: 20px;
+}
+
+.bulleted li {
+    list-style: disc;
+    padding: 5px 0px;
+    margin: 0;
+    border-left: none;
+}
+
+.bulleted li:first-child {
+    margin-top: 0;
+}
+
+
+ul li, ul li a {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.bullets li {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+ol {
+   padding: 0 20px;
+}
+
+.numbered li {
+    list-style-type: decimal;
+    padding: 5px 0px;
+    margin: 0;
+    border-left: none;
+}
+
+
+/* clear'n floats */
+ul:after {
+  clear: both;
+}
+
+// TODO: MB: commenting this out, not sure why it was there.
+// when I comment it out, it breaks various things. :( this code is old
+ul:before,
+ul:after {
+    content: " ";
+    display: table;
+}
+
+.test_container {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.modal_action {
+  text-align: left;
+  padding: 15px 20px 3px 20px;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+  position: fixed;
+  z-index: 1;
+}
+
+#nav_bar {
+  text-align: center;
+  margin: 0 auto;
+  background: #fff;
+  width: 100%;
+  font-size: 14px;
+}
+
+.nav_bar-fixed {
+  position: fixed;
+  margin: 0 auto;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+#nav_bar a:hover {
+  border-bottom: 1px solid transparent;
+}
+
+ul h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+ul a, ul a:active {
+    border-bottom: none;
+}
+
+ul.primary li a {
+  display: block;
+  padding: 12px 0px 0px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+ul.primary li a:hover, ul.primary li a:active {
+  color: #000;
+}
+
+ul.sub {
+  text-align: center;
+  position: absolute;
+  z-index: 200;
+  width: 50%;
+  display: none;
+}
+
+ul.sub li {
+  float: none;
+  margin: 0;
+}
+
+ul.sub li a {
+  border-right: none;
+  color: #333;
+  padding: 0px 0 20px 30px;
+}
+
+ul.sub li:last-child a {
+  border-bottom: none;
+}
+
+ul.sub li:first-child a {
+  border-top: none;
+}
+
+ul.sub li a:hover {
+  color: #000;
+  background: #eeeeee;
+}
+
+/* sub display*/
+ul.primary li:hover ul {
+  display: block;
+  background: #fff;
+}
+
+/*mobile menu options*/
+ul.primary li:hover a, ul.primary li:hover a:hover {
+  text-shadow: none;
+  color: #fff;
+  background: #000;
+}
+
+ul.primary li:hover > a{
+  color: #fff;
+}
+
+#mySidenav ul li {
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+ li {
+    float: none;
+  }
+
+  ul.sub {
+    display: block;
+    position: static;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  ul.sub li a {
+    background: #000;
+    border: none;
+    color: #fff;
+  }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+
+    #nav_bar {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    #nav_bar > ul {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    #nav_bar > ul > li > a {
+        font-size: 16px;
+    }
+
+    #nav_bar > ul > li > ul > li {
+        font-size: 16px;
+    }
+
+    .nav_bar-fixed {
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        max-width: 100%;
+        z-index: 100;
+        margin: 0 auto;
+        border-bottom: 1px solid #f1f1f1;
+        background: green;
+    }
+
+    #mobile_nav_bar {
+        display: none;
+    }
+
+    .typo li {
+        padding: 0px 0px 0px 30px;
+        margin: 80px 0 80px 0px;
+        border-left: 4px solid #f1f1f1;
+    }
+
+    .typo .bulleted li {
+        margin: 0px 0px 10px 0px;
+        padding: 0;
+        border-left: none;
+    }
+
+    .typo .numbered li {
+        margin: 0px 0px 10px 0px;
+        padding: 0;
+        border-left: none;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+
+    li a, li a:active, li a:hover {
+        text-decoration: none;
+        border-bottom: 1px solid #fff;
+    }
+
+    ul.primary li a {
+        padding: 25px 30px 10px 30px;
+        border-top: none;
+        color: #333;
+    }
+
+    ul.primary li:hover a  {
+       background: #fff;
+       color: #333;
+       border-bottom: 1px solid white;
+       text-decoration: none;
+    }
+
+    ul.primary li:hover a:hover  {
+       background: #f1f1f1;
+       color: #000;
+    }
+
+    ul.sub li a, ul.sub li a:hover, ul.sub li a:active {
+        padding: 15px 30px;
+        text-decoration: none;
+    }
+
+    ul.sub li a:hover {
+        text-decoration: none;
+        padding-left: 35px;
+    }
+
+    #overlay_mobile {
+        display: none;
+    }
+
+    .sidenav {
+        display: none;
+    }
+
+    .modal_action {
+        display: none;
+    }
+}
