@@ -23,5 +23,6 @@ gulp.task('css', function() {
 });
 
 gulp.task('default',function() {
-    gulp.watch('includes/sass/**/*.scss',['styles', 'css']);
+    gulp.watch('includes/sass/**/*.scss',['styles']);
+    gulp.watch('includes/css/**/*.css',['css']);
 });
