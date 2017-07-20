@@ -1,13 +1,10 @@
-# WNYC Styleguide
+# WNYC Design System
 
-Guidelines and assets for sites and apps related to WNYC Radio.
+Guidelines and assets for sites and apps related to WNYC.
 
-## Why
+## Run locally
 
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.
+`python -m SimpleHTTPServer 8000`
 
-## Copyright and License
-
-Contents &copy; WNYC Radio 2016, all rights reserved.
-
-Third party plugins and tools copyright their respective owners.
+# Watch the SCSS files, and build the CSS
+`gulp`
