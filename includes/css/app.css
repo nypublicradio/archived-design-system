@@ -247,8 +247,15 @@ section {
   max-width: 240px;
   margin: 0 auto; }
 
+.row.story {
+  margin-top: 60px; }
+
+.row.playlist {
+  padding: 15px 0;
+  margin: 60px 0 75px 0; }
+
 .row2 {
-  padding: 40px 0 0 0; }
+  padding: 50px 0 0 0; }
 
 pre {
   background: #f1f1f1;
@@ -526,7 +533,100 @@ button.black {
   button.black {
     background: #000;
     color: #fff;
-    width: auto; } }
+    width: auto; }
+  button.play {
+    position: relative;
+    transform: scale(0.8);
+    color: #128cf4;
+    float: right;
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    border-radius: 50px;
+    padding: 0 0 0 5px;
+    fill: #128cf4; }
+    button.play polygon {
+      fill: #128cf4; }
+  .notification {
+    position: fixed;
+    border: none;
+    margin: 0 auto;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    font-weight: 600px; }
+  .notification.visible {
+    position: fixed;
+    border: none;
+    margin: 0 auto;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    font-weight: 600px; }
+  .notification a {
+    color: #fff;
+    border-bottom: 1px solid #fff; }
+  .notification a:hover {
+    opacity: .7;
+    color: #fff;
+    border-bottom: 1px solid #fff; }
+  .story_list {
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid #efefef;
+    padding-top: 40px; }
+  .story_image {
+    position: relative;
+    float: left;
+    background-color: #f1f1f1;
+    margin-right: 35px;
+    height: 200px;
+    width: 200px;
+    line-height: 195px;
+    text-align: center;
+    border-radius: 6px; }
+  .ll_img {
+    background-image: url("/includes/img/dunkirk.jpg");
+    background-size: cover;
+    background-position: center center; }
+  .nancy_img {
+    background-image: url("/includes/img/nancy.png");
+    background-size: cover;
+    background-position: center center; }
+  .dsm_img {
+    background-image: url("/includes/img/loans.png");
+    background-size: cover;
+    background-position: center center; }
+  .snippet {
+    float: left;
+    width: 515px;
+    text-align: left; }
+    .snippet p.list {
+      margin: 0 0 15px 0; }
+    .snippet h3 {
+      margin-bottom: 5px; }
+    .snippet h4 {
+      margin-bottom: 5px;
+      color: #ddd; }
+  .playlist_list {
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid #efefef;
+    padding: 20px 0 0 0; }
+    .playlist_list .snippet {
+      width: 670px; }
+    .playlist_list p.list {
+      margin: 0 0 3px 0; }
+    .playlist_list p a {
+      color: #333; }
+    .playlist_list p a:hover {
+      color: #128cf4;
+      border: none;
+      text-decoration: none; }
+    .playlist_list p.list {
+      margin-right: 10px; }
+    .playlist_list button.play {
+      margin-top: 10px; } }
 
 .sidenav {
   height: 100%;
@@ -980,7 +1080,7 @@ h2, article h2 {
 h3, article h3 {
   font-size: 20px;
   line-height: 30px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 10px; }
 
 h3 a, a:active {
@@ -1009,6 +1109,16 @@ h4, article h4 {
   letter-spacing: 2px;
   font-weight: 700;
   margin-bottom: 10px; }
+
+h4 a, a:active {
+  color: #333;
+  text-decoration: none;
+  border-bottom: none; }
+
+h4 a:hover {
+  color: #128cf4;
+  text-decoration: none;
+  border-bottom: none; }
 
 p {
   font-size: 16px;
@@ -1055,7 +1165,6 @@ p {
   h3, article h3 {
     font-size: 24px;
     line-height: 36px;
-    font-weight: 600;
     margin-bottom: 15px; }
   h4, article h4 {
     font-size: 12px;
@@ -1068,6 +1177,8 @@ p {
     font-size: 18px;
     line-height: 30px; }
   p.list {
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 28px; }
   .desktop {
