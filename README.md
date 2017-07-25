@@ -9,6 +9,7 @@ Our design system is based on the principles of [atomic design](http://bradfrost
 This design system is a living document and will be updated regularly.
 
 ## Setup the project
+The project requires node, npm and gulp. 
 
 - clone repo
 - `npm install`
