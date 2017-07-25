@@ -8,9 +8,12 @@ Our design system is based on the principles of [atomic design](http://bradfrost
 
 This design system is a living document and will be updated regularly.
 
-## Run this project locally
-Run this command in one tab to run this project in the browser:
-`python -m SimpleHTTPServer 8000`
+## Setup the project
 
-run this command in another tab to compile the SCSS files
-`gulp`
+- clone repo
+- `npm install`
+
+
+## Run this project locally
+- Run this project in the browser: `python -m SimpleHTTPServer 8000`
+- watch the SCSS files: `gulp`
