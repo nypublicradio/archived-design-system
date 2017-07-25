@@ -36,7 +36,7 @@ section {
 }
 
 .col2 {
-    max-width: 240px;
+    max-width: 300px;
     margin: 0 auto;
 }
 
@@ -131,6 +131,13 @@ a:hover img, a:active img {
     background: #1164b4;
 }
 
+.mobile_only {
+    display: block;
+}
+
+.desktop_only {
+    display: none;
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -170,7 +177,6 @@ a:hover img, a:active img {
         padding: 30px 40px;
     }
 
-
 }
 
 
@@ -191,7 +197,6 @@ a:hover img, a:active img {
     }
 
     .col3 {
-        float: left;
         margin: 0 auto;
         width: 490px;
     }
@@ -204,5 +209,13 @@ a:hover img, a:active img {
     .row2 {
         margin: 80px 0px;
         clear: both;
+    }
+
+    .mobile_only {
+        display: none;
+    }
+
+    .desktop_only {
+        display: block;
     }
 }

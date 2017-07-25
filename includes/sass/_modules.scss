@@ -134,7 +134,18 @@ button.emphasis {
     color: #fff;
     font-weight: 600;
     border: none;
+
+    polygon {
+        fill: #fff;
+        width: 10px;
+        height: 10px;
+        // transform: scale(.8);
+    }
 }
+
+button svg {
+}
+
 
 button.emphasis:hover{
     background: #1068b2;
