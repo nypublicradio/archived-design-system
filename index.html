@@ -56,8 +56,10 @@
                     <a href="#organisms"><h4>Organisms</h4></a>
 
                     <ul class="sub" onclick="closeNav()">
-                        <li><a href="#organisms">Mailing List Modals</a></li>
-                        <li><a href="#organisms">Call-To-Action Modals</a></li>
+                        <li><a href="#cta"></a>Call-To-Action Modals</li>
+                        <li><a href="#mailinglist">Mailing List Modals</a></li>
+                        <li><a href="#storylist">Lists: Stories</a></li>
+                        <li><a href="#playlists">Lists: Playlists</a></li>
                     </ul>
                 </li>
                 <li>
@@ -65,6 +67,7 @@
 
                     <ul class="sub" onclick="closeNav()">
                         <li><a href="#icons">Icons</a></li>
+                        <li><a href="#accessibility">Accessibility</a></li>
                         <li><a href="#kits">Kits and Templates</a></li>
                         <li><a href="#media">Media</a></li>
                     </ul>
@@ -114,14 +117,17 @@
             <li>
               <a href="#organisms"><h4>Organisms</h4></a>
               <ul class="sub">
-                    <li><a href="#organisms">Mailing List Modals</a></li>
-                    <li><a href="#organisms">Call-To-Action Modals</a></li>
+                    <li><a href="#cta">Call-To-Action Modals</a></li>
+                    <li><a href="#mailinglist">Mailing List Modals</a></li>
+                    <li><a href="#storylist">Lists: Stories</a></li>
+                    <li><a href="#playlists">Lists: Playlists</a></li>
               </ul>
             </li>
             <li>
               <a href="#more"><h4>More</h4></a>
               <ul class="sub">
                 <li><a href="#icons">Icons</a></li>
+                <li><a href="#accessibility">Accessibility</a></li>
                 <li><a href="#kits">Kits and Templates</a></li>
                 <li><a href="#media">Media</a></li>
               </ul>
@@ -131,7 +137,12 @@
 
        <main>
 
+<!-- ********** TEST NOTIFICATION ********** -->
+<!-- <div class="notification">This is an example of a notification. A link inside a notification looks <a href="">like this</a>.</div>
+ -->
+
 <!-- ********** INTRO SECTION ********** -->
+
             <div id="intro" class="anchor-link"></div>
             <article>
 
@@ -163,7 +174,7 @@
 
                 <h1>Atoms</h1>
 
-                <div id="grid" class="anchor-link"></div>
+                <div id="grids" class="anchor-link"></div>
                 <section>
                     <h2>Grids</h2>
 
@@ -334,7 +345,7 @@ h1 {
                             <div class="copyable_code desktop">
                             <pre><code class="copy_content" id="heading-three">h1 {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 24px;
   line-height: 36px;
 }</code></pre>
@@ -554,26 +565,25 @@ h1 {
                             <p>Basic button</p>
                             <button>View more options</button>
                             <div class="copyable_code desktop">
-                            <pre><code class="copy_content" id="button_code">
-                              input[type=button] {
-                                width: auto;
-                                border-radius: 50px;
-                                font-weight: 400;
-                                padding: 8px 25px;
-                                font-size: 18px;
-                                line-height: 30px;
-                                border: 2px solid;
-                                border-color: #f1f1f1;
-                                background: none;
-                                color: #128cf4;
-                                cursor: pointer;
-                              }
+                            <pre><code class="copy_content" id="button_code">input[type=button] {
+  width: auto;
+  border-radius: 50px;
+  font-weight: 400;
+  padding: 8px 25px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid;
+  border-color: #f1f1f1;
+  background: none;
+  color: #128cf4;
+  cursor: pointer;
+}
 
-                              button:hover {
-                                border-color: #ddd;
-                                color: #1068b2;
-                              }
-                            </code></pre>
+button:hover {
+  border-color: #ddd;
+  color: #1068b2;
+}
+</code></pre>
 <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
                         </div>
                         </li>
@@ -581,13 +591,12 @@ h1 {
                             <p>Basic button, small</p>
                             <button class="small">Sign up for the newsletter</button>
                             <div class="copyable_code desktop">
-                            <pre><code class="copy_content" id="button_code">
-                              button.small {
-                                font-size: 14px;
-                                line-height: 26px;
-                                padding: 7px 20px;
-                                cursor: pointer;
-                              }</code></pre>
+                            <pre><code class="copy_content" id="button_code">button.small {
+  font-size: 14px;
+  line-height: 26px;
+  padding: 7px 20px;
+  cursor: pointer;
+}</code></pre>
                               <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
                         </div>
                         </li>
@@ -596,17 +605,16 @@ h1 {
                             <p>Basic button with emphasis</p>
                             <button class="emphasis">Listen <span class="duration">9 min</span></button>
                             <div class="copyable_code desktop">
-                            <pre><code class="copy_content" id="button_code">
-                            button.emphasis {
-                              background: #128cf4;
-                              color: #fff;
-                              font-weight: 600;
-                              border: none;
-                            }
+                            <pre><code class="copy_content" id="button_code">button.emphasis {
+  background: #128cf4;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
 
-                            button.emphasis:hover{
-                                background: #1068b2;
-                            }
+button.emphasis:hover{
+  background: #1068b2;
+}
 </code></pre>
 <button class="copyable btn_copy_code" data-clipboard-target="#paragraph">copy</button>
                         </div>
@@ -699,7 +707,7 @@ h1 {
             <article>
                 <h1>Organisms</h1>
 
-                 <div id="modals" class="anchor-link"></div>
+                 <div id="cta" class="anchor-link"></div>
                  <section>
 
                     <h2>Call-To-Action Modals</h2>
@@ -733,7 +741,8 @@ h1 {
                             </div>
                         </li>
                     </ul>
-
+                    
+                    <div id="mailinglist" class="anchor-link"></div>
                     <h2>Mailing List Modals</h2>
                     <ul class="typo">
                         <li>
@@ -747,6 +756,110 @@ h1 {
                             </div>
                         </li>
                     </ul>
+
+                    <div id="storylist" class="anchor-link"></div>
+                        <ul class="typo">
+                            <h2>Lists: Stories</h2>
+                            <p>Story lists can appear in many places. In some cases it's helpful to include the show name, such as a list of stories in a recommended stories section. In other cases this may be redundant, such as a list of episodes on a show page.<p>
+                            <div class="row story">
+                                <div class="story_list">
+                                    <div class="story_image dsm_img"></div> 
+                                    <div class="snippet">
+                                        <h3><a href="">Our Student Loan Secrets, Part 1</a></h3>
+                                         <p class="list">More Americans are taking out more student loan debt and taking longer to pay it back. But we're not talking about the impact that it has on our lives. Until now. <span class="small_print">Jun 28, 2017</span></p>
+                                         <button class="emphasis">Listen <span class="duration">9 min</span></button>
+                                    </div>
+                                </div> <!-- end story list -->
+                            </div> <!-- end row -->
+                            
+                            <div class="row2">
+                                <div class="story_list">
+                                    <div class="story_image ll_img"></div> 
+                                    <div class="snippet">
+                                        <h4><a href="">The Leonard Lopate Show</a></h4>
+                                        <h3><a href="">Mark Rylance on Rescuing Allied Forces in 'Dunkirk'</a></h3>
+                                         <p class="list">Playwright/director Lila Neugebauer and playwright Branden Jacob-Jenkins explore the collaboration process between a playwright and a director. <span class="small_print">Jul 2, 2017</span></p>
+                                         <button class="emphasis">Listen <span class="duration">9 min</span></button>
+                                    </div>
+                                </div> <!-- end story list -->
+                            </div> <!-- end row -->
+
+                            <div class="row2">
+                                <div class="story_list">
+                                    <div class="story_image nancy_img"></div> 
+                                    <div class="snippet">
+                                        <h4><a href="">WNYC Studios</a> / <a href="">Nancy</a></h4>
+                                        <h3><a href="">You've Told Me This Before</a></h3>
+                                         <p class="list">Asia Kate Dillon’s role on “Billions” helped them understand a non-binary gender identity. Tina Healy comes out as trans over and over again.
+                                        <br><span class="small_print">Jan 22, 2017</span></p>
+                                         <button class="emphasis">Listen <span class="duration">9 min</span></button>
+                                    </div>
+                                </div> <!-- end story list -->
+                            </div> <!-- end row -->
+                        </ul>
+                </section>
+
+                 <div id="playlists" class="anchor-link"></div>
+                        <ul class="typo">
+                            <h2>Lists: Playlists</h2>
+                            <p>Text coming soon.<p>
+                            <div class="row playlist">
+                                <div class="playlist_list">
+                                    <div class="snippet">
+                                        <h4><a href="">The Leonard Lopate Show</a></h4>
+                                        <p class="list"><a href="">Mark Rylance on Rescuing Allied Forces in 'Dunkirk'</a></p>
+                                        <div class="small_print">Jul 21, 2017</div>
+                                    </div>
+                                    <button class="play">
+                                        <svg width="20px" height="22px" viewBox="0 0 20 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="play" transform="translate(-2.000000, -1.000000)" fill="#000000">
+                                                    <polygon transform="translate(11.777778, 11.785326) rotate(90.000000) translate(-11.777778, -11.785326) " points="11.7777778 2.00754831 22.5631039 21.5631039 0.992451691 21.5631039"></polygon>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </button> 
+                                </div> <!-- end playlist list -->
+                            </div> <!-- end row -->
+                            
+                            <div class="row playlist row 2">
+                                <div class="playlist_list">
+                                    <div class="snippet">
+                                        <h4><a href="">WNYC News</a></h4>
+                                        <p class="list"><a href="">Silver's Corruption Conviction Overturned</a></p>
+                                        <div class="small_print">Jun 4, 2017</div>
+                                    </div>
+                                    <button class="play">
+                                        <svg width="20px" height="22px" viewBox="0 0 20 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="play" transform="translate(-2.000000, -1.000000)" fill="#000000">
+                                                    <polygon transform="translate(11.777778, 11.785326) rotate(90.000000) translate(-11.777778, -11.785326) " points="11.7777778 2.00754831 22.5631039 21.5631039 0.992451691 21.5631039"></polygon>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </button>  
+                                </div> <!-- end playlist list -->
+                            </div> <!-- end row -->
+
+                            <div class="row playlist row 2">
+                                <div class="playlist_list">
+                                    <div class="snippet">
+                                        <h4><a href="">WNYC Studios</a> / <a href="">Nancy</a></h4>
+                                        <p class="list"><a href="">You've Told Me This Before</a></p>
+                                        <div class="small_print">Mar 8, 2017</div>
+                                    </div>
+                                    <button class="play">
+                                        <svg width="20px" height="22px" viewBox="0 0 20 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="play" transform="translate(-2.000000, -1.000000)" fill="#000000">
+                                                    <polygon transform="translate(11.777778, 11.785326) rotate(90.000000) translate(-11.777778, -11.785326) " points="11.7777778 2.00754831 22.5631039 21.5631039 0.992451691 21.5631039"></polygon>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </button>  
+                                </div> <!-- end playlist list -->
+                            </div> <!-- end row -->
+                        </ul>
                 </section>
             </article>
 
@@ -945,6 +1058,12 @@ h1 {
                             <a download href="/includes/icons/wnyc-beta.svg" class="download"><img src="includes/img/download-thin.svg"></a>
                         </li>
                     </ul>
+                </section>
+
+                <div id="accessibility" class="anchor-link"></div>
+                <section>
+                    <h2>Accessibility</h2>
+                    <p>Text coming soon</p>
                 </section>
 
                 <div id="kits" class="anchor-link"></div>
