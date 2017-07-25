@@ -8,12 +8,11 @@ Our design system is based on the principles of [atomic design](http://bradfrost
 
 This design system is a living document and will be updated regularly.
 
-## Team
-*Marine Boudeau*
-Director, Design and User Experience
 
-*Fiona Carswell*
-Lead Designer, Design and User Experience
+### Contributors
+- Marine Boudeau
+- Fiona Carswell
+
 
 ## Setup
 The project requires node, npm and gulp. 
