@@ -2,8 +2,31 @@
 // 1. Create variables for each color
 // 2. Make sure they're replaced throughout the code
 
+$nypr-light: #F1F1F1;
+
 $wnyc-red: #DE1E3D;
 $wnyc-blue: #128cf4;
+$wnyc-dark-red: #8d2131;
+$wnyc-teal: #0EB8BA;
+$wnyc-dark: #333333;
+
+$wqxr-blue: #00aeff;
+$wqxr-dark-blue: #1164b4;
+$wqxr-dark: #000000;
+
+
+// *************** global colors ***************
+
+.nypr-light {
+    color: $nypr-light;
+}
+
+.nypr-light.background {
+    background-color: $nypr-light;
+    color:inherit;
+}
+
+// *************** wnyc colors ***************
 
 .wnyc-red {
     color: $wnyc-red;
@@ -13,20 +36,12 @@ $wnyc-blue: #128cf4;
     color: inherit;
 }
 
-.wnyc-red {
-    color: $wnyc-red;
-}
-.wnyc-red.background {
-    background-color: $wnyc-red;
-    color: white;
+.wnyc-dark-red {
+    color: $wnyc-dark-red;
 }
 
-.dark-red {
-    color: #8d2131;
-}
-
-.dark-red.background {
-    background-color: #8d2131;
+.wnyc-dark-red.background {
+    background-color: $wnyc-dark-red;
     color: white;
     font-weight: 600;
 }
@@ -36,73 +51,59 @@ $wnyc-blue: #128cf4;
 }
 
 .wnyc-blue.background {
-    background-color: #128cf4;
+    background-color: $wnyc-blue;
     color: white;
     font-weight: 600;
 }
 
+.wnyc-teal {
+    color: $wnyc-teal;
+}
+
+.wnyc-teal.background {
+    background-color: $wnyc-teal;
+    color: inherit;
+}
+
+.wnyc-dark {
+    color: $wnyc-dark;
+}
+
+.wnyc-dark.background {
+    background-color: $wnyc-dark;
+    color: inherit;
+}
+
+// *************** wqxr colors ***************
+
 .wqxr-blue {
-    color: #00aeff;
+    color: $wqxr-blue;
 }
 
 .wqxr-blue.background {
-    background-color: #00aeff;
+    background-color: $wqxr-blue;
     color: white;
     font-weight: 600;
 }
 
-
 .wqxr-dark-blue {
-    color: #1164b4;
+    color: $wqxr-dark-blue;
 }
 
 .wqxr-dark-blue.background {
-    background-color: #1164b4;
+    background-color: $wqxr-dark-blue;
     color: white;
     font-weight: 600;
 }
 
-.wqxr-black {
-    color: #000;
+.wqxr-dark {
+    color: $wqxr-dark;
 }
 
-.wqxr-black.background {
-    background-color: #000;
+.wqxr-dark.background {
+    background-color: $wqxr-dark;
     color: white;
     font-weight: 600;
 }
 
-.light-blue {
-    color: #627FDD;
-}
-.light-blue.background {
-    background-color: #627FDD;
-    color:inherit;
-}
 
-.light {
-    color: #F1F1F1;
-}
-
-.light.background {
-    background-color: #F1F1F1;
-    color:inherit;
-}
-
-.dark {
-    color: #333333;
-}
-
-.dark.background {
-    background-color: #333333;
-    color: inherit;
-}
-
-.teal {
-    color: #0EB8BA;
-}
-
-.teal.background {
-    background-color: #0EB8BA;
-    color: inherit;
-}

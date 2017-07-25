@@ -115,12 +115,12 @@ p {
 
 .on_color a {
     color: #fff;
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 
 .on_color a:hover {
     opacity: .7;
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 
 .desktop {
@@ -177,6 +177,10 @@ p {
     p {
         font-size: 18px;
         line-height: 30px;
+
+        a:hover {
+            border-bottom: 2px solid #128cf4;
+        }
     }
 
     p.list {

@@ -73,11 +73,11 @@ ul, li {
 .clearfix:after {
   clear: both; }
 
-.wnyc-red {
-  color: #DE1E3D; }
+.nypr-light {
+  color: #F1F1F1; }
 
-.wnyc-red.background {
-  background-color: #DE1E3D;
+.nypr-light.background {
+  background-color: #F1F1F1;
   color: inherit; }
 
 .wnyc-red {
@@ -85,12 +85,12 @@ ul, li {
 
 .wnyc-red.background {
   background-color: #DE1E3D;
-  color: white; }
+  color: inherit; }
 
-.dark-red {
+.wnyc-dark-red {
   color: #8d2131; }
 
-.dark-red.background {
+.wnyc-dark-red.background {
   background-color: #8d2131;
   color: white;
   font-weight: 600; }
@@ -102,6 +102,20 @@ ul, li {
   background-color: #128cf4;
   color: white;
   font-weight: 600; }
+
+.wnyc-teal {
+  color: #0EB8BA; }
+
+.wnyc-teal.background {
+  background-color: #0EB8BA;
+  color: inherit; }
+
+.wnyc-dark {
+  color: #333333; }
+
+.wnyc-dark.background {
+  background-color: #333333;
+  color: inherit; }
 
 .wqxr-blue {
   color: #00aeff; }
@@ -119,41 +133,13 @@ ul, li {
   color: white;
   font-weight: 600; }
 
-.wqxr-black {
-  color: #000; }
+.wqxr-dark {
+  color: #000000; }
 
-.wqxr-black.background {
-  background-color: #000;
+.wqxr-dark.background {
+  background-color: #000000;
   color: white;
   font-weight: 600; }
-
-.light-blue {
-  color: #627FDD; }
-
-.light-blue.background {
-  background-color: #627FDD;
-  color: inherit; }
-
-.light {
-  color: #F1F1F1; }
-
-.light.background {
-  background-color: #F1F1F1;
-  color: inherit; }
-
-.dark {
-  color: #333333; }
-
-.dark.background {
-  background-color: #333333;
-  color: inherit; }
-
-.teal {
-  color: #0EB8BA; }
-
-.teal.background {
-  background-color: #0EB8BA;
-  color: inherit; }
 
 .icons {
   display: -webkit-flex;
@@ -192,7 +178,8 @@ ul, li {
   border-bottom: none; }
 
 .icons li:hover a.download, .icons li:hover a, .icons li:hover img {
-  opacity: 1; }
+  opacity: 1;
+  border-bottom: none; }
 
 @media only screen and (min-width: 768px) {
   .icons li {
@@ -244,7 +231,7 @@ section {
   width: 100%; }
 
 .col2 {
-  max-width: 240px;
+  max-width: 300px;
   margin: 0 auto; }
 
 .row.story {
@@ -322,6 +309,12 @@ a:hover img, a:active img {
 .with_image button.dark-blue {
   background: #1164b4; }
 
+.mobile_only {
+  display: block; }
+
+.desktop_only {
+  display: none; }
+
 @media only screen and (min-width: 768px) {
   main {
     position: relative;
@@ -357,7 +350,6 @@ a:hover img, a:active img {
     float: right;
     width: 240px; }
   .col3 {
-    float: left;
     margin: 0 auto;
     width: 490px; }
   .row {
@@ -365,7 +357,11 @@ a:hover img, a:active img {
     margin: 10px 0px; }
   .row2 {
     margin: 80px 0px;
-    clear: both; } }
+    clear: both; }
+  .mobile_only {
+    display: none; }
+  .desktop_only {
+    display: block; } }
 
 .notification {
   width: 100%;
@@ -490,6 +486,10 @@ button.emphasis {
   color: #fff;
   font-weight: 600;
   border: none; }
+  button.emphasis polygon {
+    fill: #fff;
+    width: 10px;
+    height: 10px; }
 
 button.emphasis:hover {
   background: #1068b2; }
@@ -857,7 +857,7 @@ ul.primary li:hover > a {
     margin: 0 auto;
     text-align: center; }
   #nav_bar > ul {
-    max-width: 750px;
+    max-width: 530px;
     margin: 0 auto; }
   #nav_bar > ul > li > a {
     font-size: 16px; }
@@ -1132,11 +1132,11 @@ p {
 
 .on_color a {
   color: #fff;
-  border-bottom: 1px solid #fff; }
+  border-bottom: 2px solid #fff; }
 
 .on_color a:hover {
   opacity: .7;
-  border-bottom: 1px solid #fff; }
+  border-bottom: 2px solid #fff; }
 
 .desktop {
   display: none; }
@@ -1176,6 +1176,8 @@ p {
   p {
     font-size: 18px;
     line-height: 30px; }
+    p a:hover {
+      border-bottom: 2px solid #128cf4; }
   p.list {
     margin: 0;
     padding: 0;
