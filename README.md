@@ -1,4 +1,4 @@
-# WNYC Design System
+# New York Public Radio Design System
 
 Guidelines and assets for sites and apps related to WNYC.
 
