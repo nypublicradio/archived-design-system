@@ -238,8 +238,7 @@ section {
   margin-top: 60px; }
 
 .row.playlist {
-  padding: 15px 0;
-  margin: 60px 0 75px 0; }
+  margin: 0; }
 
 .row2 {
   padding: 50px 0 0 0; }
@@ -356,7 +355,7 @@ a:hover img, a:active img {
     width: 100%;
     margin: 10px 0px; }
   .row2 {
-    margin: 80px 0px;
+    margin: 0;
     clear: both; }
   .mobile_only {
     display: none; }
@@ -574,10 +573,11 @@ button.black {
     height: 100%;
     width: 100%;
     border-top: 1px solid #efefef;
-    padding-top: 40px; }
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
   .story_image {
-    position: relative;
-    float: left;
     background-color: #f1f1f1;
     margin-right: 35px;
     height: 200px;
@@ -598,7 +598,6 @@ button.black {
     background-size: cover;
     background-position: center center; }
   .snippet {
-    float: left;
     width: 515px;
     text-align: left; }
     .snippet p.list {
@@ -612,7 +611,9 @@ button.black {
     height: 100%;
     width: 100%;
     border-top: 1px solid #efefef;
-    padding: 20px 0 0 0; }
+    padding: 25px 0;
+    display: flex;
+    align-items: center; }
     .playlist_list .snippet {
       width: 670px; }
     .playlist_list p.list {
@@ -624,9 +625,7 @@ button.black {
       border: none;
       text-decoration: none; }
     .playlist_list p.list {
-      margin-right: 10px; }
-    .playlist_list button.play {
-      margin-top: 10px; } }
+      margin-right: 10px; } }
 
 .sidenav {
   height: 100%;
