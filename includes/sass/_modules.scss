@@ -267,11 +267,12 @@ button.black {
         width: 100%;
         border-top: 1px solid #efefef;
         padding-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .story_image {
-        position: relative;
-        float: left;
         background-color: #f1f1f1;
         margin-right: 35px;
         height: 200px;
@@ -283,24 +284,23 @@ button.black {
 
     .ll_img {
         background-image: url('/includes/img/dunkirk.jpg');
-        background-size: cover;                     
-        background-position: center center; 
+        background-size: cover;
+        background-position: center center;
     }
 
     .nancy_img {
         background-image: url('/includes/img/nancy.png');
-        background-size: cover;                     
-        background-position: center center; 
+        background-size: cover;
+        background-position: center center;
     }
 
     .dsm_img {
         background-image: url('/includes/img/loans.png');
-        background-size: cover;                     
-        background-position: center center; 
+        background-size: cover;
+        background-position: center center;
     }
 
     .snippet {
-        float: left;
         width: 515px;
         text-align: left;
 
@@ -322,7 +322,9 @@ button.black {
         height: 100%;
         width: 100%;
         border-top: 1px solid #efefef;
-        padding: 20px 0 0 0;
+        padding: 25px 0;
+        display: flex;
+        align-items: center;
 
         .snippet {
             width: 670px;
@@ -345,17 +347,6 @@ button.black {
         p.list {
             margin-right: 10px;
         }
-
-        button.play {
-            margin-top: 10px;
-        }
-
     }
 
 }
-
-
-
-
-
-
