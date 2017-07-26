@@ -109,7 +109,7 @@ input[type=button] {
     width: auto;
     border-radius: 50px;
     font-weight: 400;
-    padding: 8px 25px;
+    padding: 10px 20px 8px 20px;
     font-size: 18px;
     border: 2px solid;
     border-color: #f1f1f1;
@@ -140,10 +140,10 @@ button.emphasis {
         width: 10px;
         height: 10px;
     }
-}
 
-button svg {
-    margin-right: 7px;
+    svg {
+        margin-right: 5px;
+    }
 }
 
 button.emphasis:hover{
@@ -170,6 +170,35 @@ button.black {
     background: #000;
     color: #fff;
     width: 100%;
+}
+
+button.play {
+    position: relative;
+    transform: scale(.8);
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    border-radius: 50px;
+    padding: 7px 12px;
+
+        polygon {
+            fill: #128cf4;
+        }
+}
+
+.playlist_list {
+    h4 {
+        margin: 0;
+    }
+
+    p {
+       margin: 0;
+    }
+
+    p a {
+       color: #333;
+    }
+
 }
 
 
