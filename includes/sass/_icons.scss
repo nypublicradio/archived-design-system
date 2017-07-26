@@ -11,7 +11,7 @@
 .icons li {
     width: 50%;
     box-sizing:border-box;
-    padding: 15px 5px 17px 15px;
+    padding: 15px 5px 17px 0px;
     border-radius: 6px;
     font-size: 14px;
     white-space: nowrap;
@@ -40,6 +40,7 @@
     .icons li a.download {
         transform: scale(1.5);
         border-bottom: none;
+        display: none;
     }
 
     .icons li:hover a.download, .icons li:hover a, .icons li:hover img{
@@ -67,6 +68,8 @@
     .icons li a.link img{
         width: 12px;
         height: 12px;
+        margin-top: 5px;
+        display: block;
     }
 }
 

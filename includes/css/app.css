@@ -152,7 +152,7 @@ ul, li {
 .icons li {
   width: 50%;
   box-sizing: border-box;
-  padding: 15px 5px 17px 15px;
+  padding: 15px 5px 17px 0px;
   border-radius: 6px;
   font-size: 14px;
   white-space: nowrap; }
@@ -175,7 +175,8 @@ ul, li {
 
 .icons li a.download {
   transform: scale(1.5);
-  border-bottom: none; }
+  border-bottom: none;
+  display: none; }
 
 .icons li:hover a.download, .icons li:hover a, .icons li:hover img {
   opacity: 1;
@@ -195,7 +196,9 @@ ul, li {
   .icons li a.download img,
   .icons li a.link img {
     width: 12px;
-    height: 12px; } }
+    height: 12px;
+    margin-top: 5px;
+    display: block; } }
 
 @media only screen and (min-width: 1100px) {
   .icons li {
@@ -207,14 +210,14 @@ main {
 
 article {
   max-width: 100%;
-  padding: 20px 0 40px 0; }
+  padding: 0 0 40px 0; }
 
 section {
   width: 100%;
   padding: 20px 0 20px 0; }
 
 .anchor-link {
-  height: 61px;
+  height: 35px;
   visibility: hidden; }
 
 .col {
@@ -238,7 +241,7 @@ section {
   margin-top: 60px; }
 
 .row.playlist {
-  margin: 0; }
+  margin: 40px 0 0 0; }
 
 .row2 {
   padding: 50px 0 0 0; }
@@ -337,7 +340,9 @@ a:hover img, a:active img {
   .logo {
     margin-bottom: 45px; }
   .modal {
-    padding: 30px 40px; } }
+    padding: 30px 40px; }
+  .anchor-link {
+    height: 61px; } }
 
 @media only screen and (min-width: 915px) {
   .col {
@@ -463,7 +468,7 @@ input[type=button] {
   width: auto;
   border-radius: 50px;
   font-weight: 400;
-  padding: 8px 25px;
+  padding: 10px 20px 8px 20px;
   font-size: 18px;
   border: 2px solid;
   border-color: #f1f1f1;
@@ -489,9 +494,8 @@ button.emphasis {
     fill: #fff;
     width: 10px;
     height: 10px; }
-
-button svg {
-  margin-right: 7px; }
+  button.emphasis svg {
+    margin-right: 5px; }
 
 button.emphasis:hover {
   background: #1068b2; }
@@ -512,6 +516,26 @@ button.black {
   background: #000;
   color: #fff;
   width: 100%; }
+
+button.play {
+  position: relative;
+  transform: scale(0.8);
+  height: 65px;
+  width: 65px;
+  text-align: center;
+  border-radius: 50px;
+  padding: 7px 12px; }
+  button.play polygon {
+    fill: #128cf4; }
+
+.playlist_list h4 {
+  margin: 0; }
+
+.playlist_list p {
+  margin: 0; }
+
+.playlist_list p a {
+  color: #333; }
 
 @media only screen and (min-width: 768px) {
   input[type=text] {

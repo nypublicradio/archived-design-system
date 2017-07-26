@@ -6,7 +6,7 @@ main {
 
 article {
     max-width: 100%;
-    padding: 20px 0 40px 0;
+    padding: 0 0 40px 0;
 }
 
 
@@ -16,7 +16,7 @@ section {
 }
 
 .anchor-link {
-  height: 61px;
+  height: 35px;
   visibility: hidden;
 }
 
@@ -45,7 +45,7 @@ section {
 }
 
 .row.playlist {
-    margin: 0;
+    margin: 40px 0 0 0;
 }
 
 .row2 {
@@ -173,6 +173,10 @@ a:hover img, a:active img {
 
     .modal {
         padding: 30px 40px;
+    }
+
+    .anchor-link {
+        height: 61px;
     }
 
 }
